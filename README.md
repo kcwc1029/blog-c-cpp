@@ -1,3 +1,5 @@
+# C
+
 ## 1. 基本安裝
 
 -   要安裝的東西
@@ -39,7 +41,7 @@
 
 -   Linker  負責在連結階段找到函式庫，並將正確的函式呼叫插入到目標程式中。
 
-## 3. 第一支程式
+## 3. 第一支 C 程式
 
 ```c
 #include <stdio.h>
@@ -274,28 +276,6 @@ char str[] = "Hello, World!";
 -   ASCII（American Standard Code for Information Interchange）是早期設計的一種字符編碼方式，用來將字母、數字和符號對應到二進制數字。
 -   [字元轉換 ASCII](./Basic%20Data%20Type/ascii.c)
 
-## 8. 常數(const)
-
--   方式 1：使用#define
-    -   `#define` 是一個預處理指令
-    -   在編譯期間，所有使用到這個名稱的地方，預處理器會用對應的值來替換
-    -   在編譯前就完成了代換
-    -   優點：高效：由於在編譯時直接替換，需要額外的記憶體空間來存儲常數值
-    -   缺點：沒有類型檢查，因此不受任何編譯期的類型檢查，這可能導致一些潛在的錯誤
-
-```c
-#define PI 3.14159
-#define SQUARE(x) (x * x)
-
-// 如果使用SQUARE(3 + 1)，就會變成(3 + 1 * 3 + 1)，就不是預期答案
-```
-
--   方式 2：使用 const
-    -   const 定義的常數有類型，並且會在記憶體中分配空間。
-    -   優點：因為有資料型態，因此可以接受編譯器的類型檢查，從而避免因類型錯誤導致的問題
-    -   缺點：佔用記憶體
--   [使用常數計算圓面積](./Const/circle_area.c)
-
 ## 9. 運算
 
 -   [交換兩個變數的值](./Operation/swao01.c)
@@ -519,6 +499,22 @@ ptr + i：取的陣列內容的地址
 
 ### 15.11. [指標常數與陣列](.//Pointer/pointer_constants_arrays.c)
 
+## 參考(reference) (CPP 才有)
+
+-   reference 就是一種別名(alias)
+-   一個變數可以有很多 reference
+-   [reference 示範](./Reference/reference_size.cpp)
+-   [reference 指定](./Reference/ref_init_assign.cpp)：reference 直接代表另一個變數，因此也可以直接作使用。
+
+### reference 傳遞
+
+-   [使用參考跑 fof](./Reference/sum_ranged_for.cpp)
+-   [使用指標傳遞參數](./Reference/swap_by_pointer.cpp)
+-   [使用參考傳遞參數](./Reference/swap_by_reference.cpp)
+-   [指標作為參數傳遞的過程](./Reference/pointer_parameter.cpp)
+-   [指標參考作為參數傳遞的過程](./Reference/reference_parameter.cpp)
+-   [參考作為 return](./Reference/reference_return.cpp)
+
 ## 16. 字元
 
 -   [計算字元大小](./Char/char_size.c)
@@ -620,8 +616,33 @@ char *strtok(char *string, delimeters);
 ## 18. 宣告修飾
 
 -   [輸出各整數類別位元小](./Basic%20Data%20Type/declaration_modifiers.c)
--   [C99 有號數](./Basic%20Data%20Type/c99.c)：解決了不同平台上整數大小不一致的問題
+-   解決了不同平台上整數大小不一致的問題 => C99 跟 C++11
+-   [C99 有號數](./Basic%20Data%20Type/c99_signed.c)：
 -   [C99 無號數](./Basic%20Data%20Type/c99_unsigned.c)
+-   [C++11 有號數](./Basic%20Data%20Type/c++11_signed.cpp)：
+-   [C++11 無號數](./Basic%20Data%20Type/c++11_unsigned.cpp)：
+
+### 常數(const)
+
+-   方式 1：使用#define
+    -   `#define` 是一個預處理指令
+    -   在編譯期間，所有使用到這個名稱的地方，預處理器會用對應的值來替換
+    -   在編譯前就完成了代換
+    -   優點：高效：由於在編譯時直接替換，需要額外的記憶體空間來存儲常數值
+    -   缺點：沒有類型檢查，因此不受任何編譯期的類型檢查，這可能導致一些潛在的錯誤
+
+```c
+#define PI 3.14159
+#define SQUARE(x) (x * x)
+
+// 如果使用SQUARE(3 + 1)，就會變成(3 + 1 * 3 + 1)，就不是預期答案
+```
+
+-   方式 2：使用 const
+    -   const 定義的常數有類型，並且會在記憶體中分配空間。
+    -   優點：因為有資料型態，因此可以接受編譯器的類型檢查，從而避免因類型錯誤導致的問題
+    -   缺點：佔用記憶體
+-   [使用常數計算圓面積](./Const/circle_area.c)
 
 ### 18.4. const 指標
 
@@ -967,6 +988,209 @@ int main(int argc, char *argv[])
     -   .bss 段：存儲未初始化的全局變數。
     -   Heap（堆）：用於動態記憶體分配（例如 malloc）。
     -   Stack（堆疊）：用於存儲區域變數和函數調用信息。
+
+# CPP
+
+## 3. 第一支 cpp 程式
+
+```cpp
+#include <iostream> // 標準入串流函數庫(IO stream library)
+using namespace std;
+
+main(){
+    int i = 100;
+    int j = 200;
+    cout<<i<<endl;
+    cout<<j<<endl;
+}
+```
+
+### 輸入輸出
+
+```cpp
+#include <iostream>
+using namespace std;
+
+main(){
+    int i;
+    cin >> i;
+    cout << i << endl;
+}
+```
+
+-   [連續讀入(判斷 eof)](./)
+
+### 名稱空間（Namespace）
+
+-   名稱空間（Namespace） 是 C++ 中用來組織程式碼的一種機制，目的是避免名稱衝突
+-   標準庫的所有內容（如 cout、vector、string 等）都定義在 std 名稱空間中
+-   如果沒有使用 using namespace std;，每次使用標準庫時都需要寫 std::
+
+```cpp
+// 沒使用using namespace std
+main(){
+    std::cout << "Hello, World!" << std::endl;
+}
+
+// 有使用using namespace std
+using namespace std;
+main(){
+    cout << "Hello, World!" << endl;
+}
+```
+
+### 操控子（Manipulator）
+
+-   操控子是 C++ 中用來控制輸入輸出格式的工具。
+-   操控子可以設置輸出的格式，例如數字進制、欄寬、對齊方式等。
+-   引入 `#include <iomanip>`
+
+| 操控子            | 功能描述                                     |
+| ----------------- | -------------------------------------------- |
+| `dec`             | 將數字以十進位格式輸出。                     |
+| `oct`             | 將數字以八進位格式輸出。                     |
+| `hex`             | 將數字以十六進位格式輸出。                   |
+| `setw(n)`         | 設置下一個輸出欄位的寬度為 `n` 個字符。      |
+| `setprecision(n)` | 設置浮點數的有效位數為 `n`。                 |
+| `setfill(c)`      | 設置填充字符為 `c`，通常與 `setw` 一起使用。 |
+| `left`            | 將輸出內容靠左對齊。                         |
+| `right`           | 將輸出內容靠右對齊（預設行為）。             |
+| `endl`            | 插入換行符並刷新輸出緩衝區。                 |
+
+-   [設置數字進制](./Basic%20Data%20Type/set_base_number.cpp)
+-   [設置欄寬和填充字符](./Basic%20Data%20Type/padding_character.cpp)
+-   [設置浮點數的有效位數](./Basic%20Data%20Type/floating_point_numbers.cpp)
+
+## class
+
+-   [建立類別](./Class/class_basic.cpp)
+-   class vs. struct：
+    -   struct 預設成員是 public
+    -   class 預設成員是 private
+
+### 建構子
+
+-   當 物件被創建時會自動執行，通常用來初始化物件的屬性。
+-   [簡單建構子範例](./Class/Constructor01.cpp)
+-   [初始化成員列表{}](./Class/init_member01.cpp)
+-   [初始化成員列表:](./Class/init_member02.cpp)
+-   [建構子多載](./Class/constructor_overloading.cpp)
+
+### 解構子（Destructor）
+
+-   當 物件生命週期結束時，解構子會被自動呼叫，通常用來釋放動態記憶體（delete）、關閉檔案、釋放資源等。
+-   不接受參數（不能多載）
+-   沒有回傳值
+-   當物件超出作用域時，自動呼叫
+-   [基本解構子範例](./Class/basic_destructor.cpp)
+-   [解構子釋放動態記憶體](./Class/basic_destructor_delete_memory.cpp)
+-   [釋放動態陣列](./Class/delete_array.cpp)
+-   [釋放動態物件](./Class/delete_object.cpp)
+
+### 繼承
+
+-   [基本繼承範例](./Class/Inheritance01.cpp)
+-   存取修飾詞（public / protected / private）
+    -   public → public ✅ 可在類別內 & 外存取
+    -   protected public → protected 🔒 只能在子類別內存取
+    -   private public → private ❌ 只能在類別內部使用，子類別不能直接存取
+    -   [存取修飾詞](./Class/public_protected_private.cpp)
+-   [解構子在繼承中的行為](./Class/destructor_inheritance.cpp)
+
+#### override：確保函數正確覆寫
+
+-   當子類別要覆寫（Override） 父類別的虛擬函數時，可以加上 override，讓編譯器檢查是否真的在覆寫，避免拼錯函數名稱或錯誤的函數簽名。
+    -   [參數不同導致隱藏而非覆蓋](./Class/override_error.cpp)
+    -   [使用 override 更正](./Class/override_fix.cpp)
+
+#### final：防止進一步覆寫或繼承
+
+-   [防止子類別覆寫函數](./Class/final_function.cpp)
+-   [防止類別被繼承](./Class/final_inheritance.cpp)
+
+### 作用域解析運算子(Scope Resolution Operator)(::)
+
+-   用來 指定名稱的作用域（Scope），確保編譯器知道某個函式或變數屬於哪個類別或命名空間。
+-   [類別成員函式的定義](./Class/scope_resolution_operator01.cpp)：當我們在類別外部定義成員函式時，必須使用 :: 來指定它的作用域
+-   [靜態成員變數（Static Members）](./Class/scope_resolution_operator02.cpp)：靜態變數（static）屬於類別本身，而不是個別物件，所以需要 :: 來存取
+-   [命名空間（Namespace）](./Class/scope_resolution_operator03.cpp)：當有 相同名稱的變數或函式 時，可以使用 namespace:: 來區分
+-   [全域變數 vs 區域變數](./Class/scope_resolution_operator04.cpp)：如果區域變數遮蔽了全域變數，可以使用 :: 來存取全域變數
+
+### 隱式轉換（Implicit Conversion）
+
+-   C++ 支援 隱式轉換（Implicit Conversion），當不同型別的變數或物件相互操作時，編譯器會自動進行型別轉換，而不需要 static_cast<> 這類的顯式轉換。
+-   會發生在以下類別
+
+#### [基本型別轉換](./Class/built_in_type_conversation.cpp)：不會發生資料遺失
+
+-   int → double
+-   char → int
+-   float → double
+
+#### 類別建構函式（Constructor-based Conversion）
+
+-   建構子可以無參數、一個參數或多個參數
+-   當一個參數時，稱為單參數建構子（Single-Parameter Constructor），
+-   [單參數建構子時，是允許隱式轉換的](./Class/constructor_based_conversation.cpp)
+-   [這時候就要加 explicit 禁止隱式轉換](./Class/constructor_based_conversation_fix.cpp)
+
+### 顯式轉換（Explicit Type Conversion）
+
+-   顯式轉換（Explicit Conversion） 指的是當 C++ 不允許自動進行型別轉換 或 開發者想要強制轉換型別 時，使用 顯式轉換語法 來完成轉換。
+-   C++ 提供四種主要的顯式轉換方式：
+    -   [static_cast](./Class/static_cast.cpp)
+    -   reinterpret_cast：這種轉換非常危險，因為它不檢查型別相容性，可能導致未定義行為（UB）
+    -   const_cast：解除 const 限制
+    -   dynamic_cast：
+        -   它允許 父類指標安全地轉換為子類指標
+        -   只能用在有虛擬函式（virtual）的類別
+
+### 多形（Polymorphism）
+
+-   多型（Polymorphism） 是指「相同的函式介面，不同的行為」，主要有兩種形式：
+    -   編譯期多型（靜態綁定，Static Binding） → 函式多載、運算子多載
+    -   執行期多型（動態綁定，Dynamic Binding） → 虛擬函數（virtual）、抽象類別
+
+#### 靜態綁定（Static Binding）
+
+-   靜態綁定（Static Binding） 是指編譯時期就決定要呼叫哪個函式，這種方式的函式在編譯時已經確定對應的函式位址，所以效率較高。
+-   [函式多載（Function Overloading）](./Class/funtion_overloading.cpp)
+-   [運算子多載（Operator Overloading）](./Class/operator_overloading.cpp)
+-   [指標與多型](./Class/polymorphism_pointer.cpp)
+
+#### 動態綁定（Dynamic Binding）與 虛擬函數
+
+-   動態綁定（Dynamic Binding） 是指「函式在執行時才決定要調用哪個版本」，這是透過 虛擬函數（virtual function） 來實現的。
+-   如果沒有 virtual，會發生[靜態繼承](./Class/overriding_error.cpp)
+-   [使用 virtual](./Class/overriding_correct.cpp)
+-   菱形問題（Diamond Problem）：當一個類別同時從兩個相同的基類繼承，C++ 會出現「菱形繼承問題（Diamond Problem）」，導致基類的成員變數與函式會有兩份拷貝。
+-   [菱形繼承的問題](./Class/diamond_problem.cpp)
+-   [處理菱形繼承的問題](./Class/diamond_problem_fix.cpp)
+
+### 抽象類別（Abstract Class）
+
+-   當類別內 至少有一個「純虛擬函式（pure virtual function）」，該類別就成為 抽象類別，無法直接建立物件。
+-   [抽象類別](./Class/abstract01.cpp)
+
+## Templates
+
+-   泛型（Generic Programming）是一種讓程式碼可以適用於多種型別的技術
+-   C++ 透過模板（Templates）實現泛型，主要有兩種形式：
+    -   函式模板（Function Templates） → 適用於函式
+    -   類別模板（Class Templates） → 適用於類別
+
+### 函式模板（Function Template）
+
+-   函式模板允許我們定義 「可以處理不同型別的函式」，而不用為每種型別都寫一個版本。
+-   [計算兩個數的最大值](./Template/two_max.cpp)
+-   [多個模板參數](./Template/multi_function_parameter.cpp)
+
+### 類別模板（Class Templates）
+
+-   類別模板允許我們建立「可以處理不同型別」的類別，適用於資料結構、泛型容器（如 vector、stack）。
+-   [建立類別 Box 類別來存放不同型別的資料](./Template/template_box.cpp)
+-   [多個類別模板參數](./Template/multi_class_parameter.cpp)
+-   [類別模板提供預設值](./Template/default_paremeter.cpp)
 
 <p align="center">
   Copyright © 2025 WEI-CHENG CHEN
