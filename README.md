@@ -2,11 +2,10 @@
     如果你覺得這個專案對你有幫助，請點擊右上角的 ⭐ 支持這個專案！
 </p>
 
--   [成大工科 程式設計](./PROGRAMMING%20DESIGN.md)
+-   [成大工科 程式設計](./成大工科%20程式設計.md)
+-   [LeetCode 練習清單](./LeetCode清單.md)
 
 # C
-
-NCKU ES
 
 ## 1. 基本安裝
 
@@ -1199,9 +1198,7 @@ main(){
 -   [多個類別模板參數](./Template/multi_class_parameter.cpp)
 -   [類別模板提供預設值](./Template/default_paremeter.cpp)
 
-# Leetcode
-
-## string
+---
 
 <p align="center">
   Copyright © 2025 WEI-CHENG CHEN

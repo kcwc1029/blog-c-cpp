@@ -4,6 +4,10 @@
 		"ostream": "cpp",
 		"xstring": "cpp",
 		"system_error": "cpp",
-		"xlocale": "cpp"
+		"xlocale": "cpp",
+		"utility": "cpp",
+		"format": "cpp",
+		"initializer_list": "cpp",
+		"xutility": "cpp"
 	}
 }
