@@ -1,0 +1,8 @@
+body {
+	--file-line-width: 95%;
+}
+
+/* 编辑模式下，右侧空白太大 */
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-content {
+    max-width: 100%;
+}

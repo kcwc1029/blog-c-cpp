@@ -1,0 +1,12 @@
+{
+  "accentColor": "",
+  "textFontFamily": "Times New Roman,標楷體",
+  "baseFontSize": 23,
+  "enabledCssSnippets": [
+    "page-width"
+  ],
+  "cssTheme": "Prime",
+  "interfaceFontFamily": "",
+  "theme": "obsidian",
+  "baseFontSizeAction": true
+}

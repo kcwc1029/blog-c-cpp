@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "13e0481b955a24ae",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d4d4bb434963747",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3fa6783af230dcf5",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新分頁"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "838ba4b90c4ef34b",
+    "type": "split",
+    "children": [
+      {
+        "id": "bcc9111f50cc7137",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "91d2374114e34d8f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          },
+          {
+            "id": "1f19379a115a8167",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#define",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "775fb5577665710c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "書籤"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 356.5
+  },
+  "right": {
+    "id": "8d7f124c8bc7eb67",
+    "type": "split",
+    "children": [
+      {
+        "id": "2275bd9eae94694b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "635ffa88bb968656",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向連結"
+            }
+          },
+          {
+            "id": "e630b32c676ffd8d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "對外連結"
+            }
+          },
+          {
+            "id": "ac70b7fc10e480b2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "853cefececf4cc93",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大綱"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false
+    }
+  },
+  "active": "3fa6783af230dcf5",
+  "lastOpenFiles": [
+    "LeetCode",
+    "README.md",
+    "作業系統/作業系統.md",
+    "計算機結構組織/計算機結構.md",
+    "STM32/MCU1/test/test.ioc",
+    "STM32/MCU1/test",
+    "STM32/MCU1/hello/hello.launch",
+    "STM32/MCU1/hello/Debug/hello.list",
+    "STM32/MCU1/hello/Debug/hello.elf",
+    "STM32/MCU1/hello/Debug/hello.map",
+    "STM32/MCU1/hello/Debug/Src/syscalls.o",
+    "STM32/MCU1/hello/Debug/Src/sysmem.o",
+    "STM32/MCU1/hello/Debug/Src/syscalls.d",
+    "STM32/MCU1/hello/Debug/Src/main.o",
+    "STM32/Foundation course on Embedded C programming using STM32 Microcontroller/Embedded-C/README.md",
+    "D1mini(ESP8266)/README.md",
+    "c++/leetcode題目/數組.md",
+    "C_Programming_Notes/README.md",
+    "C_Programming_Notes/C_Programming_Notes.md",
+    "c++/C_Programming_Notes.md",
+    "c++/leetcode題目/字串.md",
+    "c++/leetcode題目/位運算.md",
+    "c++/leetcode題目/數學.md",
+    "c++/leetcode題目/linked-list.md",
+    "c++/leetcode題目/stack.md",
+    "c++/C Programming For Beginners/c(正確).md",
+    "c++/【全部整理】.md",
+    "c++/【00全部整理】.md",
+    "c++/(補充)自己寫的/運算式、運算子、if、while.md",
+    "c++/【01 Introduction to C Programming】.md",
+    "c++/(補充)自己寫的/01資料A型態、變數、常數.md",
+    "STM32/ARM Cortex/README.md",
+    "c sharp/README.md",
+    "c++/C Programming For Beginners - Master the C Language/c.md",
+    "C&C++/C Programming For Beginners - Master the C Language/c.md",
+    "C&C++/C Programming For Beginners/C455.md",
+    "D1mini(ESP8266)/MP32410_examples/ch05/temp/ball0.jpg",
+    "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/@vue/cli-service/generator/template/src/assets/logo.png",
+    "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_world.png",
+    "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_word.png",
+    "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_white_zip.png",
+    "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_white_wrench.png",
+    "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_white_world.png",
+    "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_white_word.png",
+    "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_white_width.png",
+    "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_white_visualstudio.png"
+  ]
+}
