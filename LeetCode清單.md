@@ -404,3 +404,31 @@ void backtracking(参数) {
 ### 78.Subsets
 
 -   [78.Subsets](./LeetCode/Backtracking/78.subsets.cpp)
+
+### 39.Combination Sum
+
+-   返回各種組合(元素可重複)
+
+![upgit_20241220_1734664775.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241220_1734664775.png)
+
+-   [39.combination-sum.cpp](./LeetCode/Backtracking/39.combination-sum.cpp)
+
+### 40.Combination Sum II
+
+-   根據 39 題，但不能重複
+-   [40.Combination Sum II](./LeetCode/Backtracking/40.combination-sum-ii.cpp)
+
+### 46.Permutations
+
+-   给定一个不含重复数字的数组 nums ，返回其所有可能的全排列。
+    ![upgit_20241225_1735098588.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241225_1735098588.png)
+
+-   [46.Permutations](./LeetCode/Backtracking/46.permutations.cpp)
+
+### 47.Permutations II
+
+-   给定一个可包含重复数字的序列  nums ，按任意顺序返回所有不重复的全排列。
+
+![upgit_20241226_1735193561.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241226_1735193561.png)
+
+-   [47.Permutations II](./LeetCode/Backtracking/47.permutations-ii.cpp)
