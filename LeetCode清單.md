@@ -68,6 +68,36 @@
 
 ## Bit Manipulatio
 
+### 268.Missing Number
+
+![upgit_20241110_1731240936.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241110_1731240936.png)
+
+-   [268.Missing Number](./LeetCode/Bit%20Manipulatio/268.missing-number.cpp)
+
+### 136.Single Number
+
+-   只有一個數出現 1 次，其他都出現 2 次。
+-   阿...這一題他是要找唯一一個的時候，有很多種解法拉(map、排序...)
+-   解法 1：排序
+-   解法 2：map
+-   解法 3：XOR
+-   [136.Single Number](./LeetCode/Bit%20Manipulatio/136.single-number.cpp)
+
+### 137.Single Number II
+
+-   只有一個數出現 1 次，其他都出現 3 次。
+-   解法 1：用 map 紀錄次數。
+-   解法 2：用陣列紀錄：因為她有說數值範圍到 2^32，
+
+![upgit_20241108_1731067383.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241108_1731067383.png)
+
+-   [137.Single Number II](./LeetCode/Bit%20Manipulatio/137.single-number-ii.cpp)
+
+### 260.Single Number III
+
+-   兩個數出現 1 次，其他都出現 2 次。
+-   [260.Single Number III](./LeetCode/Bit%20Manipulatio/260.single-number-iii.cpp)
+
 ### 67.Add Binary
 
 -   [67.Add Binary](./LeetCode/Bit%20Manipulatio/67.add-binary.cpp)
@@ -184,7 +214,100 @@
 -   e04 有夠難...
 -   [29.Divide Two Integers](./LeetCode/Bit%20Manipulatio/29.divide-two-integers.cpp)
 
+## array
+
+### 66.Plus One
+
+![upgit_20241106_1730892149.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241106_1730892149.png)
+
+-   [66.Plus One](./LeetCode/Array/66.plus-one.cpp)
+
+### 118.Pascal’s Triangle
+
+-   題目是返回整個三角型。
+
+```
+​[1]
+[1,1]
+[1,2,1]
+[1,3,3,1]
+[1,4,6,4,1]​
+step1：每一row的第0位跟第n位放1 => 更快點，直接全部塞1
+step2：arr[i][i] = arr[i][i-1] + arr[i-1][i-1]
+```
+
+-   [118.Pascal’s Triangle](./LeetCode/Array/118.pascals-triangle.cpp)
+
+### 119.Pascal’s Triangle II
+
+-   [119.Pascal’s Triangle II](./LeetCode/Array/119.pascals-triangle-ii.cpp)
+
+### 48.Rotate Image
+
+-   矩陣要【原地】向右 90 度
+
+![upgit_20241227_1735277021.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241227_1735277021.png)
+
+-   [48.Rotate Image](./LeetCode/Array/48.rotate-image.cpp)
+
+### 54.Spiral Matrix
+
+-   順時針螺旋
+-   [54.Spiral Matrix](./LeetCode/Array/54.spiral-matrix.cpp)
+
+### 59.Spiral Matrix II
+
+-   [59.Spiral Matrix II](./LeetCode/Array/59.spiral-matrix-ii.cpp)
+
+### 73.Set Matrix Zeroes
+
+![upgit_20250113_1736751307.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/01/upgit_20250113_1736751307.png)
+
+-   [73.Set Matrix Zeroes](./LeetCode/Array/73.set-matrix-zeroes.cpp)
+
 ## two pointer
+
+### 26.Remove Duplicates from Sorted Array
+
+-   這題可以當考題
+
+![upgit_20241105_1730803543.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241105_1730803543.png)
+
+-   解法 1：
+-   解法 2
+    -   延伸 26，26 的題目是【去重複】，也可以理解為【保留 1 位】
+    -   那如果今天是【保留 k 位】呢
+    -   保留 k 位=>代表【前 k 個數值】可以保留
+    -   對於後面的比較：跟左指針(第 k 位)進行比較，不同則保留(左指針給右指針)
+
+![upgit_20241105_1730805429.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241105_1730805429.png)
+
+-   [26.Remove Duplicates from Sorted Array](./LeetCode/Two%20Pointer/26.remove-duplicates-from-sorted-array.cpp)
+
+### 80.Remove Duplicates from Sorted Array II
+
+-   [80.Remove Duplicates from Sorted Array II](./LeetCode/Two%20Pointer/80.remove-duplicates-from-sorted-array-ii.cpp)
+
+### 27.Remove Element
+
+-   [27.Remove Element](./LeetCode/Array/27.remove-element.cpp)
+
+### 283.Move Zeroes
+
+-   把 0 都移到後面(就是把非 0 都移到前面)
+-   [283.Move Zeroes](./LeetCode/Two%20Pointer/283.move-zeroes.cpp)
+
+### 88.Merge Sorted Array
+
+-   解法 1：額外開一個空間，兩兩比較，然後再把值丟到新的 arr。
+
+![upgit_20241106_1730893985.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241106_1730893985.png)
+
+-   解法 2：進行優化。在 num1 排就好啦~
+
+![upgit_20241106_1730894582.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241106_1730894582.png)
+
+-   [88.Merge Sorted Array](./LeetCode/Two%20Pointer/88.merge-sorted-array.cpp)
 
 ### 125.Valid Palindrome
 
@@ -226,6 +349,31 @@
 
 -   [28.Find the Index of the First Occurrence in a String](./LeetCode/Two%20Pointer/28.find-the-index-of-the-first-occurrence-in-a-string.cpp)
 
+## sliding window
+
+### 219.Contains Duplicate II
+
+-   返回布林
+    -   true：`nums[i] == nums[j]`  且  `abs(i - j) <= k`
+-   解法 1：用 map 紀錄
+-   解法 2：
+
+![upgit_20241110_1731235566.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241110_1731235566.png)
+
+-   [219.Contains Duplicate II](./LeetCode/Sliding%20Window/219.contains-duplicate-ii.cpp)
+
+### 3.Longest Substring Without Repeating Characters
+
+-   去計算【連續不重複字串】的長度。
+
+![upgit_20241205_1733384520.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241205_1733384520.png)
+
+-   [3.Longest Substring Without Repeating Characters](./LeetCode/Sliding%20Window/3.longest-substring-without-repeating-characters.cpp)
+
+### 6.Zigzag Conversion
+
+-   [6.Zigzag Conversion](./LeetCode/Sliding%20Window/6.zigzag-conversion.cpp)
+
 ## map
 
 ### 205.Isomorphic Strings
@@ -265,6 +413,105 @@
 ```
 
 -   [49.Group Anagrams](./LeetCode/Map/49.group-anagrams.cpp)
+
+### 1.Two Sum
+
+-   [1.Two Sum](./LeetCode/Map/1.two-sum.cpp)
+
+### 169.Majority Element
+
+-   題目要找出最多的那個數值
+-   解法 1：用 map 紀錄次數，返回最多的那個
+-   解法 2：針對 map 進一步優化，在記錄 map 的時後，一併紀錄最多的次數
+-   解法 3：題目描述  【more than `⌊n / 2⌋` times】，那我只要先做排序，然後找那個在最中間的數值。
+-   [169.Majority Element](./LeetCode/Map/169.majority-element.cpp)
+
+### 287.Find the Duplicate Number
+
+-   題目是要在長度(n+1)找範圍 1 到 n 中的一個重複整數。
+-   不能修改數組
+-   解法 1：用 map
+-   解法 2 是用 linked 的方式
+
+    -   [Floyd's Cycle Detection Algorithm (Floyd 判圈算法) 龜兔賽跑算法 (youtube.com)](https://www.youtube.com/watch?v=xS5eL9qkffA)
+    -   ![upgit_20241108_1731040041.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241108_1731040041.png)
+
+-   解法 3：二分+抽屜原理
+    -   抽屉原理(Pigeonhole Principle)：如果有 `n + 1` 個數字在 `1` 到 `n` 的範圍內，那麼至少有一個數字是重複的。
+    -   ![upgit_20241108_1731041451.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241108_1731041451.png)
+-   [287.Find the Duplicate Number](./LeetCode/Map/287.find-the-duplicate-number.cpp)
+
+### 1.1. 36.Valid Sudoku
+
+-   檢查是否為合法數獨
+-   去檢查 3 遍(row、col、box)
+-   如何去映射 => `j/3 + (i/3)*3`
+
+```plaintext
+j/3：決定列屬於哪個 box 的位置
+j=0,1,2⇒j/3=0（屬於 box 的第一列）。
+j=3,4,5⇒j/3=1（屬於 box 的第二列）。
+j=6,7,8⇒j/3=2（屬於 box 的第三列）。
+
+(i/3)*3：決定行屬於哪個 box 的區域
+i/3 的意思是用行座標來判斷該格子屬於 box 的第幾行（0, 1, 或 2）。
+然後乘以 3，將行座標的影響轉換為 box 編號的基數：
+i=0,1,2⇒(i/3)∗3=0（屬於第一行的 box）。
+i=3,4,5⇒(i/3)∗3=3（屬於第二行的 box）。
+i=6,7,8⇒(i/3)∗3=6（屬於第三行的 box）。
+```
+
+-   [36.Valid Sudoku](./LeetCode/Map/36.valid-sudoku.cpp)
+
+### set
+
+### 2.1. 217.Contains Duplicate
+
+-   他要找【是否有重複】
+-   [217.Contains Duplicate](./LeetCode/Set/217.contains-duplicate.cpp)
+
+### 2.1. 202.Happy Number
+
+-   快樂數定義：每一次將該數值替換為她每個位置的數字的平方和
+-   判斷是否為快樂數=>要記錄
+-   解法 1：用 set 紀錄
+-   [202.Happy Number](./LeetCode/Set/202.happy-number.cpp)
+
+## Binary Search
+
+-   模板
+
+```
+step1：會有3個東西
+左指針、右指針、中指通(????
+中指針是由左右指針位置平均
+int left = 0, right = arr.size()-1;
+
+step2：
+要一值重複去計算中指針=>while
+while(left<=right){
+    int mid = left + (right - left) / 2;
+}
+
+step3：中指針就會有三種情況，是情況再去處理左右指針
+if(arr[mid]==target) return mid
+else if(arr[mid]<target) left = mid + 1;
+else (arr[mid]>target) right = mid - 1;
+```
+
+### 35.Search Insert Position
+
+-   返回他的索引位置
+-   可能就兩種解法：第一種是從頭往後找過去；要優化就二分
+-   解法 1：由頭往後
+-   解法 2：二分搜尋
+-   [35.Search Insert Position](./LeetCode/Binary%20Search/35.search-insert-position.cpp)
+
+### 278.First Bad Version
+
+-   他是要完成一個查找函數
+-   实现一个函数来查找第一个错误的版本。你应该尽量减少对调用 API 的次数 => 要用二分法去實現
+-   [278.First Bad Version](./LeetCode/Binary%20Search/278.first-bad-version.cpp)
 
 ## stack
 
@@ -375,6 +622,15 @@
 -   他一樣是要從左上到右下
 -   解法：dp
 -   [64.Minimum Path Sum](./LeetCode/Dynamic%20Programming/64.minimum-path-sum.cpp)
+
+### 121.Best Time to Buy and Sell Stock
+
+-   解法 1：用爆力解方式：定一個點(for loop)，然後另一個 for 去跑後面的，不斷紀錄最小值。
+-   解法 2：DP
+
+![upgit_20241106_1730896937.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241106_1730896937.png)
+
+-   [121.Best Time to Buy and Sell Stock](./LeetCode/Dynamic%20Programming/121.best-time-to-buy-and-sell-stock.cpp)
 
 ## Backtracking
 
