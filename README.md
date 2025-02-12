@@ -7,12 +7,9 @@
 
 ## 設定編譯環境
 
--   至https://cygwin.com/ 安裝 setup-x86_64.exe
-
-<div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/02/upgit_20250212_1739333561.png" width="300">
-    <img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/02/upgit_20250212_1739333561.png" width="300">
-</div>
+-   【win】使用 dev C++ 進行環境安裝：https://reurl.cc/p90XX4
+-   【win】使用 Cygwin + vscode 進行環境安裝：https://reurl.cc/96NyQa
+-   【mac】助教沒用過，你自己加油：https://reurl.cc/G5yDyx
 
 ---
 
