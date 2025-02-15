@@ -8,6 +8,8 @@
 		"utility": "cpp",
 		"format": "cpp",
 		"initializer_list": "cpp",
-		"xutility": "cpp"
+		"xutility": "cpp",
+		"string": "cpp",
+		"xiosbase": "cpp"
 	}
 }
