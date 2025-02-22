@@ -12,9 +12,8 @@ int main(){
     int five = change / 5;
     change = change - five * 5;
     int one = change;
-
-    printf("%d\n", fifty);
-    printf("%d\n", ten);
-    printf("%d\n", five);
-    printf("%d\n", one);
+    printf("50-dollar coins: %d piece(s)\n", fifty);
+    printf("10-dollar coins: %d piece(s)\n", ten);
+    printf("5-dollar coins: %d piece(s)\n", five);
+    printf("1-dollar coins: %d piece(s)\n", one);
 }

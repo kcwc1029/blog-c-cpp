@@ -47,6 +47,10 @@
 
 ## 3. math
 
+### 2335.Add Two Integers
+
+-   [2335.Add Two Integers](./LeetCode/Math/2235.add-two-integers.cpp)
+
 ### 3.1. 9.Palindrome Number
 
 -   檢查是否為回文數
@@ -297,6 +301,10 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 -   [29.Divide Two Integers](./LeetCode/Bit%20Manipulatio/29.divide-two-integers.cpp)
 
 ## 5. array
+
+### 1480.Running Sum of 1d Array
+
+[1480.Running Sum of 1d Array](./LeetCode/Array/1480.running-sum-of-1-d-array.cpp)
 
 ### 5.1. 66.Plus One
 
