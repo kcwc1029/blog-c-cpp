@@ -15,7 +15,6 @@
     -   https://reurl.cc/G5yDyx
     -   https://docs.google.com/presentation/d/1ckPZCDKSBjL5-Rtn8MuUXec6NBYZoSlA/edit#slide=id.p16
 
-<!--
 ### 1.1. BUG：明明已經安裝好 gcc 或 gdb，可是 vscode 的 terminal 卻無法 work
 
 -   手動設置 VS Code 的環境變數
@@ -253,7 +252,7 @@ int main() {
 ## 7. 運算
 
 -   [交換兩個變數的值](./Operation/swao01.c)
--->
+
 <!-- -   [總金額轉硬幣](./Operation/calculate_change.c)   -->
 
 ---
