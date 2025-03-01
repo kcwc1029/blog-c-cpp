@@ -255,6 +255,172 @@ int main() {
 
 <!-- -   [總金額轉硬幣](./Operation/calculate_change.c)   -->
 
+## 8. 輸入輸出
+
+### 8.1. printf
+
+```c
+// 基本語法
+int printf(const char *format, ...);
+// format 是一個字串，指定了輸出的格式
+// ... 是要輸出的變數列表
+```
+
+### 8.2. scanf
+
+```c
+// 基本語法
+int scanf(const char *format, ...);
+```
+
+-   輸入的格式必須和指定的格式化字串一致（如 %d 表示整數，%f 表示浮點數等）
+-   格式化字串必須與輸入數據類型一致：例如，%d 對應整數，%f 對應浮點數，%c 對應字符，%s 對應字串等。
+
+```c
+int num;
+printf("請輸入一個整數: ");
+scanf("%d", &num);
+printf("你輸入的整數是: %d\n", num);
+```
+
+-   格式化輸出到標準輸出（通常是屏幕）
+
+### 8.3. fgets
+
+```c
+// 基本語法
+char *fgets(char *str, int n, FILE *stream);
+
+// str 是用於存儲讀取數據的字符數組
+// n 是要讀取的最大字符數（包括結尾的 \0）
+// stream 是輸入流，通常使用 stdin 來從標準輸入讀取
+```
+
+```c
+char str[100];
+printf("請輸入一行文字: ");
+fgets(str, sizeof(str), stdin);
+printf("你輸入的文字是: %s", str);
+```
+
+### 8.4. puts
+
+```c
+int puts(const char *str);
+// str 是要輸出的字串s
+```
+
+```c
+puts("Hello, World!");
+```
+
+-   比 printf 簡單，適合輸出純文本
+-   輸出字串並自動換行
+
+## 9. flow control
+
+### 9.1. 判斷式
+
+-   選擇結構(Selection Statements)
+    -   if
+    -   switch 多重選擇敘述：根據表達式的值執行多種操作之一。
+-   迴圈結構(Iteration Statements)
+    -   while 迴圈：當條件為真時重複執行。
+    -   do…while 迴圈：至少執行一次，然後根據條件決定是否繼續。
+    -   for 迴圈：根據條件設定重複次數。
+-   [實作 abs](./Flow%20Control/abs.c)
+-   [實作三者最大值](./Flow%20Control/maximum_of_three.c)
+-   [閏年判斷](./Flow%20Control/leap_year.c)
+-   [四則運算](./Flow%20Control/four_arithmetic_operation.c)
+
+### 9.2. 迴圈
+
+![image](https://cdn.discordapp.com/attachments/1286741860538122281/1332351648785240145/image.jpg?ex=6794f0aa&is=67939f2a&hm=e7fe7b2d31924bfa30811e0988710f4e35005915844b008f15b32a061fb88a19&)
+
+-   [最大公因數](./Flow%20Control/gcd.c)
+-   [質數判斷](./Flow%20Control/prime.c)
+-   [模擬長除法](./Flow%20Control/long_division.c)
+-   [檢查 11 的倍數](./Flow%20Control/check_multiples_of_11.c)
+
+### 9.3. break
+
+-   立即退出 while、for、do while 或 switch 語句，繼續執行後續程式碼。
+-   跳出 switch 語句，避免執行後續的 case。
+
+```cpp
+for (int i = 1; i <= 10; i++) {
+    if (i == 5) break; // 當 i 為 5 時跳出迴圈
+    printf("%d ", i);
+}
+// 輸出：1 2 3 4
+```
+
+### 9.4. continue
+
+-   跳過當前迴圈中的剩餘語句，進入下一次迭代。
+
+```cpp
+for (int i = 1; i <= 5; i++) {
+    if (i == 3) continue; // 當 i 為 3 時跳過
+    printf("%d ", i);
+}
+// 輸出：1 2 4 5
+```
+
+## 10. array
+
+-   占有一塊連續的記憶體空間。
+
+### 10.1. initialization
+
+```c
+// 宣告空間
+int score[5];
+
+// 在宣告空間的時候，同時需要宣告值
+int arr[3] = {5,7,10}; // array of int
+float arr[3] = {5.1,7.1,10.1}; // array of float
+char arr[3] = {'a', 'b', 'c'}; // array of charts
+
+int arr[5] = {0}; //相當於{0,0,0,0,0}
+int arr[5] = {1,2}; //相當於{1,2,0,0,0}
+```
+
+-   [array 建立與輸出](./Array/array_initialization01.c)
+-   [寫入與讀取陣列](./Array/array_write_read.c)
+-   [示範超出邊界](./Array/array_out_of_bound.c)
+-   [查看 arr 的記憶體空間與長度](./Array/array_size.c)
+-   [查看 arr 的記憶體空間與長度](./Array/print_memory_location.c)
+-   assert：
+    -   確保輸入 n 不會超過 FIBARRAYSIZE
+    -   引入：`<assert.h>`
+-   [費博納數列](./Array/array_fibonacci.c)
+
+-   泡沫排序法
+
+```
+未排序
+64, 34, 25, 12, 22, 11, 90
+
+第一輪： 最大值 90 冒泡到最後一位
+64, 34, 25, 12, 22, 11, 90
+
+第二輪： 次大值 64 冒泡到倒數第二位
+34, 25, 12, 22, 11, 64, 90
+
+第三輪： 次次大值 34 冒泡到倒數第三位
+25, 12, 22, 11, 34, 64, 90
+...
+```
+
+-   核心：反覆比較相鄰的元素，並將較大的元素逐步「冒泡」到數列的末尾
+-   會有雙重迴圈
+    -   外部：回合數
+    -   內部：
+-   [bubble_sort01.c](./bubble%20sort/bubble_sort01.c)
+-   [bubble_sort02.c](./bubble%20sort/bubble_sort02.c) => 優化：在最佳情況下，如果數列已經有序，我們可以提早停止排序。
+-   [九宮格遊戲](./Nine%20Grid%20Game/nine_grid_game.c)
+
 ---
 
 <p align="center">

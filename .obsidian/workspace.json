@@ -11,10 +11,14 @@
             "id": "6b3077aaec437d7f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "LeetCode清單.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新分頁"
+              "title": "LeetCode清單"
             }
           }
         ]
@@ -134,12 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "LeetCode清單.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大綱"
+              "title": "LeetCode清單 的大綱"
             }
           }
         ],
@@ -159,11 +164,12 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "6b3077aaec437d7f",
+  "active": "853cefececf4cc93",
   "lastOpenFiles": [
+    "LeetCode/Array/1365.how-many-numbers-are-smaller-than-the-current-number.cpp",
+    "README.md",
     "成大工科 程式設計.md",
     "LeetCode/Array/1480.running-sum-of-1-d-array.cpp",
-    "README.md",
     "Basic Data Type/char01.c",
     "test.exe",
     "test.c",

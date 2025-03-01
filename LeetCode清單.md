@@ -1,6 +1,6 @@
 ## 1. string
 
-### 1.1. 412.Fizz Buzz
+### 1.1. 412.Fizz Buzz(教過)
 
 -   給定一個 n，for 跑 1-n，每一個數值依據規定轉換 Fizz Buzz
 -   [412.Fizz Buzz.cpp](./LeetCode/Strnig/412.fizz-buzz.cpp)
@@ -47,11 +47,11 @@
 
 ## 3. math
 
-### 2335.Add Two Integers
+### 3.1. 2335.Add Two Integers(教過)
 
 -   [2335.Add Two Integers](./LeetCode/Math/2235.add-two-integers.cpp)
 
-### 3.1. 9.Palindrome Number
+### 3.2. 9.Palindrome Number
 
 -   檢查是否為回文數
 -   解法 1：轉字串後，用雙指針判斷
@@ -62,28 +62,28 @@
 -   解法 3：用雙指針去檢查。
 -   [9.Palindrome Number](./LeetCode/Sort/9.palindrome-number.cpp)
 
-### 3.2. 171.Excel Sheet Column Number
+### 3.3. 171.Excel Sheet Column Number
 
 -   [171.Excel Sheet Column Number](./LeetCode/Math/171.excel-sheet-column-number.cpp)
 
-### 3.3. 168.Excel Sheet Column Title
+### 3.4. 168.Excel Sheet Column Title
 
 ![upgit_20241112_1731413754.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241112_1731413754.png)
 
 -   10 進制轉 26 進制
 -   [168.Excel Sheet Column Title](./LeetCode/Math/168.excel-sheet-column-title.cpp)
 
-### 3.4. 258.Add Digits
+### 3.5. 258.Add Digits
 
 -   Ugly Number：只包含质因数 2、3 和 5 的 正 整数。
 -   1 也是 Ugly Number
 -   [258.Add Digits](./LeetCode/Math/258.add-digits.cpp)
 
-### 3.5. 263.Ugly Number
+### 3.6. 263.Ugly Number
 
 -   [263.Ugly Number]
 
-### 3.6. 292.Nim Game
+### 3.7. 292.Nim Game
 
 -   Nim Game：2 人遊戲(你跟對手)，你為先手 - 每一回合，轮到的人拿掉  1 - 3 块石头。 - 拿掉最后一块石头的人就是获胜者。
 
@@ -91,25 +91,25 @@
 
 -   [292.Nim Game](./LeetCode/Math/292.nim-game.cpp)
 
-### 3.7. 326.Power of Three
+### 3.8. 326.Power of Three
 
 -   查看使否為 3 的次方
 -   [326.Power of Three](./LeetCode/Math/326.power-of-three.cpp)
 
-### 3.8. 342.Power of Four
+### 3.9. 342.Power of Four
 
 -   解法 1：查看使否為 1 的次方
 -   解法 2： 檢查是否為 4 的次方=>檢查開跟號後是否為 2 的次方
 -   [342.Power of Four](./LeetCode/Math/342.power-of-four.cpp)
 
-### 3.9. 367.Valid Perfect Square
+### 3.10. 367.Valid Perfect Square
 
 -   判斷是否為完全平方數
 -   解法 1：先開根號，在平方，看是否一樣。
 -   解法 2：二分去找(純屬裝牛 B)
 -   [367.Valid Perfect Square](./LeetCode/Math/367.valid-perfect-square.cpp)
 
-### 3.10. 405.Convert a Number to Hexadecimal
+### 3.11. 405.Convert a Number to Hexadecimal
 
 -   十進位轉十六近位(不准用函數)。
 
@@ -117,7 +117,7 @@
 
 -   [405.Convert a Number to Hexadecimal](./LeetCode/Math/405.convert-a-number-to-hexadecimal.cpp)
 
-### 3.11. 441.Arranging Coins
+### 3.12. 441.Arranging Coins
 
 -   解法 1：二分
 -   我們可以知道公式
@@ -134,7 +134,7 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 
 -   [441.Arranging Coins](./LeetCode/Math/441.arranging-coins.cpp)
 
-### 3.12. 492.Construct the Rectangle
+### 3.13. 492.Construct the Rectangle
 
 -   給一個面積，返回長寬值，其中 - 寬度<=長度
 
@@ -142,11 +142,11 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 
 -   [492.Construct the Rectangle](./LeetCode/Math/492.construct-the-rectangle.cpp)
 
-### 3.13. 504.Base 7
+### 3.14. 504.Base 7
 
 -   [504.Base 7](./LeetCode/Math/504.base-7.cpp)
 
-### 3.14. 628.Maximum Product of Three Numbers
+### 3.15. 628.Maximum Product of Three Numbers
 
 -   返回數組中最大 3 個數的乘機。
 -   解法 1：排序
@@ -302,17 +302,26 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 
 ## 5. array
 
-### 1480.Running Sum of 1d Array
+### 5.1. 1480.Running Sum of 1d Array(教過)
 
 [1480.Running Sum of 1d Array](./LeetCode/Array/1480.running-sum-of-1-d-array.cpp)
 
-### 5.1. 66.Plus One
+### 1365.How Many Numbers Are Smaller Than the Current Number
+
+-   解法 1：暴力
+-   解法 2：排序
+
+![upgit_20250228_1740751908.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/02/upgit_20250228_1740751908.png)
+
+-   [1365.How Many Numbers Are Smaller Than the Current Number](./LeetCode/Array/1365.how-many-numbers-are-smaller-than-the-current-number.cpp)
+
+### 5.2. 66.Plus One
 
 ![upgit_20241106_1730892149.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241106_1730892149.png)
 
 -   [66.Plus One](./LeetCode/Array/66.plus-one.cpp)
 
-### 5.2. 118.Pascal’s Triangle
+### 5.3. 118.Pascal’s Triangle
 
 -   題目是返回整個三角型。
 
@@ -328,11 +337,11 @@ step2：arr[i][i] = arr[i][i-1] + arr[i-1][i-1]
 
 -   [118.Pascal’s Triangle](./LeetCode/Array/118.pascals-triangle.cpp)
 
-### 5.3. 119.Pascal’s Triangle II
+### 5.4. 119.Pascal’s Triangle II
 
 -   [119.Pascal’s Triangle II](./LeetCode/Array/119.pascals-triangle-ii.cpp)
 
-### 5.4. 48.Rotate Image
+### 5.5. 48.Rotate Image
 
 -   矩陣要【原地】向右 90 度
 
@@ -340,16 +349,16 @@ step2：arr[i][i] = arr[i][i-1] + arr[i-1][i-1]
 
 -   [48.Rotate Image](./LeetCode/Array/48.rotate-image.cpp)
 
-### 5.5. 54.Spiral Matrix
+### 5.6. 54.Spiral Matrix
 
 -   順時針螺旋
 -   [54.Spiral Matrix](./LeetCode/Array/54.spiral-matrix.cpp)
 
-### 5.6. 59.Spiral Matrix II
+### 5.7. 59.Spiral Matrix II
 
 -   [59.Spiral Matrix II](./LeetCode/Array/59.spiral-matrix-ii.cpp)
 
-### 5.7. 73.Set Matrix Zeroes
+### 5.8. 73.Set Matrix Zeroes
 
 ![upgit_20250113_1736751307.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/01/upgit_20250113_1736751307.png)
 
@@ -404,7 +413,7 @@ step2：arr[i][i] = arr[i][i-1] + arr[i-1][i-1]
 -   整理字串+測驗回文
 -   [125.Valid Palindrome](./LeetCode/Two%20Pointer/125.valid-palindrome.cpp)
 
-### 6.7. 344.Reverse String
+### 6.7. 344.Reverse String(教過)
 
 -   [344.Reverse String](./LeetCode/Two%20Pointer/344.reverse-string.cpp)
 
@@ -817,17 +826,17 @@ void backtracking(参数) {
 -   解法：快慢指針：快指針走兩步，慢指針走一步，如果有成環，快慢指針有一天一定會相遇。
 -   [141.Linked List Cycle](./LeetCode/Linked%20List/141.linked-list-cycle.cpp)
 
-### 19.Remove Nth Node From End of List
+### 14.5. 19.Remove Nth Node From End of List
 
 -   [19.Remove Nth Node From End of List](./LeetCode/Linked%20List/19.remove-nth-node-from-end-of-list.cpp)
 
-### 14.5. 160.Intersection of Two Linked Lists
+### 14.6. 160.Intersection of Two Linked Lists
 
 ![upgit_20241212_1733970327.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241212_1733970327.png)
 
 -   [160.Intersection of Two Linked Lists](./LeetCode/Linked%20List/160.intersection-of-two-linked-lists.cpp)
 
-### 14.6. 203.Remove Linked List Elements
+### 14.7. 203.Remove Linked List Elements
 
 -   刪除節點
 
@@ -835,22 +844,22 @@ void backtracking(参数) {
 
 -   [203.Remove Linked List Elements](./LeetCode/Linked%20List/203.remove-linked-list-elements.cpp)
 
-### 14.7. 206.Reverse Linked List
+### 14.8. 206.Reverse Linked List
 
 -   [206.Reverse Linked List](./LeetCode/Linked%20List/206.reverse-linked-list.cpp)
 
-### 14.8. 876.Middle of the Linked List
+### 14.9. 876.Middle of the Linked List
 
 -   [876.Middle of the Linked List](./LeetCode/Linked%20List/876.middle-of-the-linked-list.cpp)
 
-### 14.9. 234.Palindrome Linked List
+### 14.10. 234.Palindrome Linked List
 
 -   用到
     -   876 檢查中間
     -   206 反轉
 -   [234.Palindrome Linked List](./LeetCode/Linked%20List/234.palindrome-linked-list.cpp)
 
-### 14.10. 86.Partition List
+### 14.11. 86.Partition List
 
 -   所有小于  `x`  的节点都出现在   大于或等于  `x`  的节点之前。
 
