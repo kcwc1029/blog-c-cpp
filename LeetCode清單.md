@@ -5,24 +5,30 @@
 -   給定一個 n，for 跑 1-n，每一個數值依據規定轉換 Fizz Buzz
 -   [412.Fizz Buzz.cpp](./LeetCode/Strnig/412.fizz-buzz.cpp)
 
-### 1.2. 14.Longest Common Prefix
+### 1.2. 1662.Check If Two String Arrays are Equivalent
+
+-   解法 1：字串拼接
+-   解法 2：雙指針比對
+-   [1662.Check If Two String Arrays are Equivalent](./LeetCode/Strnig/1662.check-if-two-string-arrays-are-equivalent.cpp)
+
+### 1.3. 14.Longest Common Prefix
 
 -   每次都跟第一個去比較
 -   [14.Longest Common Prefix](./LeetCode/Strnig/14.longest-common-prefix.cpp)
 
-### 1.3. 58.Length of Last Word
+### 1.4. 58.Length of Last Word
 
 ![upgit_20241112_1731409811.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241112_1731409811.png)
 
 -   返回最後一個字的長度(不可以用套件)
 -   [58.Length of Last Word](./LeetCode/Strnig/58.length-of-last-word.cpp)
 
-### 1.4. 415.Add Strings
+### 1.5. 415.Add Strings
 
 -   用字串模擬加法
 -   [415.Add Strings](./LeetCode/Strnig/415.add-strings.cpp)
 
-### 1.5. 38.Count and Say(medium)
+### 1.6. 38.Count and Say(medium)
 
 -   行程长度编码（Run-Length Encoding, RLE）是一种无损压缩算法，用于表示连续重复的数据。它通过记录数据中连续相同元素的个数和元素本身，来压缩原始数据的大小。
 
@@ -30,7 +36,7 @@
 
 -   [38.Count and Say](./LeetCode/Strnig/38.count-and-say.cpp)
 
-### 1.6. 520.Detect Capital
+### 1.7. 520.Detect Capital
 
 -   去檢查大寫字母的使用方式
     -   全部都大寫
@@ -306,22 +312,24 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 
 [1480.Running Sum of 1d Array](./LeetCode/Array/1480.running-sum-of-1-d-array.cpp)
 
-### 1365.How Many Numbers Are Smaller Than the Current Number
+### 5.2. 1365.How Many Numbers Are Smaller Than the Current Number
 
 -   解法 1：暴力
 -   解法 2：排序
+
+for(int t=2)
 
 ![upgit_20250228_1740751908.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/02/upgit_20250228_1740751908.png)
 
 -   [1365.How Many Numbers Are Smaller Than the Current Number](./LeetCode/Array/1365.how-many-numbers-are-smaller-than-the-current-number.cpp)
 
-### 5.2. 66.Plus One
+### 5.3. 66.Plus One
 
 ![upgit_20241106_1730892149.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241106_1730892149.png)
 
 -   [66.Plus One](./LeetCode/Array/66.plus-one.cpp)
 
-### 5.3. 118.Pascal’s Triangle
+### 5.4. 118.Pascal’s Triangle
 
 -   題目是返回整個三角型。
 
@@ -337,11 +345,22 @@ step2：arr[i][i] = arr[i][i-1] + arr[i-1][i-1]
 
 -   [118.Pascal’s Triangle](./LeetCode/Array/118.pascals-triangle.cpp)
 
-### 5.4. 119.Pascal’s Triangle II
+### 5.5. 119.Pascal’s Triangle II
 
 -   [119.Pascal’s Triangle II](./LeetCode/Array/119.pascals-triangle-ii.cpp)
 
-### 5.5. 48.Rotate Image
+### 5.6. 189.Rotate Array
+
+-   解法 01：額外開一個數組
+-   解法 02：陣列翻轉
+
+    -   STEP01：反轉所有元素
+    -   STEP02：反轉[0,kmodn−1]
+    -   STEP03：反轉[kmodn,n−1]
+
+-   [189.Rotate Array](./LeetCode/Array/189.rotate-array.cpp)
+
+### 5.7. 48.Rotate Image
 
 -   矩陣要【原地】向右 90 度
 
@@ -349,16 +368,16 @@ step2：arr[i][i] = arr[i][i-1] + arr[i-1][i-1]
 
 -   [48.Rotate Image](./LeetCode/Array/48.rotate-image.cpp)
 
-### 5.6. 54.Spiral Matrix
+### 5.8. 54.Spiral Matrix
 
 -   順時針螺旋
 -   [54.Spiral Matrix](./LeetCode/Array/54.spiral-matrix.cpp)
 
-### 5.7. 59.Spiral Matrix II
+### 5.9. 59.Spiral Matrix II
 
 -   [59.Spiral Matrix II](./LeetCode/Array/59.spiral-matrix-ii.cpp)
 
-### 5.8. 73.Set Matrix Zeroes
+### 5.10. 73.Set Matrix Zeroes
 
 ![upgit_20250113_1736751307.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/01/upgit_20250113_1736751307.png)
 
@@ -728,12 +747,19 @@ else (arr[mid]>target) right = mid - 1;
 
 ### 12.7. 121.Best Time to Buy and Sell Stock
 
+-   你只能買入一次並賣出一次，求最大的利潤是多少。
 -   解法 1：用爆力解方式：定一個點(for loop)，然後另一個 for 去跑後面的，不斷紀錄最小值。
 -   解法 2：DP
 
 ![upgit_20241106_1730896937.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241106_1730896937.png)
 
 -   [121.Best Time to Buy and Sell Stock](./LeetCode/Dynamic%20Programming/121.best-time-to-buy-and-sell-stock.cpp)
+
+### 12.8. 122.Best Time to Buy and Sell Stock II
+
+-   你可以無限次買賣股票（只要你先買了才能賣），求能夠獲得的最大總利潤。
+
+-   [122.Best Time to Buy and Sell Stock II](./LeetCode/Dynamic%20Programming/122.best-time-to-buy-and-sell-stock-ii.cpp)
 
 ## 13. Backtracking
 

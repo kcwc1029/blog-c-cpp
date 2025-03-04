@@ -10,6 +10,7 @@
 		"initializer_list": "cpp",
 		"xutility": "cpp",
 		"string": "cpp",
-		"xiosbase": "cpp"
+		"xiosbase": "cpp",
+		"stdlib.h": "c"
 	}
 }

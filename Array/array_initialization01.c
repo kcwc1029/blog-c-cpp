@@ -5,10 +5,9 @@
 
 int main(){
     int Score[5] = {87, 66, 90, 65, 70};
-    int i = 0;
-    float Total = 0;
+    float Total = 0; // 加總
 
-    for (i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) {
         printf("The score of student %d is: %d\n", i + 1, Score[i]);
         Total += Score[i]; // Calculate total score
     }
