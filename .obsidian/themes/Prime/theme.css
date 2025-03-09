@@ -773,7 +773,7 @@ body {
 
   --h1-color: var(--color-purple);
   --h2-color: var(--color-blue);
-  --h3-color: var(--color-green);
+  --h3-color: var(--color-brightblue);
   --h4-color: var(--color-yellow);
   --h5-color: var(--color-orange);
   --h6-color: var(--color-pink);
@@ -851,7 +851,8 @@ body.theme-dark {
   --color-orange: #fac79e;
   --color-yellow: #faf69c;
   --color-green: #9cfac7;
-  --color-blue: #9cfaf6;
+  --color-blue: #3a86ff;
+  --color-brightblue: #a2d6f9;
   --color-purple: #9ca0fa;
   --color-pink: #fa9ccf;
 

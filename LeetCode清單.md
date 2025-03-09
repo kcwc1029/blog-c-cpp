@@ -1,3 +1,36 @@
+### 0.1. 資料結構（Data Structures）
+
+-   **陣列（Array）** → 滑動視窗、雙指針技巧
+-   **連結串列（Linked List）** → 反轉串列、快慢指針
+-   **堆疊（Stack）** → 括號匹配、單調遞增/遞減堆疊
+-   **佇列（Queue）** → 雙端佇列（Deque）、滑動視窗最大值
+-   **雜湊表（Hash Table / Hash Map）** → 兩數之和、字串處理
+-   **樹（Binary Tree & Binary Search Tree, BST）** → 遍歷（前/中/後序）、最低共同祖先
+-   **堆積（Heap / Priority Queue）** → Top K Elements 問題
+-   **圖（Graph）** → BFS、DFS、拓撲排序（Topological Sort）
+
+### 0.2. 演算法（Algorithms）
+
+-   **排序（Sorting）**
+    -   **快速排序（Quick Sort）**
+    -   **合併排序（Merge Sort）**
+    -   **計數排序（Counting Sort）**（對大數量級問題有用）
+-   **搜尋（Searching）**
+    -   **二分搜尋（Binary Search）**（模板題必會，如「搜尋旋轉排序陣列」）
+    -   **BFS / DFS（廣度/深度優先搜尋）**（圖、迷宮、最短路徑）
+-   **動態規劃（Dynamic Programming, DP）**
+-   **貪心演算法（Greedy Algorithm）**
+-   **位元運算（Bit Manipulation）**
+    -   XOR 運算（Single Number 問題）136
+    -   位元計數（Counting Bits）：191
+    -   位元翻轉（Bit Reversal）：190
+    -   找出二的冪次方（Power of Two）：231
+    -   求兩數的漢明距離（Hamming Distance）461
+    -   找出兩數的和（Sum of Two Integers, 無需加減號）：371
+    -   位元壓縮（Bit Compression）
+    -   取最低位的 1（Lowest Set Bit）
+    -   清除最低位的 1
+
 ## 1. string
 
 ### 1.1. 412.Fizz Buzz(教過)
@@ -408,6 +441,9 @@ step2：arr[i][i] = arr[i][i-1] + arr[i-1][i-1]
 
 ### 6.3. 27.Remove Element
 
+![upgit_20250309_1741523404.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250309_1741523404.png)
+
+
 -   [27.Remove Element](./LeetCode/Array/27.remove-element.cpp)
 
 ### 6.4. 283.Move Zeroes
@@ -417,14 +453,10 @@ step2：arr[i][i] = arr[i][i-1] + arr[i-1][i-1]
 
 ### 6.5. 88.Merge Sorted Array
 
+![upgit_20250309_1741525883.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250309_1741525883.png)
+
 -   解法 1：額外開一個空間，兩兩比較，然後再把值丟到新的 arr。
-
-![upgit_20241106_1730893985.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241106_1730893985.png)
-
 -   解法 2：進行優化。在 num1 排就好啦~
-
-![upgit_20241106_1730894582.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241106_1730894582.png)
-
 -   [88.Merge Sorted Array](./LeetCode/Two%20Pointer/88.merge-sorted-array.cpp)
 
 ### 6.6. 125.Valid Palindrome
@@ -693,6 +725,15 @@ else (arr[mid]>target) right = mid - 1;
 -   依開始是使用`map<int, string>，但不保證迭代順序`
 -   使用 pair 的話，就已經固定順序了。
 -   [12.Integer to Roman](./LeetCode/Greedy/12.integer-to-roman.cpp)
+
+### 11.3. 55.Jump Game
+
+![upgit_20250305_1741151035.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250305_1741151035.png)
+
+-   如果某個作為 起跳點 的格子可以跳躍的距離是 3，那麼表示後面 3 個格子都可以作為 新的起跳點。
+-   我們可以對每一個能作為 起跳點 的格子嘗試跳一次，並持續更新 能跳到的最遠距離。
+-   如果在跳躍的過程中，可以一直跳到最後一個格子，那麼就代表成功抵達終點。
+-   [55.Jump Game](./LeetCode/Greedy/55.jump-game.cpp)
 
 ## 12. dynamic-programming
 
