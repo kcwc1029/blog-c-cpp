@@ -87,9 +87,9 @@
 
 ## 3. math
 
-### 3.1. 2335.Add Two Integers(教過)
+### 3.1. 2235.Add Two Integers(教過)
 
--   [2335.Add Two Integers](./LeetCode/Math/2235.add-two-integers.cpp)
+-   [2235.Add Two Integers](./LeetCode/Math/2235.add-two-integers.c)
 
 ### 3.2. 9.Palindrome Number
 
