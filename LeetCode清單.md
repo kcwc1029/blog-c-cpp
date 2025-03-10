@@ -37,6 +37,7 @@
 
 -   給定一個 n，for 跑 1-n，每一個數值依據規定轉換 Fizz Buzz
 -   [412.Fizz Buzz.cpp](./LeetCode/Strnig/412.fizz-buzz.cpp)
+-   [412.Fizz Buzz.cpp](./LeetCode/Strnig/412.fizz-buzz.c)
 
 ### 1.2. 1662.Check If Two String Arrays are Equivalent
 
@@ -343,7 +344,8 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 
 ### 5.1. 1480.Running Sum of 1d Array(教過)
 
-[1480.Running Sum of 1d Array](./LeetCode/Array/1480.running-sum-of-1-d-array.cpp)
+-   [1480.Running Sum of 1d Array](./LeetCode/Array/1480.running-sum-of-1-d-array.cpp)
+-   [1480.Running Sum of 1d Array](./LeetCode/Array/1480.running-sum-of-1-d-array.c)
 
 ### 5.2. 1365.How Many Numbers Are Smaller Than the Current Number
 
@@ -443,7 +445,6 @@ step2：arr[i][i] = arr[i][i-1] + arr[i-1][i-1]
 
 ![upgit_20250309_1741523404.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250309_1741523404.png)
 
-
 -   [27.Remove Element](./LeetCode/Array/27.remove-element.cpp)
 
 ### 6.4. 283.Move Zeroes
@@ -467,6 +468,7 @@ step2：arr[i][i] = arr[i][i-1] + arr[i-1][i-1]
 ### 6.7. 344.Reverse String(教過)
 
 -   [344.Reverse String](./LeetCode/Two%20Pointer/344.reverse-string.cpp)
+-   [344.Reverse String](./LeetCode/Two%20Pointer/344.reverse-string.c)
 
 ### 6.8. 345.Reverse String
 

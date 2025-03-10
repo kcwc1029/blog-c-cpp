@@ -11,6 +11,7 @@
 		"xutility": "cpp",
 		"string": "cpp",
 		"xiosbase": "cpp",
-		"stdlib.h": "c"
+		"stdlib.h": "c",
+		"ios": "cpp"
 	}
 }
