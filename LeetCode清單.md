@@ -349,14 +349,13 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 
 ### 5.2. 1365.How Many Numbers Are Smaller Than the Current Number
 
+![upgit_20250228_1740751908.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/02/upgit_20250228_1740751908.png)
+
 -   解法 1：暴力
 -   解法 2：排序
 
-for(int t=2)
-
-![upgit_20250228_1740751908.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/02/upgit_20250228_1740751908.png)
-
 -   [1365.How Many Numbers Are Smaller Than the Current Number](./LeetCode/Array/1365.how-many-numbers-are-smaller-than-the-current-number.cpp)
+-   [1365.How Many Numbers Are Smaller Than the Current Number](./LeetCode/Array/1365.how-many-numbers-are-smaller-than-the-current-number.c)
 
 ### 5.3. 66.Plus One
 
