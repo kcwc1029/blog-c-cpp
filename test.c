@@ -1,25 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 
-int* smallerNumbersThanCurrent(int* nums, int numsSize, int* returnSize) {
-    // nums 陣列本身
-    // numsSize nums陣列他的本身長度
-    // returnSize 最後做完的陣列，也需要回傳長度給他
-    *returnSize = numsSize;
+// 串接字串
+char* strCat(char** words, int wordsSize){
+    // 計算總長度
+    int totalLength = 0;
+    for(int i=0;i<wordsSize;i++){
+        totalLength += strlen(words[i]);
+    }
+    char* ans = (char*)malloc((totalLength + 1) * sizeof(char));
+    ans[0] = '\0'; // strcat會從dest中去找'\0'，進行拼接
 
-    // 建立要回傳的陣列
-    int *ans = (int*)malloc(numsSize * sizeof(int));
-    for (int i = 0; i < numsSize; i++){
-        int temp_sum = 0;
-        for(int j=0;j<numsSize;j++){
-            if(nums[j]<nums[i]) temp_sum++;
-        }
-        ans[i] = temp_sum;
+    // 拼接字串
+    for (int i = 0; i < wordsSize; i++) {
+        strcat(ans, words[i]);
     }
     return ans;
+}
 
+bool arrayStringsAreEqual(char** word1, int word1Size, char** word2, int word2Size) {
+    // word1, word2 兩個字串陣列
+    // word1Size word2Size 
+    char* str01 = strCat(word1, word1Size);
+    char* str02 = strCat(word2, word2Size);
+    bool isEqual = (strcmp(str01, str02) == 0);
+    return isEqual;
 }
 
 void print(int *result, int numsSize) {
@@ -32,16 +40,44 @@ void print(int *result, int numsSize) {
 
 int main() {
     // 測試範例
-    int nums01[] = {6,5,4,8};
-    int returnSize01;
-    int *result01 = smallerNumbersThanCurrent(nums01, 4, &returnSize01);
-    print(result01, returnSize01);
+    // 測試案例 1
+    char* word1[] = {"ab", "c"};
+    char* word2[] = {"a", "bc"};
+    int word1Size = 2;
+    int word2Size = 2;
 
-    int nums02[] = {7,7,7,7,7};
-    int returnSize02;
-    int* result02 = smallerNumbersThanCurrent(nums02, 5, &returnSize02);
-    print(result02, returnSize02);
+    if (arrayStringsAreEqual(word1, word1Size, word2, word2Size)) {
+        printf("true\n");
+    } else {
+        printf("false\n");
+    }
+
+    // 測試案例 2
+    char* word3[] = {"a", "cb"};
+    char* word4[] = {"ab", "c"};
+    int word3Size = 2;
+    int word4Size = 2;
+
+    if (arrayStringsAreEqual(word3, word3Size, word4, word4Size)) {
+        printf("true\n");
+    } else {
+        printf("false\n");
+    }
     return 0;
 }
 
 
+/*
+函數介紹01：計算字符串長度(不包括\0)
+size_t strlen(const char *str)
+
+函數介紹02：比較
+int strcmp(const char *str1, const char *str2)
+*str1 要比較的第一個字
+*str2 要比較的第二個字
+
+返回值：整數
+-1：小於
+0：等於
+1：大於
+*/
