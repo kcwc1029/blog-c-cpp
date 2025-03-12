@@ -44,6 +44,7 @@
 -   解法 1：字串拼接
 -   解法 2：雙指針比對
 -   [1662.Check If Two String Arrays are Equivalent](./LeetCode/Strnig/1662.check-if-two-string-arrays-are-equivalent.cpp)
+-   [1662.Check If Two String Arrays are Equivalent](./LeetCode/Strnig/1662.check-if-two-string-arrays-are-equivalent.c)
 
 ### 1.3. 14.Longest Common Prefix
 
@@ -614,7 +615,7 @@ i=6,7,8⇒(i/3)∗3=6（屬於第三行的 box）。
 
 -   [36.Valid Sudoku](./LeetCode/Map/36.valid-sudoku.cpp)
 
-### 8.11. set
+## 8.11. set
 
 ### 8.12. 217.Contains Duplicate
 
@@ -627,6 +628,20 @@ i=6,7,8⇒(i/3)∗3=6（屬於第三行的 box）。
 -   判斷是否為快樂數=>要記錄
 -   解法 1：用 set 紀錄
 -   [202.Happy Number](./LeetCode/Set/202.happy-number.cpp)
+
+### 1684. Count the Number of Consistent Strings
+
+-   解法 1：
+
+    -   使用 array 或 map 去記錄 allowed 中的符號
+    -   然後用 for 迴圈跑 words，去檢查是否由 allowed 組成
+
+-   解法 02 將 allowed 既錄的方式，由 set 改為 用 bitwise 去儲存
+-   解法 2 補充(位元操作)
+    ![upgit_20250312_1741756869.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250312_1741756869.png)
+
+-   [1684. Count the Number of Consistent Strings](./LeetCode/Set/1684.count-the-number-of-consistent-strings.cpp)
+-   [1684. Count the Number of Consistent Strings by C](./LeetCode/Set/1684.count-the-number-of-consistent-strings.c)
 
 ## 9. Binary Search
 

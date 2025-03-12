@@ -1,3 +1,17 @@
+/*
+函數介紹01：計算字符串長度(不包括\0)
+size_t strlen(const char *str)
+
+函數介紹02：比較
+int strcmp(const char *str1, const char *str2)
+*str1 要比較的第一個字
+*str2 要比較的第二個字
+
+返回值：整數
+-1：小於
+0：等於
+1：大於
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
