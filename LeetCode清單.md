@@ -643,7 +643,8 @@ i=6,7,8⇒(i/3)∗3=6（屬於第三行的 box）。
 
 -   解法 02 將 allowed 既錄的方式，由 set 改為 用 bitwise 去儲存
 -   解法 2 補充(位元操作)
-    ![upgit_20250312_1741756869.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250312_1741756869.png)
+
+![upgit_20250312_1741756869.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250312_1741756869.png)
 
 -   [1684. Count the Number of Consistent Strings](./LeetCode/Set/1684.count-the-number-of-consistent-strings.cpp)
 -   [1684. Count the Number of Consistent Strings by C](./LeetCode/Set/1684.count-the-number-of-consistent-strings.c)
