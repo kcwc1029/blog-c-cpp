@@ -771,6 +771,7 @@ body {
   --interactive-accent-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.95);
   --text-accent-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.9);
 
+  /*基本設定顏色的地方*/
   --h1-color: var(--color-purple);
   --h2-color: var(--color-blue);
   --h3-color: var(--color-brightblue);
@@ -895,13 +896,13 @@ body.theme-light {
   --color-base-60: #a6b1c7;
   --color-base-70: #9ba8c1;
   --color-red: #f6535a;
-  --color-orange: #f37c1d;
-  --color-yellow: #c0b90a;
+  --color-orange: #000000; /* 列印的時候通通改黑 #fac79e => #000000;*/
+  --color-yellow: #000000; /* 列印的時候通通改黑 #faf69c => #000000;*/
   --color-green: #0bd065;
-  --color-blue: #0bd0c8;
-  --color-purple: #8c90f9;
+  --color-blue: #000000; /* 列印的時候通通改黑 #3a86ff => #000000;*/
+  --color-purple: #000000; /* 列印的時候通通改黑 #8c90f9 => #000000;*/
   --color-pink: #fa9ccf;
-
+  --color-brightblue: #000000; /* 列印的時候通通改黑 #a2d6f9 => #000000;*/
   --accent-h: 237.45;
   --accent-s: 90%;
   --accent-l: 80%;

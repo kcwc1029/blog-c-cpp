@@ -33,11 +33,16 @@
 
 ## 1. string
 
+### 709.To Lower Case
+
+-   [709.To Lower Case](./LeetCode/Strnig/709.to-lower-case.cpp)
+-   [709.To Lower Case](./LeetCode/Strnig/709.to-lower-case.c)
+
 ### 1.1. 412.Fizz Buzz(教過)
 
 -   給定一個 n，for 跑 1-n，每一個數值依據規定轉換 Fizz Buzz
 -   [412.Fizz Buzz.cpp](./LeetCode/Strnig/412.fizz-buzz.cpp)
--   [412.Fizz Buzz.cpp](./LeetCode/Strnig/412.fizz-buzz.c)
+-   [412.Fizz Buzz.c](./LeetCode/Strnig/412.fizz-buzz.c)
 
 ### 1.2. 1662.Check If Two String Arrays are Equivalent
 

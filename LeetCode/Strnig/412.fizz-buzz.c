@@ -1,35 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-// 交換兩個字元的函式
-void swap(char *a, char *b) {
-    char temp = *a;
-    *a = *b;
-    *b = temp;
-}
+char** fizzBuzz(int n, int* returnSize) {
+    *returnSize = n;
+    char** result = (char**)malloc(n * sizeof(char*));
 
-// 反轉字串函式
-void reverseString(char* s, int sSize) {
-    int left = 0, right = sSize - 1;
-    while (left < right) {
-        swap(&s[left], &s[right]); // 呼叫 swap 來交換
-        left++;
-        right--;
+    for (int i = 1; i <= n; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            result[i - 1] = strdup("FizzBuzz");
+        } else if (i % 3 == 0) {
+            result[i - 1] = strdup("Fizz");
+        } else if (i % 5 == 0) {
+            result[i - 1] = strdup("Buzz");
+        } else {
+            result[i - 1] = (char*)malloc(12 * sizeof(char)); // 預留 12 個字元（包含 '\0'）
+            sprintf(result[i - 1], "%d", i);
+        }
     }
+    return result;
 }
 
 int main() {
-    // 測試範例
-    char test01[] = "hello";
-    char test02[] = "Hannah";
-    int size1 = sizeof(test01) - 1; // 減 1 去掉 '\0'
-    int size2 = sizeof(test02) - 1;
+    int n = 15;
+    int returnSize;
+    char** result = fizzBuzz(n, &returnSize);
 
-    // 反轉字串
-    reverseString(test01, size1);
-    reverseString(test02, size2);
-    printf("%s\n", test01);
-    printf("%s\n", test02);
+    for (int i = 0; i < returnSize; i++) {
+        printf("%s ", result[i]);
+    }
+    free(result); // 釋放整個陣列
 
     return 0;
 }
