@@ -13,7 +13,7 @@
 			"stopAtEntry": true,
 			"cwd": "${fileDirname}",
 			"environment": [],
-			"externalConsole": true,
+			"externalConsole": false,
 			"MIMode": "gdb",
 			"miDebuggerPath": "C:\\cygwin64\\bin\\gdb.exe",
 			"setupCommands": [

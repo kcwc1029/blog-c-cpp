@@ -33,42 +33,42 @@
 
 ## 1. string
 
-### 709.To Lower Case
+### 1.1. 709.To Lower Case
 
 -   [709.To Lower Case](./LeetCode/Strnig/709.to-lower-case.cpp)
 -   [709.To Lower Case](./LeetCode/Strnig/709.to-lower-case.c)
 
-### 1.1. 412.Fizz Buzz(教過)
+### 1.2. 412.Fizz Buzz(教過)
 
 -   給定一個 n，for 跑 1-n，每一個數值依據規定轉換 Fizz Buzz
 -   [412.Fizz Buzz.cpp](./LeetCode/Strnig/412.fizz-buzz.cpp)
 -   [412.Fizz Buzz.c](./LeetCode/Strnig/412.fizz-buzz.c)
 
-### 1.2. 1662.Check If Two String Arrays are Equivalent
+### 1.3. 1662.Check If Two String Arrays are Equivalent
 
 -   解法 1：字串拼接
 -   解法 2：雙指針比對
 -   [1662.Check If Two String Arrays are Equivalent](./LeetCode/Strnig/1662.check-if-two-string-arrays-are-equivalent.cpp)
 -   [1662.Check If Two String Arrays are Equivalent](./LeetCode/Strnig/1662.check-if-two-string-arrays-are-equivalent.c)
 
-### 1.3. 14.Longest Common Prefix
+### 1.4. 14.Longest Common Prefix
 
 -   每次都跟第一個去比較
 -   [14.Longest Common Prefix](./LeetCode/Strnig/14.longest-common-prefix.cpp)
 
-### 1.4. 58.Length of Last Word
+### 1.5. 58.Length of Last Word
 
 ![upgit_20241112_1731409811.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241112_1731409811.png)
 
 -   返回最後一個字的長度(不可以用套件)
 -   [58.Length of Last Word](./LeetCode/Strnig/58.length-of-last-word.cpp)
 
-### 1.5. 415.Add Strings
+### 1.6. 415.Add Strings
 
 -   用字串模擬加法
 -   [415.Add Strings](./LeetCode/Strnig/415.add-strings.cpp)
 
-### 1.6. 38.Count and Say(medium)
+### 1.7. 38.Count and Say(medium)
 
 -   行程长度编码（Run-Length Encoding, RLE）是一种无损压缩算法，用于表示连续重复的数据。它通过记录数据中连续相同元素的个数和元素本身，来压缩原始数据的大小。
 
@@ -76,7 +76,7 @@
 
 -   [38.Count and Say](./LeetCode/Strnig/38.count-and-say.cpp)
 
-### 1.7. 520.Detect Capital
+### 1.8. 520.Detect Capital
 
 -   去檢查大寫字母的使用方式
     -   全部都大寫
@@ -200,13 +200,46 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 
 ## 4. Bit Manipulatio
 
-### 4.1. 268.Missing Number
+```
+lab01
+67 190 191
+136 137 260
 
-![upgit_20241110_1731240936.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241110_1731240936.png)
+lab02
+211 342 268 338 389
+401 405
 
--   [268.Missing Number](./LeetCode/Bit%20Manipulatio/268.missing-number.cpp)
+lab03
+461 477 476 693 762
+832 868
 
-### 4.2. 136.Single Number
+lab04
+1009 1018 1342 1356 1486
+371 78 90 287 218 526 638 672 1238
+
+
+```
+
+### 4.1. 67.Add Binary
+
+![upgit_20250313_1741843203.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250313_1741843203.png)
+
+-   [67.Add Binary](./LeetCode/Bit%20Manipulatio/67.add-binary.cpp)
+
+### 4.2. 190.Reverse Bits
+
+![upgit_20250313_1741844116.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250313_1741844116.png)
+
+-   [190.Reverse Bits](./LeetCode/Bit%20Manipulatio/190.reverse-bits.cpp)
+-   [190.Reverse Bits by C](./LeetCode/Bit%20Manipulatio/190.reverse-bits.c)
+
+### 4.3. 191.Number of 1 Bits
+
+-   先轉乘二進位，在計算幾個 1
+-   [191.Number of 1 Bits](./LeetCode/Bit%20Manipulatio/191.number-of-1-bits.cpp)
+-   [191.Number of 1 Bits by C](./LeetCode/Bit%20Manipulatio/191.number-of-1-bits.c)
+
+### 4.4. 136.Single Number
 
 -   只有一個數出現 1 次，其他都出現 2 次。
 -   阿...這一題他是要找唯一一個的時候，有很多種解法拉(map、排序...)
@@ -215,7 +248,11 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 -   解法 3：XOR
 -   [136.Single Number](./LeetCode/Bit%20Manipulatio/136.single-number.cpp)
 
-### 4.3. 137.Single Number II
+![upgit_20250314_1741941133.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250314_1741941133.png)
+
+
+
+### 4.5. 137.Si1ngle Number II
 
 -   只有一個數出現 1 次，其他都出現 3 次。
 -   解法 1：用 map 紀錄次數。
@@ -225,25 +262,19 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 
 -   [137.Single Number II](./LeetCode/Bit%20Manipulatio/137.single-number-ii.cpp)
 
-### 4.4. 260.Single Number III
+### 4.6. 260.Single Number III
 
 -   兩個數出現 1 次，其他都出現 2 次。
 -   [260.Single Number III](./LeetCode/Bit%20Manipulatio/260.single-number-iii.cpp)
 
-### 4.5. 67.Add Binary
+![upgit_20250314_1741941150.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250314_1741941150.png)
 
--   [67.Add Binary](./LeetCode/Bit%20Manipulatio/67.add-binary.cpp)
 
-### 4.6. 190.Reverse Bits
+### 4.7. 268.Missing Number
 
-![upgit_20241120_1732093818.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241120_1732093818.png)
+![upgit_20241110_1731240936.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241110_1731240936.png)
 
--   [190.Reverse Bits](./LeetCode/Bit%20Manipulatio/190.reverse-bits.cpp)
-
-### 4.7. 191.Number of 1 Bits
-
--   先轉乘二進位，在計算幾個 1
--   [191.Number of 1 Bits](./LeetCode/Bit%20Manipulatio/191.number-of-1-bits.cpp)
+-   [268.Missing Number](./LeetCode/Bit%20Manipulatio/268.missing-number.cpp)
 
 ### 4.8. 231.Power of Two
 
@@ -620,21 +651,21 @@ i=6,7,8⇒(i/3)∗3=6（屬於第三行的 box）。
 
 -   [36.Valid Sudoku](./LeetCode/Map/36.valid-sudoku.cpp)
 
-## 8.11. set
+## 9. set
 
-### 8.12. 217.Contains Duplicate
+### 9.1. 217.Contains Duplicate
 
 -   他要找【是否有重複】
 -   [217.Contains Duplicate](./LeetCode/Set/217.contains-duplicate.cpp)
 
-### 8.13. 202.Happy Number
+### 9.2. 202.Happy Number
 
 -   快樂數定義：每一次將該數值替換為她每個位置的數字的平方和
 -   判斷是否為快樂數=>要記錄
 -   解法 1：用 set 紀錄
 -   [202.Happy Number](./LeetCode/Set/202.happy-number.cpp)
 
-### 1684. Count the Number of Consistent Strings
+### 9.3. Count the Number of Consistent Strings
 
 -   解法 1：
 
@@ -649,7 +680,7 @@ i=6,7,8⇒(i/3)∗3=6（屬於第三行的 box）。
 -   [1684. Count the Number of Consistent Strings](./LeetCode/Set/1684.count-the-number-of-consistent-strings.cpp)
 -   [1684. Count the Number of Consistent Strings by C](./LeetCode/Set/1684.count-the-number-of-consistent-strings.c)
 
-## 9. Binary Search
+## 10. Binary Search
 
 -   模板
 
@@ -671,7 +702,7 @@ else if(arr[mid]<target) left = mid + 1;
 else (arr[mid]>target) right = mid - 1;
 ```
 
-### 9.1. 35.Search Insert Position
+### 10.1. 35.Search Insert Position
 
 -   返回他的索引位置
 -   可能就兩種解法：第一種是從頭往後找過去；要優化就二分
@@ -679,22 +710,22 @@ else (arr[mid]>target) right = mid - 1;
 -   解法 2：二分搜尋
 -   [35.Search Insert Position](./LeetCode/Binary%20Search/35.search-insert-position.cpp)
 
-### 9.2. 278.First Bad Version
+### 10.2. 278.First Bad Version
 
 -   他是要完成一個查找函數
 -   实现一个函数来查找第一个错误的版本。你应该尽量减少对调用 API 的次数 => 要用二分法去實現
 -   [278.First Bad Version](./LeetCode/Binary%20Search/278.first-bad-version.cpp)
 
-## 10. stack
+## 11. stack
 
-### 10.1. 20.Valid Parentheses
+### 11.1. 20.Valid Parentheses
 
 -   括弧配對的話，就想法要想清楚。
 -   如果是碰到各種左括弧=>無腦 push 進去。
 -   不是左括弧的話，那就是右括弧。(那要去想，甚麼樣的條件，可以 pop=>不如去想說，甚麼樣的條件是 false。)
 -   [20.Valid Parentheses](./LeetCode/Stack/20.valid-parentheses.cpp)
 
-### 10.2. 22.Generate Parentheses
+### 11.2. 22.Generate Parentheses
 
 -   可以直接從程式碼去看~
 -   遞迴長相
@@ -719,13 +750,13 @@ else (arr[mid]>target) right = mid - 1;
 -   非法情況：當 left > right 時，直接返回。這是因為右括號 ) 已經多於左括號 (，此時無法形成合法的組合。
 -   [22.Generate Parentheses](./LeetCode/Stack/22.generate-parentheses.cpp)
 
-### 10.3. 225.Implement Stack using Queues
+### 11.3. 225.Implement Stack using Queues
 
 -   用兩個 queue 去實現 stack
 -   只有 push 的時候要注意，當 push 兩個以上時，需要去把兩個 queue 交換(順序顛倒)
 -   [225.Implement Stack using Queues](./LeetCode/Stack/225.implement-stack-using-queues.cpp)
 
-### 10.4. 232.Implement Queue using Stacks
+### 11.4. 232.Implement Queue using Stacks
 
 ![upgit_20250121_1737456465.png|800px](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/01/upgit_20250121_1737456465.png)
 
@@ -733,22 +764,22 @@ else (arr[mid]>target) right = mid - 1;
 -   要注意的是，因為 stack 順序改成 queue 只能一次，所以 push 時就先不要動，在 pop 跟 peek 時候，再用檢查的方式，決定要不要做顛倒
 -   [232.Implement Queue using Stacks](./LeetCode/Stack/232.implement-queue-using-stacks.cpp)
 
-## 11. greedy
+## 12. greedy
 
-### 11.1. 13.Roman to Integer
+### 12.1. 13.Roman to Integer
 
 -   小的在大的左邊：相減 => 可以想成加一個負號
 -   小的在大的右邊：相加
 -   [13.roman-to-integer.cpp](./LeetCode/Greedy/13.roman-to-integer.cpp)
 
-### 11.2. 12.Integer to Roman
+### 12.2. 12.Integer to Roman
 
 -   貪婪：盡量去用最大的數來表示
 -   依開始是使用`map<int, string>，但不保證迭代順序`
 -   使用 pair 的話，就已經固定順序了。
 -   [12.Integer to Roman](./LeetCode/Greedy/12.integer-to-roman.cpp)
 
-### 11.3. 55.Jump Game
+### 12.3. 55.Jump Game
 
 ![upgit_20250305_1741151035.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250305_1741151035.png)
 
@@ -757,13 +788,13 @@ else (arr[mid]>target) right = mid - 1;
 -   如果在跳躍的過程中，可以一直跳到最後一個格子，那麼就代表成功抵達終點。
 -   [55.Jump Game](./LeetCode/Greedy/55.jump-game.cpp)
 
-## 12. dynamic-programming
+## 13. dynamic-programming
 
-### 12.1. 509.Fibonacci Number
+### 13.1. 509.Fibonacci Number
 
 -   [509.Fibonacci Number](./LeetCode/Dynamic%20Programming/509.fibonacci-number.cpp)
 
-### 12.2. 70.Climbing Stairs
+### 13.2. 70.Climbing Stairs
 
 -   給階層數，一次只能走 1 或 2 步，求該階層有幾種走法。
 
@@ -771,7 +802,7 @@ else (arr[mid]>target) right = mid - 1;
 
 -   [70.Climbing Stairs](./LeetCode/Dynamic%20Programming/70.climbing-stairs.cpp)
 
-### 12.3. 53.Maximum Subarray(medium)
+### 13.3. 53.Maximum Subarray(medium)
 
 -   找出一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
 -   解法 1：前缀和
@@ -784,7 +815,7 @@ else (arr[mid]>target) right = mid - 1;
 
 -   [53.Maximum Subarray](./LeetCode/Dynamic%20Programming/53.maximum-subarray.cpp)
 
-### 12.4. 62.Unique Paths(medium)
+### 13.4. 62.Unique Paths(medium)
 
 -   法 1：排列組合數學計算
 
@@ -797,18 +828,18 @@ else (arr[mid]>target) right = mid - 1;
 
 -   [62.Unique Paths](./LeetCode/Dynamic%20Programming/62.unique-paths.cpp)
 
-### 12.5. 63.Unique Paths II
+### 13.5. 63.Unique Paths II
 
 -   她是基於 62，但中間多了障礙物
 -   [63.Unique Paths II](./LeetCode/Dynamic%20Programming/63.unique-paths-ii.cpp)
 
-### 12.6. 64.Minimum Path Sum
+### 13.6. 64.Minimum Path Sum
 
 -   他一樣是要從左上到右下
 -   解法：dp
 -   [64.Minimum Path Sum](./LeetCode/Dynamic%20Programming/64.minimum-path-sum.cpp)
 
-### 12.7. 121.Best Time to Buy and Sell Stock
+### 13.7. 121.Best Time to Buy and Sell Stock
 
 -   你只能買入一次並賣出一次，求最大的利潤是多少。
 -   解法 1：用爆力解方式：定一個點(for loop)，然後另一個 for 去跑後面的，不斷紀錄最小值。
@@ -818,13 +849,13 @@ else (arr[mid]>target) right = mid - 1;
 
 -   [121.Best Time to Buy and Sell Stock](./LeetCode/Dynamic%20Programming/121.best-time-to-buy-and-sell-stock.cpp)
 
-### 12.8. 122.Best Time to Buy and Sell Stock II
+### 13.8. 122.Best Time to Buy and Sell Stock II
 
 -   你可以無限次買賣股票（只要你先買了才能賣），求能夠獲得的最大總利潤。
 
 -   [122.Best Time to Buy and Sell Stock II](./LeetCode/Dynamic%20Programming/122.best-time-to-buy-and-sell-stock-ii.cpp)
 
-## 13. Backtracking
+## 14. Backtracking
 
 -   模板
 
@@ -843,17 +874,17 @@ void backtracking(参数) {
 }
 ```
 
-### 13.1. 17.Letter Combinations of a Phone Number
+### 14.1. 17.Letter Combinations of a Phone Number
 
 ![upgit_20241207_1733561921.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241207_1733561921.png)
 
 -   [17.Letter Combinations of a Phone Number](./LeetCode/Backtracking/17.letter-combinations-of-a-phone-number.cpp)
 
-### 13.2. 78.Subsets
+### 14.2. 78.Subsets
 
 -   [78.Subsets](./LeetCode/Backtracking/78.subsets.cpp)
 
-### 13.3. 39.Combination Sum
+### 14.3. 39.Combination Sum
 
 -   返回各種組合(元素可重複)
 
@@ -861,19 +892,19 @@ void backtracking(参数) {
 
 -   [39.combination-sum.cpp](./LeetCode/Backtracking/39.combination-sum.cpp)
 
-### 13.4. 40.Combination Sum II
+### 14.4. 40.Combination Sum II
 
 -   根據 39 題，但不能重複
 -   [40.Combination Sum II](./LeetCode/Backtracking/40.combination-sum-ii.cpp)
 
-### 13.5. 46.Permutations
+### 14.5. 46.Permutations
 
 -   给定一个不含重复数字的数组 nums ，返回其所有可能的全排列。
     ![upgit_20241225_1735098588.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241225_1735098588.png)
 
 -   [46.Permutations](./LeetCode/Backtracking/46.permutations.cpp)
 
-### 13.6. 47.Permutations II
+### 14.6. 47.Permutations II
 
 -   给定一个可包含重复数字的序列  nums ，按任意顺序返回所有不重复的全排列。
 
@@ -881,9 +912,9 @@ void backtracking(参数) {
 
 -   [47.Permutations II](./LeetCode/Backtracking/47.permutations-ii.cpp)
 
-## 14. linked-list
+## 15. linked-list
 
-### 14.1. 2.Add Two Numbers
+### 15.1. 2.Add Two Numbers
 
 -   節點上面做加總
 
@@ -891,13 +922,13 @@ void backtracking(参数) {
 
 -   [2.Add Two Numbers](./LeetCode/Linked%20List/2.add-two-numbers.cpp)
 
-### 14.2. 21.Merge Two Sorted Lists
+### 15.2. 21.Merge Two Sorted Lists
 
 ![upgit_20241210_1733813202.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241210_1733813202.png)
 
 -   [21.Merge Two Sorted Lists](./LeetCode/Linked%20List/21.merge-two-sorted-lists.cpp)
 
-### 14.3. 24.Swap Nodes in Pairs
+### 15.3. 24.Swap Nodes in Pairs
 
 -   解法 1：遞迴
 
@@ -910,22 +941,22 @@ void backtracking(参数) {
 -   要刪除某格節點，就是將他的【上一個】直接指向下一個(沒人指=消失)
 -   [83.Remove Duplicates from Sorted List](./LeetCode/Linked%20List/83.remove-duplicates-from-sorted-list.cpp)
 
-### 14.4. 141.Linked List Cycle
+### 15.4. 141.Linked List Cycle
 
 -   解法：快慢指針：快指針走兩步，慢指針走一步，如果有成環，快慢指針有一天一定會相遇。
 -   [141.Linked List Cycle](./LeetCode/Linked%20List/141.linked-list-cycle.cpp)
 
-### 14.5. 19.Remove Nth Node From End of List
+### 15.5. 19.Remove Nth Node From End of List
 
 -   [19.Remove Nth Node From End of List](./LeetCode/Linked%20List/19.remove-nth-node-from-end-of-list.cpp)
 
-### 14.6. 160.Intersection of Two Linked Lists
+### 15.6. 160.Intersection of Two Linked Lists
 
 ![upgit_20241212_1733970327.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241212_1733970327.png)
 
 -   [160.Intersection of Two Linked Lists](./LeetCode/Linked%20List/160.intersection-of-two-linked-lists.cpp)
 
-### 14.7. 203.Remove Linked List Elements
+### 15.7. 203.Remove Linked List Elements
 
 -   刪除節點
 
@@ -933,22 +964,22 @@ void backtracking(参数) {
 
 -   [203.Remove Linked List Elements](./LeetCode/Linked%20List/203.remove-linked-list-elements.cpp)
 
-### 14.8. 206.Reverse Linked List
+### 15.8. 206.Reverse Linked List
 
 -   [206.Reverse Linked List](./LeetCode/Linked%20List/206.reverse-linked-list.cpp)
 
-### 14.9. 876.Middle of the Linked List
+### 15.9. 876.Middle of the Linked List
 
 -   [876.Middle of the Linked List](./LeetCode/Linked%20List/876.middle-of-the-linked-list.cpp)
 
-### 14.10. 234.Palindrome Linked List
+### 15.10. 234.Palindrome Linked List
 
 -   用到
     -   876 檢查中間
     -   206 反轉
 -   [234.Palindrome Linked List](./LeetCode/Linked%20List/234.palindrome-linked-list.cpp)
 
-### 14.11. 86.Partition List
+### 15.11. 86.Partition List
 
 -   所有小于  `x`  的节点都出现在   大于或等于  `x`  的节点之前。
 
