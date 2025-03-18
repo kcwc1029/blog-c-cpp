@@ -535,7 +535,7 @@ int arr[5] = {1,2}; //相當於{1,2,0,0,0}
 ![upgit_20250318_1742264531.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250318_1742264531.png)
 
 -   In a function declaration, we must provide the function name, its return type, and the number and type of its parameters.
--                                                                 A function declaration tells the compiler that there is a function with the given name defined somewhere else in the program.
+-                                                                   A function declaration tells the compiler that there is a function with the given name defined somewhere else in the program.
 
 ### Function Definition
 
@@ -570,8 +570,7 @@ int arr[5] = {1,2}; //相當於{1,2,0,0,0}
 #include <stdlib.h>
 #include <string.h>
 
-int sum(int x, int y)
-{
+int sum(int x, int y){
     int c;
     c = x + y;
     return c;
