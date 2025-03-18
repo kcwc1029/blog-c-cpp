@@ -535,7 +535,7 @@ int arr[5] = {1,2}; //相當於{1,2,0,0,0}
 ![upgit_20250318_1742264531.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250318_1742264531.png)
 
 -   In a function declaration, we must provide the function name, its return type, and the number and type of its parameters.
--                                                                   A function declaration tells the compiler that there is a function with the given name defined somewhere else in the program.
+-   A function declaration tells the compiler that there is a function with the given name defined somewhere else in the program.
 
 ### Function Definition
 
@@ -543,21 +543,52 @@ int arr[5] = {1,2}; //相當於{1,2,0,0,0}
 
 -   The function definition consists of actual statements which are executed when the function is called (i.e. when the program control comes to the function).
 
--   A C function is generally defined and declared in a single step because the function definition always starts with the function declaration so we do not need to declare it explicitly. The below example serves as both a function definition and a declaration.
-
 ### Function Call
 
 ![upgit_20250318_1742264725.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250318_1742264725.png)
 
 -   A function call is a statement that instructs the compiler to execute the function. We use the function name and parameters in the function call.
--   In the below example, the first sum function is called and 10,30 are passed to the sum function. After the function call sum of a and b is returned and control is also returned back to the main function of the program.
+
+> Q：What is the difference between function declaration and function definition?
+>
+> -   A function declaration includes details like the function name, return type, and parameters.
+> -   A function definition includes the actual body of the function.
+
+### forward declaration?
+
+-   Sometimes, we define a function after its call to improve readability. In such cases, we declare the function before its definition and call. Such a declaration is called a forward declaration.
+
+```c
+#include <stdio.h>
+
+// Forward declaration（前向宣告）
+void sayHello();
+
+int main() {
+    sayHello();  // 可以先呼叫函式，因為已經有宣告
+    return 0;
+}
+
+// Function definition（函式定義）
+void sayHello() {
+    printf("Hello, World!\n");
+}
+
+```
 
 ### 12.1. 參數傳遞(Function Arguments)
 
+-   分為
+    -   形式參數(formal parameter) => parameter
+    -   實際參數(actual parameter) => Argument
+
 ![upgit_20250318_1742266084.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250318_1742266084.png)
 
--   The data passed when the function is being invoked is known as the Actual parameters. In the below program, 10 and 30 are known as actual parameters. Formal Parameters are the variable and the data type as mentioned in the function declaration. In the below program, a and b are known as formal parameters.
--   分為形式參數(formal parameter)跟實際參數(actual parameter)
+> Q：What is the difference between function arguments and parameters?
+>
+> -   Function parameters are the variables listed in the function declaration.
+> -   Function arguments are the actual values passed to the function during the function call.
+
 -   [主程式與函數內的地址不同](./Function/main_program_function_address.c)
 
 #### Call by Value
@@ -630,39 +661,6 @@ int main(){
 -   [判斷是否為質數(優化)](./Function/is_prime02.c)
 -   [列出兩整數之間的質數](./Function/prime_betweeen_two_intergers.c)
 -   [檢查一個數字是否可以表示為兩個質數之和](./Function/check_sum_of_two_primes.c)
-
-### FAQs on Functions in C
-
--   Define functions.
--   What is a forward declaration?
-    -   Sometimes, we define a function after its call to improve readability. In such cases, we declare the function before its definition and call. Such a declaration is called a forward declaration.
-
-```c
-#include <stdio.h>
-
-// Forward declaration（前向宣告）
-void sayHello();
-
-int main() {
-    sayHello();  // 可以先呼叫函式，因為已經有宣告
-    return 0;
-}
-
-// Function definition（函式定義）
-void sayHello() {
-    printf("Hello, World!\n");
-}
-
-```
-
--   What is the difference between function declaration and function definition?
-
-    -   A function declaration includes details like the function name, return type, and parameters.
-    -   A function definition includes the actual body of the function.
-
--   What is the difference between function arguments and parameters?
-    -   Function parameters are the variables listed in the function declaration.
-    -   Function arguments are the actual values passed to the function during the function call.
 
 ---
 
