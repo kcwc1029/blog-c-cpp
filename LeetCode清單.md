@@ -239,6 +239,7 @@ lab04
 -   [191.Number of 1 Bits](./LeetCode/Bit%20Manipulatio/191.number-of-1-bits.cpp)
 -   [191.Number of 1 Bits by C](./LeetCode/Bit%20Manipulatio/191.number-of-1-bits.c)
 
+
 ### 4.4. 136.Single Number
 
 -   只有一個數出現 1 次，其他都出現 2 次。
