@@ -522,6 +522,149 @@ int arr[5] = {1,2}; //相當於{1,2,0,0,0}
 -   [bubble_sort02.c](./bubble%20sort/bubble_sort02.c) => 優化：在最佳情況下，如果數列已經有序，我們可以提早停止排序。
 -   [九宮格遊戲](./Nine%20Grid%20Game/nine_grid_game.c)
 
+## 12. 函數
+
+-   包含五個部分：函式庫、標頭檔(header file)、函數名稱、參數、回傳
+-   函數可以分三個方面：
+    -   Function Declaration 函數聲明
+    -   Function Definition 功能定義
+    -   Function Calls 函數調用
+
+### Function Declarations
+
+![upgit_20250318_1742264531.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250318_1742264531.png)
+
+-   In a function declaration, we must provide the function name, its return type, and the number and type of its parameters.
+-                                                                 A function declaration tells the compiler that there is a function with the given name defined somewhere else in the program.
+
+### Function Definition
+
+![upgit_20250318_1742264667.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250318_1742264667.png)
+
+-   The function definition consists of actual statements which are executed when the function is called (i.e. when the program control comes to the function).
+
+-   A C function is generally defined and declared in a single step because the function definition always starts with the function declaration so we do not need to declare it explicitly. The below example serves as both a function definition and a declaration.
+
+### Function Call
+
+![upgit_20250318_1742264725.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250318_1742264725.png)
+
+-   A function call is a statement that instructs the compiler to execute the function. We use the function name and parameters in the function call.
+-   In the below example, the first sum function is called and 10,30 are passed to the sum function. After the function call sum of a and b is returned and control is also returned back to the main function of the program.
+
+### 12.1. 參數傳遞(Function Arguments)
+
+![upgit_20250318_1742266084.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250318_1742266084.png)
+
+-   The data passed when the function is being invoked is known as the Actual parameters. In the below program, 10 and 30 are known as actual parameters. Formal Parameters are the variable and the data type as mentioned in the function declaration. In the below program, a and b are known as formal parameters.
+-   分為形式參數(formal parameter)跟實際參數(actual parameter)
+-   [主程式與函數內的地址不同](./Function/main_program_function_address.c)
+
+#### Call by Value
+
+-   Call by value in C is where in the arguments we pass value and that value can be used in function for performing the operation.
+-   Values passed in the function are stored in temporary memory so the changes performed in the function don’t affect the actual value of the variable passed.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int sum(int x, int y)
+{
+    int c;
+    c = x + y;
+    return c;
+}
+
+// Driver Code
+int main(){
+    int a = 3, b = 2;
+    int c = sum(a, b);
+    printf("Sum of %d and %d : %d", a, b, c);
+    return 0;
+}
+```
+
+#### Call by Reference
+
+-   Call by reference is the method in C where we call the function with the passing address as arguments.
+-   We pass the address of the memory blocks which can be further stored in a pointer variable that can be used in the function.
+-   Now, changes performed in the values inside the function can be directly reflected in the main memory.
+
+```c
+#include <stdio.h>
+
+// Call by reference
+void swap(int* x, int* y)
+{
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+int main(){
+    int x = 1, y = 5;
+    printf("Before Swapping: x:%d , y:%d\n", x, y);
+    swap(&x, &y);
+    printf("After Swapping: x:%d , y:%d\n", x, y);
+    return 0;
+}
+```
+
+### 12.2. 陣列參數傳遞
+
+-   Can we return multiple values from a C function?
+    -   No, it is generally not possible to return multiple values from a function. However, we can return multiple values using pointers, heap memory, or structures.
+-   陣列是以實際參數(actual parameter)的方式傳值
+-   [陣列參數傳遞](./Array/array_parameter_passing.c)
+
+### 12.3. 使用函數對陣列操作
+
+-   因為陣列是實際參數，所以可以用函數的方式去對陣列操作
+-   [使用函數對陣列操作](./Function/operate_array_by_function.c)
+
+### 12.4. 其他練習
+
+-   [陣列中找特定值](./Function/array_find_specific_value.c)
+-   [判斷是否為質數](./Function/is_prime01.c)
+-   [判斷是否為質數(優化)](./Function/is_prime02.c)
+-   [列出兩整數之間的質數](./Function/prime_betweeen_two_intergers.c)
+-   [檢查一個數字是否可以表示為兩個質數之和](./Function/check_sum_of_two_primes.c)
+
+### FAQs on Functions in C
+
+-   Define functions.
+-   What is a forward declaration?
+    -   Sometimes, we define a function after its call to improve readability. In such cases, we declare the function before its definition and call. Such a declaration is called a forward declaration.
+
+```c
+#include <stdio.h>
+
+// Forward declaration（前向宣告）
+void sayHello();
+
+int main() {
+    sayHello();  // 可以先呼叫函式，因為已經有宣告
+    return 0;
+}
+
+// Function definition（函式定義）
+void sayHello() {
+    printf("Hello, World!\n");
+}
+
+```
+
+-   What is the difference between function declaration and function definition?
+
+    -   A function declaration includes details like the function name, return type, and parameters.
+    -   A function definition includes the actual body of the function.
+
+-   What is the difference between function arguments and parameters?
+    -   Function parameters are the variables listed in the function declaration.
+    -   Function arguments are the actual values passed to the function during the function call.
+
 ---
 
 <p align="center">

@@ -2,27 +2,30 @@
 #include <stdlib.h>
 #include <string.h>
 
-int hammingWeight(int n) {
-    int ans = 0;
-    for(int i=0;i<32;i++){
-        if(n&1 == 1) ans ++;
-        n>>=1;
-    }
-    return ans;
+// prime number
+int isPrime(int number){
+	int isPrime = 1;
+	for (int i = 2; i <= number / 2; ++i) {
+		if (number % i == 0) {
+			isPrime = 0;
+			break;
+		}
+	}
+	return isPrime;
 }
 
-int main() {
-    int n = 11;
-    int result = hammingWeight(n);
-    printf("%d\n", result);
 
-    n = 128;
-    result = hammingWeight(n);
-    printf("%d\n", result);
-
-    n = 2147483645;
-    result = hammingWeight(n);
-    printf("%d\n", result);
-
+int main(){
+    int n = 5;
+    for (int i = 2; i <= n / 2; ++i) {
+        if (isPrime(i) == 1) {
+            if (isPrime(n - i) == 1) {
+                printf("%d %d\n", i, n-i);
+                printf("Yes\n");
+                return 0;
+            }
+        }
+    }
+    printf("No\n");
     return 0;
 }
