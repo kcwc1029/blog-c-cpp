@@ -5,6 +5,8 @@
 -   [成大工科 程式設計](./成大工科%20程式設計.md)
 -   [LeetCode 練習清單](./LeetCode清單.md)
 
+
+
 ## 1. 建立編譯環境
 
 -   【win】使用 dev C++ 進行環境安裝：https://reurl.cc/p90XX4
@@ -195,7 +197,7 @@ int main() {
 }
 ```
 
-## 6. 變數
+## 7. 變數
 
 -   變數命名規則：https://reurl.cc/A2zqNQ
 -   變數的宣告告訴電腦要為變數分配多少記憶體空間。
@@ -218,7 +220,7 @@ int main(){
 
 -   可以用 sizeof()查詢資料長度。
 
-### 6.1. 整數型
+### 7.1. 整數型
 
 -   int：4byte
 
@@ -246,14 +248,14 @@ int main() {
 
 ```
 
-### 6.2. 浮點數
+### 7.2. 浮點數
 
 -   float：4byte
 -   double：8byte
 -   [浮點數資料宣告](./Basic%20Data%20Type/float01.c)
 -   [浮點數輸入輸出](./Basic%20Data%20Type/float02.c)
 
-### 6.3. 字元 char
+### 7.3. 字元 char
 
 ```c
 char c = 'r';
@@ -272,14 +274,14 @@ char str[] = "Hello, World!";
 
 ![upgit_20250222_1740213553.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/02/upgit_20250222_1740213553.png)
 
-### 6.4. ASCII
+### 7.4. ASCII
 
 -   ASCII（American Standard Code for Information Interchange）是早期設計的一種字符編碼方式，用來將字母、數字和符號對應到二進制數字。
 -   [字元轉換 ASCII](./Basic%20Data%20Type/ascii.c)
 
-### 6.5. 強型別&弱型別
+### 7.5. 強型別&弱型別
 
-#### 6.5.1. 強型別 (Strongly Typed)
+#### 7.5.1. 強型別 (Strongly Typed)
 
 -   不允許隱式類型轉換，類型檢查嚴格。
 -   Python、java 屬於強行別
@@ -293,7 +295,7 @@ print(a + b)  # ❌ TypeError: can only concatenate str (not "int") to str
 print(int(a) + b)  # ✅ 正確輸出 15
 ```
 
-#### 6.5.2. 若型別 (Weakly Typed)
+#### 7.5.2. 若型別 (Weakly Typed)
 
 -   變數的型別可以根據上下文自動轉換（自動類型提升）。
 -   允許隱式轉換（例如：字串變數可以與數字變數相加）。
@@ -309,7 +311,7 @@ console.log(a - b); // ✅ 5 (JavaScript 自動把 "10" 轉成數字)
 console.log(a * b); // ✅ 50 (JavaScript 自動把 "10" 轉成數字)
 ```
 
-#### 6.5.3. C 語言是強型別還是弱型別
+#### 7.5.3. C 語言是強型別還是弱型別
 
 -   C 語言是一種「靜態型別 (Statically Typed)」且「強型別 (Strongly Typed)」的語言，但允許某些隱式轉換 (Implicit Conversion)。
 -   不允許直接改變變數類型
@@ -350,15 +352,15 @@ int main() {
 }
 ```
 
-## 7. 運算
+## 8. 運算
 
 -   [交換兩個變數的值](./Operation/swao01.c)
 
 <!-- -   [總金額轉硬幣](./Operation/calculate_change.c)   -->
 
-## 8. 輸入輸出
+## 9. 輸入輸出
 
-### 8.1. printf
+### 9.1. printf
 
 ```c
 // 基本語法
@@ -367,7 +369,7 @@ int printf(const char *format, ...);
 // ... 是要輸出的變數列表
 ```
 
-### 8.2. scanf
+### 9.2. scanf
 
 ```c
 // 基本語法
@@ -386,7 +388,7 @@ printf("你輸入的整數是: %d\n", num);
 
 -   格式化輸出到標準輸出（通常是屏幕）
 
-### 8.3. fgets
+### 9.3. fgets
 
 ```c
 // 基本語法
@@ -404,7 +406,7 @@ fgets(str, sizeof(str), stdin);
 printf("你輸入的文字是: %s", str);
 ```
 
-### 8.4. puts
+### 9.4. puts
 
 ```c
 int puts(const char *str);
@@ -418,9 +420,9 @@ puts("Hello, World!");
 -   比 printf 簡單，適合輸出純文本
 -   輸出字串並自動換行
 
-## 9. flow control
+## 10. flow control
 
-### 9.1. 判斷式
+### 10.1. 判斷式
 
 -   選擇結構(Selection Statements)
     -   if
@@ -434,7 +436,7 @@ puts("Hello, World!");
 -   [閏年判斷](./Flow%20Control/leap_year.c)
 -   [四則運算](./Flow%20Control/four_arithmetic_operation.c)
 
-### 9.2. 迴圈
+### 10.2. 迴圈
 
 ![image](https://cdn.discordapp.com/attachments/1286741860538122281/1332351648785240145/image.jpg?ex=6794f0aa&is=67939f2a&hm=e7fe7b2d31924bfa30811e0988710f4e35005915844b008f15b32a061fb88a19&)
 
@@ -443,7 +445,7 @@ puts("Hello, World!");
 -   [模擬長除法](./Flow%20Control/long_division.c)
 -   [檢查 11 的倍數](./Flow%20Control/check_multiples_of_11.c)
 
-### 9.3. break
+### 10.3. break
 
 -   立即退出 while、for、do while 或 switch 語句，繼續執行後續程式碼。
 -   跳出 switch 語句，避免執行後續的 case。
@@ -456,7 +458,7 @@ for (int i = 1; i <= 10; i++) {
 // 輸出：1 2 3 4
 ```
 
-### 9.4. continue
+### 10.4. continue
 
 -   跳過當前迴圈中的剩餘語句，進入下一次迭代。
 
@@ -468,11 +470,11 @@ for (int i = 1; i <= 5; i++) {
 // 輸出：1 2 4 5
 ```
 
-## 10. array
+## 11. array
 
 -   占有一塊連續的記憶體空間。
 
-### 10.1. initialization
+### 11.1. initialization
 
 ```c
 // 宣告空間
@@ -530,20 +532,20 @@ int arr[5] = {1,2}; //相當於{1,2,0,0,0}
     -   Function Definition 功能定義
     -   Function Calls 函數調用
 
-### Function Declarations
+### 12.1. Function Declarations
 
 ![upgit_20250318_1742264531.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250318_1742264531.png)
 
 -   In a function declaration, we must provide the function name, its return type, and the number and type of its parameters.
 -   A function declaration tells the compiler that there is a function with the given name defined somewhere else in the program.
 
-### Function Definition
+### 12.2. Function Definition
 
 ![upgit_20250318_1742264667.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250318_1742264667.png)
 
 -   The function definition consists of actual statements which are executed when the function is called (i.e. when the program control comes to the function).
 
-### Function Call
+### 12.3. Function Call
 
 ![upgit_20250318_1742264725.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250318_1742264725.png)
 
@@ -554,7 +556,7 @@ int arr[5] = {1,2}; //相當於{1,2,0,0,0}
 > -   A function declaration includes details like the function name, return type, and parameters.
 > -   A function definition includes the actual body of the function.
 
-### forward declaration?
+### 12.4. forward declaration?
 
 -   Sometimes, we define a function after its call to improve readability. In such cases, we declare the function before its definition and call. Such a declaration is called a forward declaration.
 
@@ -576,7 +578,7 @@ void sayHello() {
 
 ```
 
-### 12.1. 參數傳遞(Function Arguments)
+### 12.5. 參數傳遞(Function Arguments)
 
 -   分為
     -   形式參數(formal parameter) => parameter
@@ -591,7 +593,7 @@ void sayHello() {
 
 -   [主程式與函數內的地址不同](./Function/main_program_function_address.c)
 
-#### Call by Value
+#### 12.5.1. Call by Value
 
 -   Call by value in C is where in the arguments we pass value and that value can be used in function for performing the operation.
 -   Values passed in the function are stored in temporary memory so the changes performed in the function don’t affect the actual value of the variable passed.
@@ -616,7 +618,7 @@ int main(){
 }
 ```
 
-#### Call by Reference
+#### 12.5.2. Call by Reference
 
 -   Call by reference is the method in C where we call the function with the passing address as arguments.
 -   We pass the address of the memory blocks which can be further stored in a pointer variable that can be used in the function.
@@ -642,25 +644,213 @@ int main(){
 }
 ```
 
-### 12.2. 陣列參數傳遞
+### 12.6. 陣列參數傳遞
 
 -   Can we return multiple values from a C function?
     -   No, it is generally not possible to return multiple values from a function. However, we can return multiple values using pointers, heap memory, or structures.
 -   陣列是以實際參數(actual parameter)的方式傳值
 -   [陣列參數傳遞](./Array/array_parameter_passing.c)
 
-### 12.3. 使用函數對陣列操作
+### 12.7. 使用函數對陣列操作
 
 -   因為陣列是實際參數，所以可以用函數的方式去對陣列操作
 -   [使用函數對陣列操作](./Function/operate_array_by_function.c)
 
-### 12.4. 其他練習
+### 12.8. 其他練習
 
 -   [陣列中找特定值](./Function/array_find_specific_value.c)
 -   [判斷是否為質數](./Function/is_prime01.c)
 -   [判斷是否為質數(優化)](./Function/is_prime02.c)
 -   [列出兩整數之間的質數](./Function/prime_betweeen_two_intergers.c)
 -   [檢查一個數字是否可以表示為兩個質數之和](./Function/check_sum_of_two_primes.c)
+
+## 13. recusion
+
+-   [遞迴費博那係數](./Recusion/fib.c)
+-   [實作最大公因數](./Recusion/gcd.c)
+-   [實作和內塔](./Recusion/hanoi.c)
+
+## 14. Pointers
+
+-   A pointer is a variable that stores the memory address of another variable
+-   Instead of holding a direct value, it holds the address where the value is stored in memory.
+
+-   Dereferencing operator(`*`) used to declare pointer variable and access the value stored in the address.
+-   Address operator(`&`) used to returns the address of a variable or to access the address of a variable to a pointer.
+
+```c
+// example
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+    int m = 100;
+    int *ptr = &m;
+
+    printf("The Value of Variable m is: %d\n", m);
+    printf("The Memory Address of Variable m is: %p\n", &m);
+    printf("The Memory Address of Variable m is using ptr: %p\n", ptr);
+    return 0;
+}
+
+
+// The Memory Address of Variable m is: 0x7ffffcc14
+// The Memory Address of Variable m is using ptr: 0x7ffffcc14
+```
+
+```c
+// example
+#include <stdio.h>
+
+int main() {
+
+    int a = 10;
+    int * ptr;
+    ptr = &a;
+
+    printf("ptr = %p\n", ptr);
+    printf("*ptr = %d", *ptr);
+    return 0;
+}
+
+// ptr = 0x7ffffcc14
+// *ptr = 10
+```
+
+-   C 語言中的指標可以分為許多不同的類型，具體取決於它所指向的數據
+-   [宣告指標變數](./Pointer/declare_pointer_variable.c)
+-   [查看指標大小](./Pointer/pointer_size.c)
+
+### 14.1. 宣告指標變數
+
+-   無法變更指標所指向的 data type
+
+```c
+// TODO: 宣告方式
+int *x;
+int *x, *y;
+int *y=NULL;
+float *fptr;
+double *dptr;
+```
+
+### 14.2. Integer Pointers
+
+-   指向整數值的指標
+-   [指標交換變數值](./Pointer/swap_value_by_pointer.c)
+
+### 14.3. Function Pointers
+
+-   [使用函數指標](./Pointer/funtion_pointer.c)
+-   [將指標作為回傳值](./Pointer/using_pointer_as_return.c)
+
+### 14.4. Array Pointer
+
+-   指向陣列的指標是指向整個陣列而不是陣列的第一個元素的指標。它將整個陣列視為單個單元，而不是給定元素的集合。
+
+```c
+#include<stdio.h>
+
+int main() {
+    int arr[5] = { 1, 2, 3, 4, 5 };
+    int *ptr = arr;
+
+    printf("%p\n", ptr);
+    return 0;
+}
+```
+
+```c
+#include <stdio.h>
+
+int main() {
+    int arr[5] = { 1, 2, 3, 4, 5 };
+    int *ptr = arr;
+    for (int i = 0; i < 5; i++){
+        printf("%d ", ptr[i]);
+    }
+    return 0;
+}
+// 1 2 3 4 5
+```
+
+```
+*(ptr + i)：取的陣列內容的值
+    ptr 是指向陣列第一個元素的指標
+    ptr + i 會移動到第 i 個元素的記憶體位置。
+    *(ptr + i) 會解引用該位置，取得該元素的值。
+
+ptr[i]：取的陣列內容的值
+    是*(ptr + i) 的語法糖，
+    編譯器會自動將 ptr[i] 轉換為 *(ptr + i)
+
+ptr + i：取的陣列內容的地址
+&ptr[i]：取的陣列內容的地址
+```
+
+-   [分別用陣列跟陣列指標傳遞，並印出值跟地址](./Pointer/array_pointer_func.c)
+-   [指標常數與陣列](.//Pointer/pointer_constants_arrays.c)
+-   [指標變數當陣列使用](./Pointer/using_pointer_variable_as_array.c)
+-   [指標操作二微陣列](./Pointer/array2D_pointer.c)
+
+### 14.5. Structure Pointer
+
+-   [基本操作 Structure Pointer](./Pointer/basic_structure_pointer.c)
+
+### 14.6. Double Pointers
+
+![upgit_20250319_1742372900.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250319_1742372900.png)
+
+-   we can define a pointer that stores the memory address of another pointer
+-   nstead of pointing to a data value, they point to another pointer.
+-   [雙重指標](./Pointer/double_pointer.c)
+
+### 14.7. 指標運算
+
+![upgit_20250319_1742372958.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250319_1742372958.png)
+
+-   [指針上下移動](./Pointer/pointer_increment_decrement.c)
+-   [將陣列+3](./Pointer/array_add3_by_pointer.c)
+
+### 14.8. 基於 C 指標屋完成的作用
+
+-   Pass Arguments by Pointers => pass by address
+-   Accessing Array Elements
+-   Return Multiple Values from Function
+-   Dynamic Memory Allocation
+-   Implementing Data Structures
+
+### 14.9. 優點
+
+-   Pointers are used for dynamic memory allocation and deallocation.
+-   An Array or a structure can be accessed efficiently with pointers
+-   Pointers are useful for accessing memory locations.
+-   Pointers are used to form complex data structures such as linked lists, graphs, trees, etc.
+-   Pointers reduce the length of the program and its execution time as well.
+
+### 14.10. 缺點
+
+-   Memory corruption can occur if an incorrect value is provided to pointers.
+-   Pointers are a little bit complex to understand.
+-   Pointers are majorly responsible for memory leaks in C.
+-   Uninitialized pointers might cause a segmentation fault.
+
+## 15. 參考(reference) (CPP 才有)
+
+-   reference 就是一種別名(alias)
+-   一個變數可以有很多 reference
+-   [reference 示範](./Reference/reference_size.cpp)
+-   [reference 指定](./Reference/ref_init_assign.cpp)：reference 直接代表另一個變數，因此也可以直接作使用。
+
+### 15.1. reference 傳遞
+
+-   [使用參考跑 fof](./Reference/sum_ranged_for.cpp)
+-   [使用指標傳遞參數](./Reference/swap_by_pointer.cpp)
+-   [使用參考傳遞參數](./Reference/swap_by_reference.cpp)
+-   [指標作為參數傳遞的過程](./Reference/pointer_parameter.cpp)
+-   [指標參考作為參數傳遞的過程](./Reference/reference_parameter.cpp)
+-   [參考作為 return](./Reference/reference_return.cpp)
 
 ---
 

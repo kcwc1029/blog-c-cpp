@@ -142,28 +142,23 @@
 -   查看使否為 3 的次方
 -   [326.Power of Three](./LeetCode/Math/326.power-of-three.cpp)
 
-### 3.9. 342.Power of Four
-
--   解法 1：查看使否為 1 的次方
--   解法 2： 檢查是否為 4 的次方=>檢查開跟號後是否為 2 的次方
--   [342.Power of Four](./LeetCode/Math/342.power-of-four.cpp)
-
-### 3.10. 367.Valid Perfect Square
+### 3.9. 367.Valid Perfect Square
 
 -   判斷是否為完全平方數
 -   解法 1：先開根號，在平方，看是否一樣。
 -   解法 2：二分去找(純屬裝牛 B)
 -   [367.Valid Perfect Square](./LeetCode/Math/367.valid-perfect-square.cpp)
 
-### 3.11. 405.Convert a Number to Hexadecimal
+### 3.10. 405.Convert a Number to Hexadecimal
 
 -   十進位轉十六近位(不准用函數)。
 
 ![upgit_20241201_1733048505.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241201_1733048505.png)
 
 -   [405.Convert a Number to Hexadecimal](./LeetCode/Math/405.convert-a-number-to-hexadecimal.cpp)
+-   [405.Convert a Number to Hexadecimal by C](./LeetCode/Math/405.convert-a-number-to-hexadecimal.c)
 
-### 3.12. 441.Arranging Coins
+### 3.11. 441.Arranging Coins
 
 -   解法 1：二分
 -   我們可以知道公式
@@ -180,7 +175,7 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 
 -   [441.Arranging Coins](./LeetCode/Math/441.arranging-coins.cpp)
 
-### 3.13. 492.Construct the Rectangle
+### 3.12. 492.Construct the Rectangle
 
 -   給一個面積，返回長寬值，其中 - 寬度<=長度
 
@@ -188,11 +183,11 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 
 -   [492.Construct the Rectangle](./LeetCode/Math/492.construct-the-rectangle.cpp)
 
-### 3.14. 504.Base 7
+### 3.13. 504.Base 7
 
 -   [504.Base 7](./LeetCode/Math/504.base-7.cpp)
 
-### 3.15. 628.Maximum Product of Three Numbers
+### 3.14. 628.Maximum Product of Three Numbers
 
 -   返回數組中最大 3 個數的乘機。
 -   解法 1：排序
@@ -201,12 +196,8 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 ## 4. Bit Manipulatio
 
 ```
-lab01
-67 190 191
-136 137 260
-
 lab02
-211 342 268 338 389
+231 211 342 268 338 389
 401 405
 
 lab03
@@ -220,27 +211,46 @@ lab04
 
 ```
 
-### 4.1. 67.Add Binary
+### 4.1. 位元操作：n & (-n) 跟 n & (n-)
+
+-   n & (-n)：保留最低位的 1，其它清零 => 取出最低位的 1
+
+```
+n =  0b1100 (12)
+-n = 0b0100 (取補數+1)
+-----------------------
+n & -n = 0b0100 (4)
+```
+
+-   n & (n-1)：消除最低位的 1 => 把 `n` 的 最低位的 1 變成 0，其它位元保持不變。
+
+```
+n =  0b1100 (12)
+n-1= 0b1011 (11)
+-----------------------
+n&(n-1)= 0b1000 (8)
+```
+
+### 4.2. 67.Add Binary
 
 ![upgit_20250313_1741843203.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250313_1741843203.png)
 
 -   [67.Add Binary](./LeetCode/Bit%20Manipulatio/67.add-binary.cpp)
 
-### 4.2. 190.Reverse Bits
+### 4.3. 190.Reverse Bits
 
 ![upgit_20250313_1741844116.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250313_1741844116.png)
 
 -   [190.Reverse Bits](./LeetCode/Bit%20Manipulatio/190.reverse-bits.cpp)
 -   [190.Reverse Bits by C](./LeetCode/Bit%20Manipulatio/190.reverse-bits.c)
 
-### 4.3. 191.Number of 1 Bits
+### 4.4. 191.Number of 1 Bits
 
 -   先轉乘二進位，在計算幾個 1
 -   [191.Number of 1 Bits](./LeetCode/Bit%20Manipulatio/191.number-of-1-bits.cpp)
 -   [191.Number of 1 Bits by C](./LeetCode/Bit%20Manipulatio/191.number-of-1-bits.c)
 
-
-### 4.4. 136.Single Number
+### 4.5. 136.Single Number
 
 -   只有一個數出現 1 次，其他都出現 2 次。
 -   阿...這一題他是要找唯一一個的時候，有很多種解法拉(map、排序...)
@@ -251,9 +261,7 @@ lab04
 
 ![upgit_20250314_1741941133.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250314_1741941133.png)
 
-
-
-### 4.5. 137.Si1ngle Number II
+### 4.6. 137.Si1ngle Number II
 
 -   只有一個數出現 1 次，其他都出現 3 次。
 -   解法 1：用 map 紀錄次數。
@@ -263,35 +271,46 @@ lab04
 
 -   [137.Single Number II](./LeetCode/Bit%20Manipulatio/137.single-number-ii.cpp)
 
-### 4.6. 260.Single Number III
+### 4.7. 260.Single Number III
 
 -   兩個數出現 1 次，其他都出現 2 次。
 -   [260.Single Number III](./LeetCode/Bit%20Manipulatio/260.single-number-iii.cpp)
 
 ![upgit_20250314_1741941150.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250314_1741941150.png)
 
-
-### 4.7. 268.Missing Number
-
-![upgit_20241110_1731240936.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241110_1731240936.png)
-
--   [268.Missing Number](./LeetCode/Bit%20Manipulatio/268.missing-number.cpp)
-
 ### 4.8. 231.Power of Two
 
--   解法 1：用乘法的方式
--   解法 2：用除法的方式
--   解法 3：利用 n&(-n)取得最低位元 1，再去 XOR 檢查
+![upgit_20250321_1742563504.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250321_1742563504.png)
 
-![upgit_20241121_1732193850.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241121_1732193850.png)
+-   題目要檢查，是否滿足`-231 <= n <= 231 - 1`
+-   開平方嘛，所以就是檢查 1-2^32 這樣
+-   解法 1：用乘法的方式，for 迴圈檢查 1-32，每個都去乘乘看
+-   解法 2：用除法的方式
+-   解法 3：利用 n&(-n)取得最低位元 1，再去 XOR 檢查 => 判斷 2 的幕方
 
 -   [231.Power of Two](./LeetCode/Bit%20Manipulatio/231.power-of-two.cpp)
+-   [231.Power of Two by C](./LeetCode/Bit%20Manipulatio/231.power-of-two.c)
 
-### 4.9. 389.Find the Difference
+### 4.9. 342.Power of Four
+
+-   解法 1：用除法的方式
+-   解法 2： 檢查是否為 4 的次方=>檢查開跟號後是否為 2 的次方
+-   [342.Power of Four](./LeetCode/Math/342.power-of-four.cpp)
+-   [342.Power of Four by C](./LeetCode/Math/342.power-of-four.c)
+
+### 4.10. 268.Missing Number
+
+![upgit_20250322_1742573954.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250322_1742573954.png)
+
+-   [268.Missing Number](./LeetCode/Bit%20Manipulatio/268.missing-number.cpp)
+-   [268.Missing Number by C](./LeetCode/Bit%20Manipulatio/268.missing-number.c)
+
+### 4.11. 389.Find the Difference
 
 -   [389.Find the Difference](./LeetCode/Bit%20Manipulatio/389.find-the-difference.cpp)
+-   [389.Find the Difference by C](./LeetCode/Bit%20Manipulatio/389.find-the-difference.c)
 
-### 4.10. 338.Counting Bits
+### 4.12. 338.Counting Bits
 
 -   計算範圍內，每個數(二進位)1 的數量。
 -   解法 1：就乖乖一個一個去數
@@ -305,15 +324,18 @@ lab04
 
 -   [338.Counting Bits](./LeetCode/Bit%20Manipulatio/338.counting-bits.cpp)
 
-### 4.11. 401.Binary Watch
+### 4.13. 401.Binary Watch
 
 ![upgit_20241122_1732261033.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241122_1732261033.png)
 
 -   給你一個數字，他代表只能亮的燈數，阿你要返回所有可能
 -   他給的燈數，代表說你要去計算【每個時間點，他轉成二進位後的 1 的各數】(就代表說，亮幾個燈)
+-   使用雙重迴圈，外迴圈跑 1-12(表示小時)，內迴圈跑 1-60(表示分鐘) => 去遍歷所有時間可能性
+-   將【小時】跟【分鐘】各自轉乘二進至，最後看總共用幾個 1
 -   [401.Binary Watch](./LeetCode/Bit%20Manipulatio/401.binary-watch.cpp)
+-   [401.Binary Watch by C](./LeetCode/Bit%20Manipulatio/401.binary-watch.c)
 
-### 4.12. 461.Hamming Distance
+### 4.14. 461.Hamming Distance
 
 -   漢明距離：兩個數值轉二進位後，两个数字在二进制表示中有多少位是不同的。
 
@@ -323,7 +345,7 @@ lab04
 
 -   [461.Hamming Distance](./LeetCode/Bit%20Manipulatio/461.hamming-distance.cpp)
 
-### 4.13. 476.Number Complement
+### 4.15. 476.Number Complement
 
 -   10 轉反(但不+1)
 -   解法 1：模擬(這一題的難度是，你不知道他的最高位到哪裡，所以要先用遮罩做出來)。
@@ -332,7 +354,7 @@ lab04
 
 -   [476.Number Complement](./LeetCode/Bit%20Manipulatio/476.number-complement.cpp)
 
-### 4.14. 645.Set Mismatch
+### 4.16. 645.Set Mismatch
 
 ![upgit_20241122_1732265777.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241122_1732265777.png)
 
@@ -342,27 +364,27 @@ lab04
     -   丟失的數字：若 curr - prev > 1，表示中間缺少一個數字，應記錄為丟失數字 prev + 1。
 -   [645.Set Mismatch](./LeetCode/Bit%20Manipulatio/645.set-mismatch.cpp)
 
-### 4.15. 693.Binary Number with Alternating Bits
+### 4.17. 693.Binary Number with Alternating Bits
 
 -   轉二進制後查看是否 10 交替出現
 -   解法 1：模擬
 -   解法 2：位運算
 -   [693.Binary Number with Alternating Bits](./LeetCode/Bit%20Manipulatio/693.binary-number-with-alternating-bits.cpp)
 
-### 4.16. 762.Prime Number of Set Bits in Binary Representation
+### 4.18. 762.Prime Number of Set Bits in Binary Representation
 
 -   題目給一個範圍，範圍中的每一個數值轉二進位後，去數 1 的個數。
 -   返回【1 的個數為質數】的數量
 -   [762.Prime Number of Set Bits in Binary Representation](./LeetCode/Bit%20Manipulatio/762.prime-number-of-set-bits-in-binary-representation.cpp)
 
-### 4.17. 832.Flipping an Image
+### 4.19. 832.Flipping an Image
 
 -   題目要求：左右翻轉，再 10 反轉
 -   解法 1：就先按照題目要求，
 -   解法 2：優化至一個迴圈
 -   [832.Flipping an Image](./LeetCode/Bit%20Manipulatio/832.flipping-an-image.cpp)
 
-### 4.18. 868.Binary Gap
+### 4.20. 868.Binary Gap
 
 -   給一個整數，把她轉二近制後，返回相鄰兩個 1 之間的最長距離。
 -   取 1 的部分，可以用 AND1=>應該就是右移跟 AND1 的解法。
@@ -371,7 +393,7 @@ lab04
 
 -   [868.Binary Gap](./LeetCode/Bit%20Manipulatio/868.binary-gap.cpp)
 
-### 4.19. 29.Divide Two Integers
+### 4.21. 29.Divide Two Integers
 
 ![upgit_20241214_1734160683.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241214_1734160683.png)
 
@@ -496,6 +518,7 @@ step2：arr[i][i] = arr[i][i-1] + arr[i-1][i-1]
 -   解法 1：額外開一個空間，兩兩比較，然後再把值丟到新的 arr。
 -   解法 2：進行優化。在 num1 排就好啦~
 -   [88.Merge Sorted Array](./LeetCode/Two%20Pointer/88.merge-sorted-array.cpp)
+-   [88.Merge Sorted Array by C](./LeetCode/Two%20Pointer/88.merge-sorted-array.c)
 
 ### 6.6. 125.Valid Palindrome
 
