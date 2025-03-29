@@ -196,13 +196,8 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 ## 4. Bit Manipulatio
 
 ```
-lab02
-231 211 342 268 338 389
-401 405
 
-lab03
-461 477 476 693 762
-832 868
+
 
 lab04
 1009 1018 1342 1356 1486
@@ -258,6 +253,7 @@ n&(n-1)= 0b1000 (8)
 -   解法 2：map
 -   解法 3：XOR
 -   [136.Single Number](./LeetCode/Bit%20Manipulatio/136.single-number.cpp)
+-   [136.Single Number by C](./LeetCode/Bit%20Manipulatio/136.single-number.c)
 
 ![upgit_20250314_1741941133.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250314_1741941133.png)
 
@@ -275,6 +271,7 @@ n&(n-1)= 0b1000 (8)
 
 -   兩個數出現 1 次，其他都出現 2 次。
 -   [260.Single Number III](./LeetCode/Bit%20Manipulatio/260.single-number-iii.cpp)
+-   [260.Single Number III by C](./LeetCode/Bit%20Manipulatio/260.single-number-iii.c)
 
 ![upgit_20250314_1741941150.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250314_1741941150.png)
 
@@ -312,17 +309,14 @@ n&(n-1)= 0b1000 (8)
 
 ### 4.12. 338.Counting Bits
 
+![upgit_20250328_1743163162.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250328_1743163162.png)
+
 -   計算範圍內，每個數(二進位)1 的數量。
 -   解法 1：就乖乖一個一個去數
 -   解法 2：Brian Kernighan 演算法(針對解法 1 進行優化)
-
-![upgit_20241121_1732191249.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241121_1732191249.png)
-
 -   解法 3：DP
-
-![upgit_20241121_1732192960.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241121_1732192960.png)
-
 -   [338.Counting Bits](./LeetCode/Bit%20Manipulatio/338.counting-bits.cpp)
+-   [338.Counting Bits by C](./LeetCode/Bit%20Manipulatio/338.counting-bits.c)
 
 ### 4.13. 401.Binary Watch
 
@@ -334,8 +328,6 @@ n&(n-1)= 0b1000 (8)
 -   將【小時】跟【分鐘】各自轉乘二進至，最後看總共用幾個 1
 -   [401.Binary Watch](./LeetCode/Bit%20Manipulatio/401.binary-watch.cpp)
 -   [401.Binary Watch by C](./LeetCode/Bit%20Manipulatio/401.binary-watch.c)
-
-
 
 ### 4.14. 461.Hamming Distance
 
@@ -350,11 +342,12 @@ n&(n-1)= 0b1000 (8)
 ### 4.15. 476.Number Complement
 
 -   10 轉反(但不+1)
--   解法 1：模擬(這一題的難度是，你不知道他的最高位到哪裡，所以要先用遮罩做出來)。
+-   模擬(這一題的難度是，你不知道他的最高位到哪裡，所以要先用遮罩做出來)。
 
-![upgit_20241122_1732264090.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241122_1732264090.png)
+![upgit_20250329_1743224601.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250329_1743224601.png)
 
 -   [476.Number Complement](./LeetCode/Bit%20Manipulatio/476.number-complement.cpp)
+-   [476.Number Complement by C](./LeetCode/Bit%20Manipulatio/476.number-complement.c)
 
 ### 4.16. 645.Set Mismatch
 
@@ -368,16 +361,20 @@ n&(n-1)= 0b1000 (8)
 
 ### 4.17. 693.Binary Number with Alternating Bits
 
+![upgit_20250329_1743226315.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250329_1743226315.png)
+
 -   轉二進制後查看是否 10 交替出現
 -   解法 1：模擬
 -   解法 2：位運算
 -   [693.Binary Number with Alternating Bits](./LeetCode/Bit%20Manipulatio/693.binary-number-with-alternating-bits.cpp)
+-   [693.Binary Number with Alternating Bits by C](./LeetCode/Bit%20Manipulatio/693.binary-number-with-alternating-bits.c)
 
 ### 4.18. 762.Prime Number of Set Bits in Binary Representation
 
 -   題目給一個範圍，範圍中的每一個數值轉二進位後，去數 1 的個數。
 -   返回【1 的個數為質數】的數量
 -   [762.Prime Number of Set Bits in Binary Representation](./LeetCode/Bit%20Manipulatio/762.prime-number-of-set-bits-in-binary-representation.cpp)
+-   [762.Prime Number of Set Bits in Binary Representation by C](./LeetCode/Bit%20Manipulatio/762.prime-number-of-set-bits-in-binary-representation.c)
 
 ### 4.19. 832.Flipping an Image
 

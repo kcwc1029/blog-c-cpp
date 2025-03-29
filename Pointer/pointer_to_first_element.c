@@ -2,8 +2,8 @@
 
 int main() {
     int arr[5] = {1, 2, 3, 4, 5};
-    int *p1;
-    int(*p2)[5];
+    int *p1; // 指向單一整數（arr[0]）
+    int(*p2)[5]; // 指向整個陣列（arr）
 
     p1 = arr;
     p2 = &arr;
@@ -17,15 +17,3 @@ int main() {
   	printf("*p2 = %p", p2);
     return 0;
 }
-
-// p1 = 0x7ffffcbf0
-// *p2 = 0x7ffffcbf0
-
-// p1 = 0x7ffffcbf4
-// *p2 = 0x7ffffcc04
-
-
-
-/**
- * 
- */

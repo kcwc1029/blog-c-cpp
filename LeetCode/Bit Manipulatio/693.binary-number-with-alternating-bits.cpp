@@ -2,14 +2,12 @@
 class Solution {
     public:
         bool hasAlternatingBits(int n) {
-            int prev=-1; // 紀錄前一位是1還是0
-            int cur; // 當下的值
+            int check = -1;
             while(n){
-                cur = n%2;
-                if(cur == prev) return false; // 檢查
-                // 為下一輪作處裡
-                prev = cur;
-                n/=2;
+                int temp = n&1;
+                if(check==temp) return false;
+                check=temp;
+                n>>=1;
             }
             return true;
         }

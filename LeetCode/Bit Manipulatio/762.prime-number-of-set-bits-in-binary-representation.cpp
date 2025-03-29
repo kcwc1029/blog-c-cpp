@@ -1,15 +1,18 @@
 class Solution {
     public:
         // TODO: 判斷質數
-        bool isPrime(int n) {
-            if (n <= 1) return false; // 1 和小於 1 的數不是質數
-            if (n == 2 || n == 3) return true; // 2 和 3 是質數
-            if (n % 2 == 0 || n % 3 == 0) return false; // 排除能被 2 或 3 整除的數
-    
-            for (int i = 5; i * i <= n; i += 6) { // 減少檢查次數，跳過偶數
-                if (n % i == 0 || n % (i + 2) == 0) return false;
+        vector<bool> isPrime_table(int n){
+            vector<bool> isPrime(n + 1, true);  // 全部初始化為 true
+            isPrime[0] = false;
+            isPrime[1] = false;
+            for (int i = 2; i * i <= n; i++) {
+                if (isPrime[i]) {
+                    for (int j = i * i; j <= n; j += i) {
+                        isPrime[j] = false;
+                    }
+                }
             }
-            return true;
+            return isPrime;
         }
     
         // TODO: 計算1的個數
@@ -21,13 +24,16 @@ class Solution {
             }
             return count;
         }
-    
+        
+        // TODO: 主函數
         int countPrimeSetBits(int left, int right) {
+            vector<bool> prime = isPrime_table(right);
             int ans = 0;
             for(int i=left;i<right+1;i++){
-                if(isPrime(countOnes(i))) ans++;
+    
+                if(prime[countOnes(i)]) ans++;
             }
             return ans;
-    
+            
         }
     };
