@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "成大工科 程式設計.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "成大工科 程式設計"
+              "title": "README"
             }
           }
         ]
@@ -138,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "成大工科 程式設計.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "成大工科 程式設計 的大綱"
+              "title": "README 的大綱"
             }
           }
         ],
@@ -166,7 +166,14 @@
   },
   "active": "73636ed7913633f9",
   "lastOpenFiles": [
+    "README_hidden.md",
     "README.md",
+    "LeetCode清單.md",
+    "未閱讀/Clockwise_Spiral Rule.html",
+    "未閱讀/C語言觀念題目整理分享版.pdf",
+    "未閱讀",
+    "新增資料夾",
+    "成大工科 程式設計.md",
     "temp.md",
     "Pointer/null_linked_list.c",
     "Pointer/null_malloc_check.c",
@@ -174,13 +181,6 @@
     "Pointer/pointer_assignment.c",
     "Pointer/string_array_function.c",
     "Pointer/dynamic_2d_array.c",
-    "Pointer/function_pointer_array.c",
-    "Pointer/function_pointer_callback.c",
-    "Pointer/function_pointer_null.c",
-    "Pointer/function_pointer_basic_example.c",
-    "LeetCode清單.md",
-    "成大工科 程式設計.md",
-    "README_hidden.md",
     "作業系統/作業系統.md",
     "計算機結構組織/計算機結構.md",
     "STM32/Foundation course on Embedded C programming using STM32 Microcontroller/Embedded-C/README.md",
@@ -201,7 +201,6 @@
     "c++/【01 Introduction to C Programming】.md",
     "c++/(補充)自己寫的/01資料A型態、變數、常數.md",
     "STM32/ARM Cortex/README.md",
-    "c sharp/README.md",
     "D1mini(ESP8266)/MP32410_examples/ch05/temp/ball0.jpg",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/@vue/cli-service/generator/template/src/assets/logo.png",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_world.png",

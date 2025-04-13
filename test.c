@@ -1,31 +1,12 @@
-#include <stdio.h>
+unsigned int seed;
 
-int main() {
-    int arr[5] = {1, 2, 3, 4, 5};
-    int *p1;
-    int(*p2)[5];
-
-    p1 = arr;
-    p2 = &arr;
-  
-  	printf("p1 = %p\n", p1);
-  	printf("*p2 = %p\n\n", *p2);
-
-    p1++;
-    p2++;
-    printf("p1 = %p\n", p1);
-  	printf("*p2 = %p", p2);
-    return 0;
+// initialize the random seed
+void my_srand(unsigned int s) {
+    seed = s;
 }
 
-// p1 = 0x7ffffcbf0
-// *p2 = 0x7ffffcbf0
-
-// p1 = 0x7ffffcbf4
-// *p2 = 0x7ffffcc04
-
-
-
-/**
- * 
- */
+// generate random numbers
+int rand() {
+    seed = seed * 1103515245 + 12345;
+    return (seed / 65536) % 32768;
+}
