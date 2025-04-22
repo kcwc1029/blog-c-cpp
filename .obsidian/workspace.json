@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "LeetCode清單.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "LeetCode清單"
             }
           }
         ]
@@ -138,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "LeetCode清單.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大綱"
+              "title": "LeetCode清單 的大綱"
             }
           }
         ],
@@ -166,8 +166,13 @@
   },
   "active": "73636ed7913633f9",
   "lastOpenFiles": [
-    "README_hidden.md",
+    "變數.md",
+    "Header_File.md",
+    "第一支C程式.md",
+    "C_BUG.md",
+    "建立編譯環境.md",
     "README.md",
+    "README_hidden.md",
     "LeetCode清單.md",
     "未閱讀/Clockwise_Spiral Rule.html",
     "未閱讀/C語言觀念題目整理分享版.pdf",
@@ -197,10 +202,6 @@
     "c++/C Programming For Beginners/c(正確).md",
     "c++/【全部整理】.md",
     "c++/【00全部整理】.md",
-    "c++/(補充)自己寫的/運算式、運算子、if、while.md",
-    "c++/【01 Introduction to C Programming】.md",
-    "c++/(補充)自己寫的/01資料A型態、變數、常數.md",
-    "STM32/ARM Cortex/README.md",
     "D1mini(ESP8266)/MP32410_examples/ch05/temp/ball0.jpg",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/@vue/cli-service/generator/template/src/assets/logo.png",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_world.png",

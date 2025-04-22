@@ -936,6 +936,14 @@ void backtracking(参数) {
 -   [47.Permutations II](./LeetCode/Backtracking/47.permutations-ii.cpp)
 
 ## 15. linked-list
+```
+簡單
+67 83 141 160 203 206 234 876
+(我自己還沒做)705 706 3507 1290
+
+中等-簡單
+24 86 109 114 116 117 138 147 237 382 445 1669 2130 2181
+```
 
 ### 15.1. 2.Add Two Numbers
 
