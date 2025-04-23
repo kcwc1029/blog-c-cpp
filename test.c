@@ -1,36 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
 
-int main() {
-    int m = 2, n = 3;
+struct student {
+    char name[10];
+    char id[20];
+    char phone[20];
+    float grade[4]; // 16
+    int birthYear, birthMonth, birthDay; // 12
+};
 
-    // 分配 m 個指向 int* 的指針（行）
-    int **arr = (int**)malloc(m * sizeof(int*));
-
-    // 為每行分配 n 個 int（列）
-    for (int i = 0; i < m; i++) {
-        arr[i] = (int*)malloc(n * sizeof(int));
-    }
-
-    // 初始化陣列
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-            arr[i][j] = i * n + j + 1;
-        }
-    }
-
-    // 輸出陣列
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-            printf("%d ", arr[i][j]);
-        }
-        printf("\n");
-    }
-
-    // 釋放記憶體
-    free(arr);
+int main(void){
+    struct student john = {
+        "John Smith",
+        "12345",
+        "1234567",
+        {4.0, 3.9, 3.8, 3.6},
+        2000, 1, 1
+    };
+    printf("name is %s\n", john.name);
+    printf("id is %s\n", john.id);
+    printf("phone is %s\n", john.phone);
+    printf("john.grade[0] is %f\n", john.grade[0]);
     return 0;
 }
 
-// 1 2 3 
-// 4 5 6
+// name is John Smith12345
+// id is 12345
+// phone is 1234567
+// john.grade[0] is 4.000000

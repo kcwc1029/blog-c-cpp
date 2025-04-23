@@ -21,38 +21,9 @@
 -   [static 與 extern](./static與extern.md)
 -   [遞迴](./遞迴.md)
 -   [指標](./指標.md)
+-   [結構](./結構.md)
 
 ## 4. 結構(structuure)
-
--   一名學生有以下資料：
-    -   name：string
-    -   student ID：string
-    -   phone：string
-    -   各學期平均成績：float[]
-    -   birth：3 個 int
-
-```c
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdint.h>
-
-struct student {
-    char name[10];
-    char id[20];
-    char phone[20];
-    float grade[4]; // 16
-    int birthYear, birthMonth, birthDay; // 12
-};
-
-int main(void){
-    struct student john;
-    printf("sizeof(john) = %ld\n", sizeof(john));
-    return 0;
-}
-```
-
-### 4.1. [結構初始化](./Structure/struct_init.c)
 
 ### 4.2. 結構指標
 
