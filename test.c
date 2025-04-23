@@ -1,12 +1,36 @@
-unsigned int seed;
+#include <stdio.h>
+#include <stdlib.h>
 
-// initialize the random seed
-void my_srand(unsigned int s) {
-    seed = s;
+int main() {
+    int m = 2, n = 3;
+
+    // 分配 m 個指向 int* 的指針（行）
+    int **arr = (int**)malloc(m * sizeof(int*));
+
+    // 為每行分配 n 個 int（列）
+    for (int i = 0; i < m; i++) {
+        arr[i] = (int*)malloc(n * sizeof(int));
+    }
+
+    // 初始化陣列
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            arr[i][j] = i * n + j + 1;
+        }
+    }
+
+    // 輸出陣列
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+
+    // 釋放記憶體
+    free(arr);
+    return 0;
 }
 
-// generate random numbers
-int rand() {
-    seed = seed * 1103515245 + 12345;
-    return (seed / 65536) % 32768;
-}
+// 1 2 3 
+// 4 5 6

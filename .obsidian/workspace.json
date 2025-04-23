@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "dc5f04b78ba5c392",
+        "id": "adceacd5766e4ac5",
         "type": "tabs",
         "children": [
           {
-            "id": "73636ed7913633f9",
+            "id": "a5feb149fc626368",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LeetCode清單.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "LeetCode清單"
+              "title": "新分頁"
             }
           }
         ]
@@ -126,7 +122,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "標籤"
@@ -138,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LeetCode清單.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LeetCode清單 的大綱"
+              "title": "大綱"
             }
           }
         ],
@@ -164,16 +161,28 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "73636ed7913633f9",
+  "active": "a5feb149fc626368",
   "lastOpenFiles": [
+    "指標.md",
+    "test.c",
+    "test_temp copy.c",
+    "test_temp.c",
+    "README.md",
+    "LeetCode清單.md",
+    "遞迴.md",
+    "運算.md",
+    "迴圈.md",
+    "輸入輸出.md",
+    "判斷式.md",
+    "函數.md",
+    "static與extern.md",
+    "Array.md",
     "變數.md",
     "Header_File.md",
     "第一支C程式.md",
     "C_BUG.md",
     "建立編譯環境.md",
-    "README.md",
     "README_hidden.md",
-    "LeetCode清單.md",
     "未閱讀/Clockwise_Spiral Rule.html",
     "未閱讀/C語言觀念題目整理分享版.pdf",
     "未閱讀",
@@ -183,25 +192,12 @@
     "Pointer/null_linked_list.c",
     "Pointer/null_malloc_check.c",
     "Pointer/null_init.c",
-    "Pointer/pointer_assignment.c",
-    "Pointer/string_array_function.c",
-    "Pointer/dynamic_2d_array.c",
     "作業系統/作業系統.md",
     "計算機結構組織/計算機結構.md",
     "STM32/Foundation course on Embedded C programming using STM32 Microcontroller/Embedded-C/README.md",
     "D1mini(ESP8266)/README.md",
     "c++/leetcode題目/數組.md",
     "C_Programming_Notes/README.md",
-    "C_Programming_Notes/C_Programming_Notes.md",
-    "c++/C_Programming_Notes.md",
-    "c++/leetcode題目/字串.md",
-    "c++/leetcode題目/位運算.md",
-    "c++/leetcode題目/數學.md",
-    "c++/leetcode題目/linked-list.md",
-    "c++/leetcode題目/stack.md",
-    "c++/C Programming For Beginners/c(正確).md",
-    "c++/【全部整理】.md",
-    "c++/【00全部整理】.md",
     "D1mini(ESP8266)/MP32410_examples/ch05/temp/ball0.jpg",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/@vue/cli-service/generator/template/src/assets/logo.png",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_world.png",
