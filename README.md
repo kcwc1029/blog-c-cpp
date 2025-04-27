@@ -16,36 +16,13 @@
 -   [運算](./運算.md)
 -   [判斷式](./判斷式.md)
 -   [迴圈](./迴圈.md)
--   [Array](./Array.md)
+-   [陣列](陣列.md)
 -   [函數](./函數.md)
 -   [static 與 extern](./static與extern.md)
 -   [遞迴](./遞迴.md)
 -   [指標](./指標.md)
+-   [常數(要放在指標後面)](./常數.md)
 -   [結構](./結構.md)
-
-## 4. 結構(structuure)
-
-### 4.2. 結構指標
-
--   按照正常想法，如果要在結構指標取值，需要先使用星號取整個結構的值，在用結構的語法 => \*(ptr).id
--   可以直接寫成 ptr->id
--   [結構指標](./Structure/struct_pointer.c)
-
--   [使用結構處理負數](./Structure/complex01.c)
--   [結構傳遞](./Structure/complex02.c)
-
-### 4.3. typedef
-
--   結構在初是化實，要寫兩個英文字母，typedef 可以把它節和在一起
--   [在結構中使用 typedef](./Structure/complex03.c)
-
-### 4.4. 結構標題檔
-
--   [可以把結構用標題檔儲存](./Structure/complex04.c)
-
-### 4.5. 在結構中使用結構
-
--   [在結構中使用結構](./Structure/student01.c)
 
 ## 17. 參考(reference) (CPP 才有)
 

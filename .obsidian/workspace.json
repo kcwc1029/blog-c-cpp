@@ -11,10 +11,14 @@
             "id": "a5feb149fc626368",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "函數.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新分頁"
+              "title": "函數"
             }
           }
         ]
@@ -136,12 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "函數.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大綱"
+              "title": "函數 的大綱"
             }
           }
         ],
@@ -163,7 +168,17 @@
   },
   "active": "a5feb149fc626368",
   "lastOpenFiles": [
+    "leetcode_刷題筆記.pdf",
+    "Array.md",
+    "陣列.md",
     "指標.md",
+    "常數.md",
+    "Structure/student01.c",
+    "test.exe",
+    "test.eze",
+    "test.txt",
+    "結構.md",
+    "test",
     "test.c",
     "test_temp copy.c",
     "test_temp.c",
@@ -176,7 +191,6 @@
     "判斷式.md",
     "函數.md",
     "static與extern.md",
-    "Array.md",
     "變數.md",
     "Header_File.md",
     "第一支C程式.md",
@@ -185,19 +199,11 @@
     "README_hidden.md",
     "未閱讀/Clockwise_Spiral Rule.html",
     "未閱讀/C語言觀念題目整理分享版.pdf",
-    "未閱讀",
-    "新增資料夾",
     "成大工科 程式設計.md",
     "temp.md",
-    "Pointer/null_linked_list.c",
-    "Pointer/null_malloc_check.c",
-    "Pointer/null_init.c",
     "作業系統/作業系統.md",
     "計算機結構組織/計算機結構.md",
     "STM32/Foundation course on Embedded C programming using STM32 Microcontroller/Embedded-C/README.md",
-    "D1mini(ESP8266)/README.md",
-    "c++/leetcode題目/數組.md",
-    "C_Programming_Notes/README.md",
     "D1mini(ESP8266)/MP32410_examples/ch05/temp/ball0.jpg",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/@vue/cli-service/generator/template/src/assets/logo.png",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_world.png",

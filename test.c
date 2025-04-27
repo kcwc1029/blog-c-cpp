@@ -1,32 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdint.h>
 
-struct student {
-    char name[10];
-    char id[20];
-    char phone[20];
-    float grade[4]; // 16
-    int birthYear, birthMonth, birthDay; // 12
-};
-
-int main(void){
-    struct student john = {
-        "John Smith",
-        "12345",
-        "1234567",
-        {4.0, 3.9, 3.8, 3.6},
-        2000, 1, 1
-    };
-    printf("name is %s\n", john.name);
-    printf("id is %s\n", john.id);
-    printf("phone is %s\n", john.phone);
-    printf("john.grade[0] is %f\n", john.grade[0]);
-    return 0;
+int sum(const int a[], const int n){
+    int total = 0;
+    for (int i = 0; i < n; i++)
+        // a[i]++; // 因為a[]設定為const，因此不能更動
+        total += a[i];
+    return total;
 }
 
-// name is John Smith12345
-// id is 12345
-// phone is 1234567
-// john.grade[0] is 4.000000
+#define ARRAYSIZE 5
+int main(void){
+    int array[ARRAYSIZE];
+    for (int i = 0; i < ARRAYSIZE; i++)
+        scanf("%d", &(array[i]));
+    printf("sum = %d\n", sum(array, ARRAYSIZE));
+    return 0;
+}
