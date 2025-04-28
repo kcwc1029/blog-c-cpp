@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "函數.md",
+                "file": "指標.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "函數"
+              "title": "指標"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "函數.md",
+                "file": "指標.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "函數 的大綱"
+              "title": "指標 的大綱"
             }
           }
         ],
@@ -168,6 +168,7 @@
   },
   "active": "a5feb149fc626368",
   "lastOpenFiles": [
+    "函數.md",
     "leetcode_刷題筆記.pdf",
     "Array.md",
     "陣列.md",
@@ -189,7 +190,6 @@
     "迴圈.md",
     "輸入輸出.md",
     "判斷式.md",
-    "函數.md",
     "static與extern.md",
     "變數.md",
     "Header_File.md",
@@ -198,7 +198,6 @@
     "建立編譯環境.md",
     "README_hidden.md",
     "未閱讀/Clockwise_Spiral Rule.html",
-    "未閱讀/C語言觀念題目整理分享版.pdf",
     "成大工科 程式設計.md",
     "temp.md",
     "作業系統/作業系統.md",
