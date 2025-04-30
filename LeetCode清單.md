@@ -936,6 +936,7 @@ void backtracking(参数) {
 -   [47.Permutations II](./LeetCode/Backtracking/47.permutations-ii.cpp)
 
 ## 15. linked-list
+
 ```
 簡單
 67 83 141 160 203 206 234 876
@@ -955,9 +956,10 @@ void backtracking(参数) {
 
 ### 15.2. 21.Merge Two Sorted Lists
 
-![upgit_20241210_1733813202.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241210_1733813202.png)
+![upgit_20250428_1745852897.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/04/upgit_20250428_1745852897.png)
 
 -   [21.Merge Two Sorted Lists](./LeetCode/Linked%20List/21.merge-two-sorted-lists.cpp)
+-   [21.Merge Two Sorted Lists in C](./LeetCode/Linked%20List/21.merge-two-sorted-lists.c)
 
 ### 15.3. 24.Swap Nodes in Pairs
 
@@ -971,6 +973,9 @@ void backtracking(参数) {
 
 -   要刪除某格節點，就是將他的【上一個】直接指向下一個(沒人指=消失)
 -   [83.Remove Duplicates from Sorted List](./LeetCode/Linked%20List/83.remove-duplicates-from-sorted-list.cpp)
+-   [83.Remove Duplicates from Sorted List in C](./LeetCode/Linked%20List/83.remove-duplicates-from-sorted-list.c)
+
+![upgit_20250429_1745911407.png|1030x737](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/04/upgit_20250429_1745911407.png)
 
 ### 15.4. 141.Linked List Cycle
 

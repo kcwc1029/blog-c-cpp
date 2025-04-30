@@ -20,6 +20,16 @@
               "icon": "lucide-file",
               "title": "指標"
             }
+          },
+          {
+            "id": "9b987568806c508c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新分頁"
+            }
           }
         ]
       }
@@ -78,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 356.5
+    "width": 356.5,
+    "collapsed": true
   },
   "right": {
     "id": "8d7f124c8bc7eb67",
@@ -168,23 +179,27 @@
   },
   "active": "a5feb149fc626368",
   "lastOpenFiles": [
-    "函數.md",
+    "test copy.c",
+    "LeetCode清單.md",
+    "LeetCode/Linked List/83.remove-duplicates-from-sorted-list.c",
+    "LeetCode/Linked List/21.merge-two-sorted-lists.c",
     "leetcode_刷題筆記.pdf",
+    "linklist.md",
+    "linklist_drow.drawio",
+    "Basic Data Type/未命名",
+    "記憶體.md",
+    "結構.md",
+    "指標.md",
+    "函數.md",
     "Array.md",
     "陣列.md",
-    "指標.md",
     "常數.md",
     "Structure/student01.c",
     "test.exe",
     "test.eze",
     "test.txt",
-    "結構.md",
     "test",
-    "test.c",
-    "test_temp copy.c",
-    "test_temp.c",
     "README.md",
-    "LeetCode清單.md",
     "遞迴.md",
     "運算.md",
     "迴圈.md",
@@ -197,12 +212,9 @@
     "C_BUG.md",
     "建立編譯環境.md",
     "README_hidden.md",
-    "未閱讀/Clockwise_Spiral Rule.html",
     "成大工科 程式設計.md",
     "temp.md",
     "作業系統/作業系統.md",
-    "計算機結構組織/計算機結構.md",
-    "STM32/Foundation course on Embedded C programming using STM32 Microcontroller/Embedded-C/README.md",
     "D1mini(ESP8266)/MP32410_examples/ch05/temp/ball0.jpg",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/@vue/cli-service/generator/template/src/assets/logo.png",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_world.png",

@@ -1,18 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int sum(const int a[], const int n){
-    int total = 0;
-    for (int i = 0; i < n; i++)
-        // a[i]++; // 因為a[]設定為const，因此不能更動
-        total += a[i];
-    return total;
-}
+int main(){
+    // int [2][3] 
+    int m = 2, n = 3;
 
-#define ARRAYSIZE 5
-int main(void){
-    int array[ARRAYSIZE];
-    for (int i = 0; i < ARRAYSIZE; i++)
-        scanf("%d", &(array[i]));
-    printf("sum = %d\n", sum(array, ARRAYSIZE));
+    int **arr = (int**)malloc(m * sizeof(int*));
+    for(int i=0;i<2;i++){
+        arr[i] = (int*)malloc(n * sizeof(int));
+    }
+
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            arr[i][j] = i+j;
+        }
+    }
+
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            printf("%d\t", arr[i][j]);
+        }
+    }
+    
+    
     return 0;
 }
