@@ -24,7 +24,7 @@
 -   [常數(要放在指標後面)](./常數.md)
 -   [結構](./結構.md)
 -   [C 語言中的記憶體](./記憶體.md)
--   [linklist](./linklist.md)
+-   [Linklist](Linklist.md)
 
 ## 17. 參考(reference) (CPP 才有)
 

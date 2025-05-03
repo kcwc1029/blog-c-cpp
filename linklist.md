@@ -118,9 +118,10 @@ int main(void){
     ListNode *previous = NULL; // 目前最新插入的節點
     for (int i = 0; i < ARRAYSIZE; i++) {
         // 要把「新節點的 next 指向 previous」，然後更新 previous 成新節點。
-        head = genListNode(array[i], previous);
-        previous = head;
+        head = genListNode(array[i], previous); // 整個linklist最新的頭
+        previous = head;// 當前linklist最新的頭
     }
+    // 做出來linklist
     printLinkedList(head);
     freeLinkedList(head);
     return 0;

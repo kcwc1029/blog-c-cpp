@@ -937,15 +937,6 @@ void backtracking(参数) {
 
 ## 15. linked-list
 
-```
-簡單
-67 83 141 160 203 206 234 876
-(我自己還沒做)705 706 3507 1290
-
-中等-簡單
-24 86 109 114 116 117 138 147 237 382 445 1669 2130 2181
-```
-
 ### 15.1. 2.Add Two Numbers
 
 -   節點上面做加總
@@ -956,7 +947,7 @@ void backtracking(参数) {
 
 ### 15.2. 21.Merge Two Sorted Lists
 
-![upgit_20250428_1745852897.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/04/upgit_20250428_1745852897.png)
+![upgit_20250428_1745852897.png|1030x797](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/04/upgit_20250428_1745852897.png)
 
 -   [21.Merge Two Sorted Lists](./LeetCode/Linked%20List/21.merge-two-sorted-lists.cpp)
 -   [21.Merge Two Sorted Lists in C](./LeetCode/Linked%20List/21.merge-two-sorted-lists.c)
@@ -969,7 +960,10 @@ void backtracking(参数) {
 
 -   [24.Swap Nodes in Pairs](./LeetCode/Linked%20List/24.swap-nodes-in-pairs.cpp)
 
-83.Remove Duplicates from Sorted List
+-   解法 2：迴圈
+    -   [24.Swap Nodes in Pairs ic C](./LeetCode/Linked%20List/24.swap-nodes-in-pairs.c)
+
+### 15.4. 83.Remove Duplicates from Sorted List
 
 -   要刪除某格節點，就是將他的【上一個】直接指向下一個(沒人指=消失)
 -   [83.Remove Duplicates from Sorted List](./LeetCode/Linked%20List/83.remove-duplicates-from-sorted-list.cpp)
@@ -977,45 +971,72 @@ void backtracking(参数) {
 
 ![upgit_20250429_1745911407.png|1030x737](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/04/upgit_20250429_1745911407.png)
 
-### 15.4. 141.Linked List Cycle
+### 15.5. 82.Remove Duplicates from Sorted List II
+
+-   [82.Remove Duplicates from Sorted List II in C](./LeetCode/Linked%20List/82.remove-duplicates-from-sorted-list-ii.c)
+
+### 15.6. 141.Linked List Cycle
+
+![upgit_20250503_1746266566.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/05/upgit_20250503_1746266566.png)
 
 -   解法：快慢指針：快指針走兩步，慢指針走一步，如果有成環，快慢指針有一天一定會相遇。
 -   [141.Linked List Cycle](./LeetCode/Linked%20List/141.linked-list-cycle.cpp)
+-   [141.Linked List Cycle in C](./LeetCode/Linked%20List/141.linked-list-cycle.c)
 
-### 15.5. 19.Remove Nth Node From End of List
+### 15.7. 142.Linked List Cycle II
+
+-   做兩次的快慢指針相遇
+-   第一次相遇：確認有沒有環
+    -   slow 每次走一步；fast 每次走兩步。
+    -   如果沒有環：快指針會最終走到 NULL
+    -   如果有環：快指針會因為它走得比較快，最終會在環內追上慢指針，這時兩者會「第一次相遇」。
+-   第二次相遇：找到環的入口
+    -   把 fast 指針放回到鏈表的頭（head）。
+    -   slow 依然留在相遇的那個點。
+    -   然後讓 fast 和 slow 每次都走一步。
+-   [142.Linked List Cycle II in C](./LeetCode/Linked%20List/142.linked-list-cycle-ii.c)
+
+### 15.8. 19.Remove Nth Node From End of List
 
 -   [19.Remove Nth Node From End of List](./LeetCode/Linked%20List/19.remove-nth-node-from-end-of-list.cpp)
 
-### 15.6. 160.Intersection of Two Linked Lists
+### 15.9. 160.Intersection of Two Linked Lists
 
 ![upgit_20241212_1733970327.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241212_1733970327.png)
 
 -   [160.Intersection of Two Linked Lists](./LeetCode/Linked%20List/160.intersection-of-two-linked-lists.cpp)
+-   [160.Intersection of Two Linked Lists in C](./LeetCode/Linked%20List/160.intersection-of-two-linked-lists.c)
 
-### 15.7. 203.Remove Linked List Elements
+### 15.10. 203.Remove Linked List Elements
 
 -   刪除節點
 
 ![upgit_20241215_1734241405.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241215_1734241405.png)
 
 -   [203.Remove Linked List Elements](./LeetCode/Linked%20List/203.remove-linked-list-elements.cpp)
+-   [203.Remove Linked List Elements in C](./LeetCode/Linked%20List/203.remove-linked-list-elements.c)
 
-### 15.8. 206.Reverse Linked List
+### 15.11. 206.Reverse Linked List
 
 -   [206.Reverse Linked List](./LeetCode/Linked%20List/206.reverse-linked-list.cpp)
+-   [206.Reverse Linked List in C](./LeetCode/Linked%20List/206.reverse-linked-list.c)
 
-### 15.9. 876.Middle of the Linked List
+![upgit_20250503_1746258876.png|1030x553](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/05/upgit_20250503_1746258876.png)
+
+### 15.12. 876.Middle of the Linked List
 
 -   [876.Middle of the Linked List](./LeetCode/Linked%20List/876.middle-of-the-linked-list.cpp)
+-   [876.Middle of the Linked List in C](./LeetCode/Linked%20List/876.middle-of-the-linked-list.c)
 
-### 15.10. 234.Palindrome Linked List
+### 15.13. 234.Palindrome Linked List
 
 -   用到
     -   876 檢查中間
     -   206 反轉
 -   [234.Palindrome Linked List](./LeetCode/Linked%20List/234.palindrome-linked-list.cpp)
+-   [234.Palindrome Linked List in C](./LeetCode/Linked%20List/234.palindrome-linked-list.c)
 
-### 15.11. 86.Partition List
+### 15.14. 86.Partition List
 
 -   所有小于  `x`  的节点都出现在   大于或等于  `x`  的节点之前。
 
@@ -1027,3 +1048,21 @@ head = [1,4,3,2,5,2], x = 3
 
 -   建立兩個指標 small_dummy 跟 big_dummy，去把原資料拆開。
 -   [86.Partition List](./LeetCode/Linked%20List/86.partition-list.cpp)
+
+### 15.15. Convert Binary Number in a Linked List to Integer
+
+```
+head
+1 -> 0 -> 1 -> 1
+宣告 ans = 0
+讀到1 => (ans*2)加讀到的值 = 0*2 + 1 = 1
+讀到0 => (ans*2)加讀到的值 = 1*2 + 0 = 2
+讀到1 => (ans*2)加讀到的值 = 2*2 + 1 = 5
+讀到1 => (ans*2)加讀到的值 = 5*2 + 1 = 11
+```
+
+-   [1290.Convert Binary Number in a Linked List to Integer in C](./LeetCode/Linked%20List/1290.convert-binary-number-in-a-linked-list-to-integer.c)
+
+### 15.16. 15.16.Delete Node in a Linked List
+
+-   [237. Delete Node in a Linked List in C](./LeetCode/Linked%20List/237.delete-node-in-a-linked-list.c)
