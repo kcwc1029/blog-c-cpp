@@ -688,7 +688,7 @@ i=6,7,8⇒(i/3)∗3=6（屬於第三行的 box）。
 -   解法 1：用 set 紀錄
 -   [202.Happy Number](./LeetCode/Set/202.happy-number.cpp)
 
-### 9.3. Count the Number of Consistent Strings
+### 9.3. 1684. Count the Number of Consistent Strings
 
 -   解法 1：
 
@@ -702,6 +702,28 @@ i=6,7,8⇒(i/3)∗3=6（屬於第三行的 box）。
 
 -   [1684. Count the Number of Consistent Strings](./LeetCode/Set/1684.count-the-number-of-consistent-strings.cpp)
 -   [1684. Count the Number of Consistent Strings by C](./LeetCode/Set/1684.count-the-number-of-consistent-strings.c)
+
+### 9.4. 349. Intersection of Two Arrays
+
+找出兩個陣列的「交集」，不考慮重複元素，也就是說只要元素有出現過，就放進結果。
+只保留「唯一」的交集元素，結果中不會有重複數字
+將 num1 放到 set 中
+for 跑 num2，去檢查 map 中有沒有，有的話就放進 ans
+
+-   [349. Intersection of Two Arrays](./LeetCode/Set/349.intersection-of-two-arrays.cpp)
+
+### 9.5. 350. Intersection of Two Arrays II
+
+找出兩個陣列的「交集」，但這次考慮元素出現的次數，如果某個數字在兩個陣列中都出現多次，就按照它的最小次數重複出現在結果中。
+每個元素的出現次數，要跟兩個陣列中「最小的出現次數」相同。
+結果中會有重複數字。
+做法跟 349 依樣，但因為要考慮次數，改用 map
+
+-   [350. Intersection of Two Arrays II](./LeetCode/Set/350.intersection-of-two-arrays-ii.cpp)
+
+### 9.6. Find All Numbers Disappeared in an Array
+
+-   [448.Find All Numbers Disappeared in an Array](./LeetCode/Set/448.find-all-numbers-disappeared-in-an-array.cpp)
 
 ## 10. Binary Search
 
