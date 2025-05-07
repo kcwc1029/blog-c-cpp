@@ -809,6 +809,10 @@ else (arr[mid]>target) right = mid - 1;
 -   要注意的是，因為 stack 順序改成 queue 只能一次，所以 push 時就先不要動，在 pop 跟 peek 時候，再用檢查的方式，決定要不要做顛倒
 -   [232.Implement Queue using Stacks](./LeetCode/Stack/232.implement-queue-using-stacks.cpp)
 
+### 496. Next Greater Element I
+
+-   [496. Next Greater Element I](./LeetCode/Stack/496.next-greater-element-i.cpp)
+
 ## 12. greedy
 
 ### 12.1. 13.Roman to Integer
