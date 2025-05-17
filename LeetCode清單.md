@@ -193,6 +193,16 @@ $${n(總數)} = \frac{x(最大層) \times (x(最大層) + 1)}{2}$$
 -   解法 1：排序
 -   [628.Maximum Product of Three Numbers](./LeetCode/Math/628.maximum-product-of-three-numbers.cpp)
 
+### 3.15. Distribute Candies
+
+這一題比較偏向，數學題
+
+-   假設我有 6 個種類不同的糖果，每一個種類的各一顆 => 因為數量限制是 6/2=3 => 所以我只能吃 3 種
+-   假設我有 6 個種類相同的糖果(舊式種類為 1) => 雖然數量限制為 3，但種類只有一個，所以只能吃一種
+-   總結，就是【數量/2】、【種類】取最小值
+
+-   [575. Distribute Candies](./LeetCode/Math/575.distribute-candies.cpp)
+
 ## 4. Bit Manipulatio
 
 ```
@@ -674,6 +684,26 @@ i=6,7,8⇒(i/3)∗3=6（屬於第三行的 box）。
 
 -   [36.Valid Sudoku](./LeetCode/Map/36.valid-sudoku.cpp)
 
+### 8.11. 500.Keyboard Row
+
+-   題目描述，返回可以使用在鍵盤同一行的字母打印出来的單字
+-   [500.Keyboard Row](./LeetCode/Map/500.keyboard-row.cpp)
+
+### 8.12. 4Sum II
+
+-   題目要求為：`nums1[i]+nums2[j]+nums3[k]+nums4[l]==0`
+-   那可以把它視為：`nums1[i]+nums2[j] = -nums3[k]-nums4[l]`
+-   先用先用一個 map 紀錄 nums1[i]+nums2[j]
+-   再用另一個 map 紀錄 nums3[k]+nums4[l]
+-   然後兩者去比較
+
+-   [454. 4Sum II](./LeetCode/Map/454.4-sum-ii.cpp)
+
+### 8.13. Longest Consecutive Sequence
+
+-   題目描述：找到未排序的整數陣列中 數字連續的最長序列（不要求序列元素在原陣列中連續）的長度。
+-   [128. Longest Consecutive Sequence](./LeetCode/Map/128.longest-consecutive-sequence.cpp)
+
 ## 9. set
 
 ### 9.1. 217.Contains Duplicate
@@ -809,7 +839,7 @@ else (arr[mid]>target) right = mid - 1;
 -   要注意的是，因為 stack 順序改成 queue 只能一次，所以 push 時就先不要動，在 pop 跟 peek 時候，再用檢查的方式，決定要不要做顛倒
 -   [232.Implement Queue using Stacks](./LeetCode/Stack/232.implement-queue-using-stacks.cpp)
 
-### 496. Next Greater Element I
+### 11.5. Next Greater Element I
 
 -   [496. Next Greater Element I](./LeetCode/Stack/496.next-greater-element-i.cpp)
 
@@ -835,7 +865,53 @@ else (arr[mid]>target) right = mid - 1;
 -   如果某個作為 起跳點 的格子可以跳躍的距離是 3，那麼表示後面 3 個格子都可以作為 新的起跳點。
 -   我們可以對每一個能作為 起跳點 的格子嘗試跳一次，並持續更新 能跳到的最遠距離。
 -   如果在跳躍的過程中，可以一直跳到最後一個格子，那麼就代表成功抵達終點。
+-   你只需要知道「我最遠能跳到哪」，所以一個變數 k 就夠了
 -   [55.Jump Game](./LeetCode/Greedy/55.jump-game.cpp)
+
+### 12.3. 45.Jump Game II
+
+-   [45.Jump Game II](./LeetCode/Greedy/45.jump-game-ii.cpp)
+
+### 12.4. Assign Cookies
+
+-   因為我的目的是要，盡可能地讓小孩吃飽 => 先餵胃口小的
+-   將 s、g 排序
+-   [455. Assign Cookies](./LeetCode/Greedy/455.assign-cookies.cpp)
+
+### 12.5. 605.Can Place Flowers
+
+-   種花 0 跟 1，要交錯種
+-   判斷的條件就是，【當前】【前一個】【後一個】都要為 0，才可以種花(1)
+-   判斷：flowerbed[i-1], flowerbed[i], flowerbed[i+1]都要為 0
+-   而為了判斷方便，可以在陣列頭尾，各加一個 0
+-   [605. Can Place Flowers](./LeetCode/Greedy/605.can-place-flowers.cpp)
+
+### 12.6. 860.Lemonade Change
+
+-   [860. Lemonade Change](./LeetCode/Greedy/860.lemonade-change.cpp)
+
+### 12.7. 1221.Split a String in Balanced Strings
+
+-   [1221.Split a String in Balanced Strings](./LeetCode/Greedy/1221.split-a-string-in-balanced-strings.cpp)
+
+### 12.8. 2027.Minimum Moves to Convert String
+
+-   [2027.Minimum Moves to Convert String](./LeetCode/Greedy/2027.minimum-moves-to-convert-string.cpp)
+
+### 12.9. 435.Non-overlapping Intervals
+
+-   解題方式：按照「結束時間」排序
+-   選擇最早結束的區間能讓後續的區間有更多空間可選擇，這樣我們能保留更多區間。
+-   如果排序按照「起始時間」，可能會讓一些區間重疊更多次，導致要移除更多區間。
+-   [435.Non-overlapping Intervals](./LeetCode/Greedy/435.non-overlapping-intervals.cpp)
+
+### 12.10. 134.Gas Station
+
+-   [134.Gas Station](./LeetCode/Greedy/134.gas-station.cpp)
+
+### 763. Partition Labels
+
+-   [763. Partition Labels](./LeetCode/Greedy/763.partition-labels.cpp)
 
 ## 13. dynamic-programming
 
