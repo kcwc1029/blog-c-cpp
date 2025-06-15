@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "LeetCode清單.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向連結"
+              "title": "LeetCode清單 的反向連結"
             }
           },
           {
@@ -149,8 +150,7 @@
               "title": "LeetCode清單 的大綱"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -168,18 +168,18 @@
   },
   "active": "ed9785de90bb26b8",
   "lastOpenFiles": [
+    "LeetCode/DFS/530.minimum-absolute-difference-in-BST.cpp",
+    "LeetCode/BFS/107.binary-tree-level-order-traversal-ii.cpp",
+    "LeetCode/BFS/103.binary-tree-zigzag-level-order-traversal.cpp",
+    "LeetCode/BFS/102.binary-tree-level-order-traversal.cpp",
+    "leetcode_刷題筆記.pdf",
+    "LeetCode清單.md",
     "LeetCode/Greedy/134.gas-station.cpp",
     "LeetCode/Greedy/435.non-overlapping-intervals.cpp",
     "LeetCode/Greedy/2027.minimum-moves-to-convert-string.cpp",
     "LeetCode/Greedy/1221.split-a-string-in-balanced-strings.cpp",
     "LeetCode/Greedy/860.lemonade-change.cpp",
     "LeetCode/Greedy/605.can-place-flowers.cpp",
-    "LeetCode/Greedy/455.assign-cookies.cpp",
-    "LeetCode/Set/448.find-all-numbers-disappeared-in-an-array.cpp",
-    "LeetCode/Set/350.intersection-of-two-arrays-ii.cpp",
-    "LeetCode/Set/349.intersection-of-two-arrays.cpp",
-    "leetcode_刷題筆記.pdf",
-    "LeetCode清單.md",
     "成大工科 程式設計.md",
     "Linklist.md",
     "結構.md",

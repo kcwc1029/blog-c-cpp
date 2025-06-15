@@ -1,7 +1,5 @@
 ### 0.1. 資料結構（Data Structures）
 
--   **陣列（Array）** → 滑動視窗、雙指針技巧
--   **連結串列（Linked List）** → 反轉串列、快慢指針
 -   **堆疊（Stack）** → 括號匹配、單調遞增/遞減堆疊
 -   **佇列（Queue）** → 雙端佇列（Deque）、滑動視窗最大值
 -   **雜湊表（Hash Table / Hash Map）** → 兩數之和、字串處理
@@ -58,7 +56,7 @@
 
 ### 1.5. 58.Length of Last Word
 
-![upgit_20241112_1731409811.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241112_1731409811.png)
+![upgit_20241112_1731409811.png|0x0](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/11/upgit_20241112_1731409811.png)
 
 -   返回最後一個字的長度(不可以用套件)
 -   [58.Length of Last Word](./LeetCode/Strnig/58.length-of-last-word.cpp)
@@ -868,17 +866,17 @@ else (arr[mid]>target) right = mid - 1;
 -   你只需要知道「我最遠能跳到哪」，所以一個變數 k 就夠了
 -   [55.Jump Game](./LeetCode/Greedy/55.jump-game.cpp)
 
-### 12.3. 45.Jump Game II
+### 12.4. 45.Jump Game II
 
 -   [45.Jump Game II](./LeetCode/Greedy/45.jump-game-ii.cpp)
 
-### 12.4. Assign Cookies
+### 12.5. Assign Cookies
 
 -   因為我的目的是要，盡可能地讓小孩吃飽 => 先餵胃口小的
 -   將 s、g 排序
 -   [455. Assign Cookies](./LeetCode/Greedy/455.assign-cookies.cpp)
 
-### 12.5. 605.Can Place Flowers
+### 12.6. 605.Can Place Flowers
 
 -   種花 0 跟 1，要交錯種
 -   判斷的條件就是，【當前】【前一個】【後一個】都要為 0，才可以種花(1)
@@ -886,30 +884,30 @@ else (arr[mid]>target) right = mid - 1;
 -   而為了判斷方便，可以在陣列頭尾，各加一個 0
 -   [605. Can Place Flowers](./LeetCode/Greedy/605.can-place-flowers.cpp)
 
-### 12.6. 860.Lemonade Change
+### 12.7. 860.Lemonade Change
 
 -   [860. Lemonade Change](./LeetCode/Greedy/860.lemonade-change.cpp)
 
-### 12.7. 1221.Split a String in Balanced Strings
+### 12.8. 1221.Split a String in Balanced Strings
 
 -   [1221.Split a String in Balanced Strings](./LeetCode/Greedy/1221.split-a-string-in-balanced-strings.cpp)
 
-### 12.8. 2027.Minimum Moves to Convert String
+### 12.9. 2027.Minimum Moves to Convert String
 
 -   [2027.Minimum Moves to Convert String](./LeetCode/Greedy/2027.minimum-moves-to-convert-string.cpp)
 
-### 12.9. 435.Non-overlapping Intervals
+### 12.10. 435.Non-overlapping Intervals
 
 -   解題方式：按照「結束時間」排序
 -   選擇最早結束的區間能讓後續的區間有更多空間可選擇，這樣我們能保留更多區間。
 -   如果排序按照「起始時間」，可能會讓一些區間重疊更多次，導致要移除更多區間。
 -   [435.Non-overlapping Intervals](./LeetCode/Greedy/435.non-overlapping-intervals.cpp)
 
-### 12.10. 134.Gas Station
+### 12.11. 134.Gas Station
 
 -   [134.Gas Station](./LeetCode/Greedy/134.gas-station.cpp)
 
-### 763. Partition Labels
+### 12.12. Partition Labels
 
 -   [763. Partition Labels](./LeetCode/Greedy/763.partition-labels.cpp)
 
@@ -980,7 +978,142 @@ else (arr[mid]>target) right = mid - 1;
 
 -   [122.Best Time to Buy and Sell Stock II](./LeetCode/Dynamic%20Programming/122.best-time-to-buy-and-sell-stock-ii.cpp)
 
-## 14. Backtracking
+## 14. DFS
+
+-   模板
+
+```cpp
+void DFS(TreeNode* root, vector<int>& ans){
+        // 返回條件
+        if(root==nullptr) return;
+        // 往左走
+        DFS(root->left, ans);
+        // 到最左邊之後，慢慢蝶帶回來
+        ans.push_back(root->val);
+        // 往右走
+        DFS(root->right, ans);
+    }
+```
+
+### 14.1. 100.Same Tree
+
+-   [100. Same Tree](./LeetCode/DFS/100.same-tree.cpp)
+
+### 14.2. Symmetric Tree
+
+-   [101. Symmetric Tree](./LeetCode/DFS/101.symmetric-tree.cpp)
+
+### 14.3. Maximum Depth of Binary Tree
+
+-   [104. Maximum Depth of Binary Tree](./LeetCode/DFS/104.maximum-depth-of-binary-tree.cpp)
+
+### 14.4. Balanced Binary Tree
+
+-   核心：樹的長度 = max(左子樹長度, 右子樹長度) + 1;
+-   有兩種解法：由頭->尾巴，或是由尾巴->頭
+-   [110. Balanced Binary Tree](./LeetCode/DFS/110.balanced-binary-tree.cpp)
+
+### 14.5. Minimum Depth of Binary Tree
+
+-   [111. Minimum Depth of Binary Tree](./LeetCode/DFS/111.minimum-depth-of-binary-tree.cpp)
+
+### 14.6. Path Sum
+
+-   [112. Path Sum](./LeetCode/DFS/112.path-sum.cpp)
+
+### 14.7. 94.Binary Tree Inorder Traversal
+
+-   中序
+
+```cpp
+// inorder traversal：中序遍歷 => 左子樹 → 根節點 → 右子樹
+//     1
+//    / \
+//   2   3
+//  / \
+// 4   5
+// 使用中序遍历的結果會是：4 → 2 → 5 → 1 → 3
+```
+
+-   [94.Binary Tree Inorder Traversal](./LeetCode/DFS/94.binary-tree-inorder-traversal.cpp)
+
+### 14.8. Binary Tree Preorder Traversal
+
+-   前序
+-   [144. Binary Tree Preorder Traversal](./LeetCode/DFS/144.binary-tree-preorder-traversal.cpp)
+
+### 14.9. Binary Tree Postorder Traversal
+
+-   後序
+-   [145. Binary Tree Postorder Traversal](./LeetCode/DFS/145.binary-tree-postorder-traversal.cpp)
+
+### 14.10. Invert Binary Tree
+
+-   [226. Invert Binary Tree](./LeetCode/DFS/226.invert-binary-tree.cpp)
+
+### 14.11. Binary Tree Paths
+
+-   [257. Binary Tree Paths](./LeetCode/DFS/257.binary-tree-paths.cpp)
+
+### 14.12. Recover Binary Search Tree
+
+-   [99. Recover Binary Search Tree](./LeetCode/DFS/99.recover-binary-search-tree.cpp)
+
+### 14.13. Flatten Binary Tree to Linked List
+
+-   [114. Flatten Binary Tree to Linked List](./LeetCode/DFS/114.flatten-binary-tree-to-linked-list.cpp)
+
+### 14.14. Sum Root to Leaf Numbers
+
+-   [129. Sum Root to Leaf Numbers](./LeetCode/DFS/129.sum-root-to-leaf-numbers.cpp)
+
+### 14.15. Binary Tree Right Side View
+
+-   [199. Binary Tree Right Side View](./LeetCode/DFS/199.binary-tree-right-side-view.cpp)
+
+### 14.16. Kth Smallest Element in a BST
+
+-   [230. Kth Smallest Element in a BST](./LeetCode/DFS/230.kth-smallest-element-in-a-bst.cpp)
+
+### 14.17. Lowest Common Ancestor of a Binary Search Tree
+
+-   尋找共同祖先
+-   [235. Lowest Common Ancestor of a Binary Search Tree](./LeetCode/DFS/235.lowest-common-ancestor-of-a-binary-search-tree.cpp)
+
+### 14.18. 530.Minimum Absolute Difference in BST
+
+-   [530. Minimum Absolute Difference in BST](./LeetCode/DFS/530.minimum-absolute-difference-in-BST.cpp)
+
+## 15. BFS
+
+### 15.1. Populating Next Right Pointers in Each Node
+
+-   是完美二元數
+-   [116. Populating Next Right Pointers in Each Node](./LeetCode/BFS/116.populating-next-right-pointers-in-each-node.cpp)
+
+### 15.2. Populating Next Right Pointers in Each Node II
+
+-   不是完美二元數
+-   [117. Populating Next Right Pointers in Each Node II](./LeetCode/BFS/117.populating-next-right-pointers-in-each-node-ii.cpp)
+
+### 15.3. 404.Sum of Left Leaves
+
+-   [404. Sum of Left Leaves](./LeetCode/BFS/404.sum-of-left-leaves.cpp)
+
+### 15.4. 102.Binary Tree Level Order Traversal
+
+-   [102. Binary Tree Level Order Traversal](./LeetCode/BFS/102.binary-tree-level-order-traversal.cpp)
+
+### 15.5. Binary Tree Level Order Traversal II
+
+-   就最後 ans 顛倒而已
+-   [107. Binary Tree Level Order Traversal II](./LeetCode/BFS/107.binary-tree-level-order-traversal-ii.cpp)
+
+### 15.6. 103.Binary Tree Zigzag Level Order Traversal
+
+-   [103. Binary Tree Zigzag Level Order Traversal](./LeetCode/BFS/103.binary-tree-zigzag-level-order-traversal.cpp)
+
+## 16. Backtracking
 
 -   模板
 
@@ -999,17 +1132,17 @@ void backtracking(参数) {
 }
 ```
 
-### 14.1. 17.Letter Combinations of a Phone Number
+### 16.1. 17.Letter Combinations of a Phone Number
 
 ![upgit_20241207_1733561921.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241207_1733561921.png)
 
 -   [17.Letter Combinations of a Phone Number](./LeetCode/Backtracking/17.letter-combinations-of-a-phone-number.cpp)
 
-### 14.2. 78.Subsets
+### 16.2. 78.Subsets
 
 -   [78.Subsets](./LeetCode/Backtracking/78.subsets.cpp)
 
-### 14.3. 39.Combination Sum
+### 16.3. 39.Combination Sum
 
 -   返回各種組合(元素可重複)
 
@@ -1017,19 +1150,19 @@ void backtracking(参数) {
 
 -   [39.combination-sum.cpp](./LeetCode/Backtracking/39.combination-sum.cpp)
 
-### 14.4. 40.Combination Sum II
+### 16.4. 40.Combination Sum II
 
 -   根據 39 題，但不能重複
 -   [40.Combination Sum II](./LeetCode/Backtracking/40.combination-sum-ii.cpp)
 
-### 14.5. 46.Permutations
+### 16.5. 46.Permutations
 
 -   给定一个不含重复数字的数组 nums ，返回其所有可能的全排列。
     ![upgit_20241225_1735098588.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241225_1735098588.png)
 
 -   [46.Permutations](./LeetCode/Backtracking/46.permutations.cpp)
 
-### 14.6. 47.Permutations II
+### 16.6. 47.Permutations II
 
 -   给定一个可包含重复数字的序列  nums ，按任意顺序返回所有不重复的全排列。
 
@@ -1037,9 +1170,13 @@ void backtracking(参数) {
 
 -   [47.Permutations II](./LeetCode/Backtracking/47.permutations-ii.cpp)
 
-## 15. linked-list
+### 16.7. Path Sum II
 
-### 15.1. 2.Add Two Numbers
+-   [113. Path Sum II](./LeetCode/Backtracking/113.path-sum-ii.cpp)
+
+## 17. linked-list
+
+### 17.1. 2.Add Two Numbers
 
 -   節點上面做加總
 
@@ -1047,14 +1184,14 @@ void backtracking(参数) {
 
 -   [2.Add Two Numbers](./LeetCode/Linked%20List/2.add-two-numbers.cpp)
 
-### 15.2. 21.Merge Two Sorted Lists
+### 17.2. 21.Merge Two Sorted Lists
 
 ![upgit_20250428_1745852897.png|1030x797](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/04/upgit_20250428_1745852897.png)
 
 -   [21.Merge Two Sorted Lists](./LeetCode/Linked%20List/21.merge-two-sorted-lists.cpp)
 -   [21.Merge Two Sorted Lists in C](./LeetCode/Linked%20List/21.merge-two-sorted-lists.c)
 
-### 15.3. 24.Swap Nodes in Pairs
+### 17.3. 24.Swap Nodes in Pairs
 
 -   解法 1：遞迴
 
@@ -1065,7 +1202,7 @@ void backtracking(参数) {
 -   解法 2：迴圈
     -   [24.Swap Nodes in Pairs ic C](./LeetCode/Linked%20List/24.swap-nodes-in-pairs.c)
 
-### 15.4. 83.Remove Duplicates from Sorted List
+### 17.4. 83.Remove Duplicates from Sorted List
 
 -   要刪除某格節點，就是將他的【上一個】直接指向下一個(沒人指=消失)
 -   [83.Remove Duplicates from Sorted List](./LeetCode/Linked%20List/83.remove-duplicates-from-sorted-list.cpp)
@@ -1073,11 +1210,11 @@ void backtracking(参数) {
 
 ![upgit_20250429_1745911407.png|1030x737](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/04/upgit_20250429_1745911407.png)
 
-### 15.5. 82.Remove Duplicates from Sorted List II
+### 17.5. 82.Remove Duplicates from Sorted List II
 
 -   [82.Remove Duplicates from Sorted List II in C](./LeetCode/Linked%20List/82.remove-duplicates-from-sorted-list-ii.c)
 
-### 15.6. 141.Linked List Cycle
+### 17.6. 141.Linked List Cycle
 
 ![upgit_20250503_1746266566.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/05/upgit_20250503_1746266566.png)
 
@@ -1085,7 +1222,7 @@ void backtracking(参数) {
 -   [141.Linked List Cycle](./LeetCode/Linked%20List/141.linked-list-cycle.cpp)
 -   [141.Linked List Cycle in C](./LeetCode/Linked%20List/141.linked-list-cycle.c)
 
-### 15.7. 142.Linked List Cycle II
+### 17.7. 142.Linked List Cycle II
 
 -   做兩次的快慢指針相遇
 -   第一次相遇：確認有沒有環
@@ -1098,18 +1235,18 @@ void backtracking(参数) {
     -   然後讓 fast 和 slow 每次都走一步。
 -   [142.Linked List Cycle II in C](./LeetCode/Linked%20List/142.linked-list-cycle-ii.c)
 
-### 15.8. 19.Remove Nth Node From End of List
+### 17.8. 19.Remove Nth Node From End of List
 
 -   [19.Remove Nth Node From End of List](./LeetCode/Linked%20List/19.remove-nth-node-from-end-of-list.cpp)
 
-### 15.9. 160.Intersection of Two Linked Lists
+### 17.9. 160.Intersection of Two Linked Lists
 
 ![upgit_20241212_1733970327.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2024/12/upgit_20241212_1733970327.png)
 
 -   [160.Intersection of Two Linked Lists](./LeetCode/Linked%20List/160.intersection-of-two-linked-lists.cpp)
 -   [160.Intersection of Two Linked Lists in C](./LeetCode/Linked%20List/160.intersection-of-two-linked-lists.c)
 
-### 15.10. 203.Remove Linked List Elements
+### 17.10. 203.Remove Linked List Elements
 
 -   刪除節點
 
@@ -1118,19 +1255,19 @@ void backtracking(参数) {
 -   [203.Remove Linked List Elements](./LeetCode/Linked%20List/203.remove-linked-list-elements.cpp)
 -   [203.Remove Linked List Elements in C](./LeetCode/Linked%20List/203.remove-linked-list-elements.c)
 
-### 15.11. 206.Reverse Linked List
+### 17.11. 206.Reverse Linked List
 
 -   [206.Reverse Linked List](./LeetCode/Linked%20List/206.reverse-linked-list.cpp)
 -   [206.Reverse Linked List in C](./LeetCode/Linked%20List/206.reverse-linked-list.c)
 
 ![upgit_20250503_1746258876.png|1030x553](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/05/upgit_20250503_1746258876.png)
 
-### 15.12. 876.Middle of the Linked List
+### 17.12. 876.Middle of the Linked List
 
 -   [876.Middle of the Linked List](./LeetCode/Linked%20List/876.middle-of-the-linked-list.cpp)
 -   [876.Middle of the Linked List in C](./LeetCode/Linked%20List/876.middle-of-the-linked-list.c)
 
-### 15.13. 234.Palindrome Linked List
+### 17.13. 234.Palindrome Linked List
 
 -   用到
     -   876 檢查中間
@@ -1138,7 +1275,7 @@ void backtracking(参数) {
 -   [234.Palindrome Linked List](./LeetCode/Linked%20List/234.palindrome-linked-list.cpp)
 -   [234.Palindrome Linked List in C](./LeetCode/Linked%20List/234.palindrome-linked-list.c)
 
-### 15.14. 86.Partition List
+### 17.14. 86.Partition List
 
 -   所有小于  `x`  的节点都出现在   大于或等于  `x`  的节点之前。
 
@@ -1151,7 +1288,7 @@ head = [1,4,3,2,5,2], x = 3
 -   建立兩個指標 small_dummy 跟 big_dummy，去把原資料拆開。
 -   [86.Partition List](./LeetCode/Linked%20List/86.partition-list.cpp)
 
-### 15.15. Convert Binary Number in a Linked List to Integer
+### 17.15. 1290.Convert Binary Number in a Linked List to Integer
 
 ```
 head
@@ -1165,6 +1302,23 @@ head
 
 -   [1290.Convert Binary Number in a Linked List to Integer in C](./LeetCode/Linked%20List/1290.convert-binary-number-in-a-linked-list-to-integer.c)
 
-### 15.16. 15.16.Delete Node in a Linked List
+### 17.16. 237.Delete Node in a Linked List
 
 -   [237. Delete Node in a Linked List in C](./LeetCode/Linked%20List/237.delete-node-in-a-linked-list.c)
+
+## 18. 島嶼問題系列
+
+### 18.1. Island Perimeter
+
+-   計算島嶼的周長
+-   [463. Island Perimeter](./LeetCode/Island/463.island-perimeter.cpp)
+
+### 18.2. Number of Islands
+
+-   計算島嶼數量
+-   [200. Number of Islands](./LeetCode/Island/200.number-of-islands.cpp)
+
+### 18.3. Max Area of Island
+
+-   找除最大島嶼的面積
+-   [695. Max Area of Island](./LeetCode/Island/695.max-area-of-island.cpp)
