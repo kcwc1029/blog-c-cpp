@@ -1,4 +1,4 @@
-### Lab：實作 abs
+### 0.1. Lab：實作 abs
 
 ```c
 #include <stdio.h>
@@ -16,7 +16,7 @@ int main(){
 }
 ```
 
-### Lab：實作三者最大值
+### 0.2. Lab：實作三者最大值
 
 ```c
 #include <stdio.h>
@@ -37,7 +37,7 @@ int main(){
 }
 ```
 
-### Lab：閏年判斷
+### 0.3. Lab：閏年判斷
 
 ```c
 #include <stdio.h>
@@ -60,7 +60,7 @@ int main(){
 }
 ```
 
-### Lab：四則運算
+### 0.4. Lab：四則運算
 
 ```c
 // TODO:  輸入三個參數：被加數、加數、規則
