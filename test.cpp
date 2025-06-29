@@ -1,13 +1,14 @@
 #include <iostream>
 using namespace std;
 
+// 宣告 inline 函式
+inline int square(int x) {
+    return x * x;
+}
+
 int main() {
-    int i = 2147483647;  // 最大值（32-bit int）
-
-    cout << "sizeof(i) = " << sizeof(i) << " bytes" << endl;
-    cout << "原始值：i = " << i << endl; // 2147483647
-
-    i++;  // 溢位
-    cout << "i++ 後：i = " << i << endl; // -2147483648
+    int n = 5;
+    int result = square(n);  // 這裡會被展開成：n * n
+    cout << "平方是：" << result << endl;
     return 0;
 }
