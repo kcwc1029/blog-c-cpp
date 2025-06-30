@@ -3,33 +3,11 @@
 
 ## 1. 章節
 
--   [指標](./指標.md)
--   [常數(要放在指標後面)](./常數.md)
--   [結構](./結構.md)
--   [C 語言中的記憶體](./記憶體.md)
--   [Linklist](Linklist.md)
-
-## 2. 參考(reference) (CPP 才有)
-
--   reference 就是一種別名(alias)
--   一個變數可以有很多 reference
--   [reference 示範](./Reference/reference_size.cpp)
--   [reference 指定](./Reference/ref_init_assign.cpp)：reference 直接代表另一個變數，因此也可以直接作使用。
-
-### 2.1. reference 傳遞
-
--   [使用參考跑 fof](./Reference/sum_ranged_for.cpp)
--   [使用指標傳遞參數](./Reference/swap_by_pointer.cpp)
--   [使用參考傳遞參數](./Reference/swap_by_reference.cpp)
--   [指標作為參數傳遞的過程](./Reference/pointer_parameter.cpp)
--   [指標參考作為參數傳遞的過程](./Reference/reference_parameter.cpp)
--   [參考作為 return](./Reference/reference_return.cpp)
-
-## 3. 字元
+## 2. 字元
 
 -   [計算字元大小](./Char/char_size.c)
 
-### 3.1. 常用函數<ctype.h>
+### 2.1. 常用函數<ctype.h>
 
 -   isalnum(int c) 檢查字符是否為字母或數字（a-z、A-Z、0-9）。
 -   isalpha(int c) 檢查字符是否為字母（a-z、A-Z）。
@@ -42,24 +20,24 @@
 -   tolower(int c) 將大寫字母轉換為小寫字母。
 -   toupper(int c) 將小寫字母轉換為大寫字母。
 
-## 4. 字串
+## 3. 字串
 
 -   [字串就是字元陣列](./String/string_char_array.c)
 -   [使用字元陣列模擬字元](./String/char_array_simulate_string.c)
 
-### 4.1. 字元指標
+### 3.1. 字元指標
 
 -   [字元指標](./String/character_pointer.c)
 -   [不同字串格式各有不同的記憶體空間](./String/different_string_format.c)
 
-### 4.2. 字串函數
+### 3.2. 字串函數
 
-#### 4.2.1. strlen：計算字串長度
+#### 3.2.1. strlen：計算字串長度
 
 -   [strlen01](./String/strlen01.c)
 -   [strlen02](./String/strlen02.c)
 
-#### 4.2.2. strcat：連接字串 & strcpy：複製字串
+#### 3.2.2. strcat：連接字串 & strcpy：複製字串
 
 ```
 char *strcat(char *destination, *source)
@@ -78,7 +56,7 @@ char *strcpy(char *destination, *source)
 -   [strcpy01](./String/strcpy01.c)
 -   [比較 3 種字串在 strcpy 處理(重要)](./String/strcpy02.c)
 
-#### 4.2.3. strncpy、strncat 第三個參數(處理緩衝區覆蓋，但要手動'\0')
+#### 3.2.3. strncpy、strncat 第三個參數(處理緩衝區覆蓋，但要手動'\0')
 
 ```
 char *strncpy(char *destination, *source, int i)
@@ -87,7 +65,7 @@ char *strncpy(char *destination, *source, int i)
 - 如果 source 的長度大於或等於 n，則 strncpy 不會自動在 destination 的結尾添加 \0。
 ```
 
-#### 4.2.4. strcmp、strncmp 字串比較
+#### 3.2.4. strcmp、strncmp 字串比較
 
 ```
 int strcmp(char *string1, *string2);
@@ -98,7 +76,7 @@ int strncmp(char *string1, *string2, int n);
     -   [12 生肖陣列排序](./String/ZodiacSort01.c)
     -   [12 生肖指標排序](./String/ZodiacSort02.c)
 
-#### 4.2.5. strchr、strrchrr、strstr
+#### 3.2.5. strchr、strrchrr、strstr
 
 ```
 char *strchr(char *string, char c); // 前往後找c，返回找到目標的地址
@@ -113,7 +91,7 @@ char *strstr(char *string1, char *string2); 在string1中找string2，找到返�
 
 -   [在 12 生肖中找有 er 字串的](./String/strstr.c)
 
-#### 4.2.6. 切割字串：strtok
+#### 3.2.6. 切割字串：strtok
 
 ```
 char *strtok(char *string, delimeters);
@@ -121,7 +99,7 @@ char *strtok(char *string, delimeters);
 
 -   [切割字串](./String/strtok.c)
 
-## 5. 宣告修飾
+## 4. 宣告修飾
 
 -   [輸出各整數類別位元小](./Basic%20Data%20Type/declaration_modifiers.c)
 -   解決了不同平台上整數大小不一致的問題 => C99 跟 C++11
@@ -130,7 +108,7 @@ char *strtok(char *string, delimeters);
 -   [C++11 有號數](./Basic%20Data%20Type/c++11_signed.cpp)：
 -   [C++11 無號數](./Basic%20Data%20Type/c++11_unsigned.cpp)：
 
-### 5.1. 常數(const)
+### 4.1. 常數(const)
 
 -   方式 1：使用#define
 
@@ -153,7 +131,7 @@ char *strtok(char *string, delimeters);
     -   缺點：佔用記憶體
 -   [使用常數計算圓面積](./Const/circle_area.c)
 
-### 5.2. const 指標
+### 4.2. const 指標
 
 ```
 int *ptrToInt = &i; ptrToInt 一個指向 int 型別變數的指標
@@ -161,17 +139,17 @@ const int *ptrToConstInt = &i; 一個指向 const int 型別變數 的指標(可
 int * const constPtrToInt = &i; 一個指向 int 的 常量指標 => 只能指向初始化時的地址，但可以透過指標修改目標變數的值
 ```
 
-### 5.3. static
+### 4.3. static
 
 -   更改生命週期：從程式開始執行時初始化，一直存在於程式運行期間，直到程式結束才會被銷毀。
 -   [static 範例](./Basic%20Data%20Type/static01.c)
 
-## 6. 記憶體(未整理)
+## 5. 記憶體(未整理)
 
 -   https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc
 -   https://www.geeksforgeeks.org/what-is-memory-leak-how-can-we-avoid/
 
-## 7. 檔案處理
+## 6. 檔案處理
 
 -   開啟檔案方式
 
@@ -188,14 +166,14 @@ fclose(fp); //關閉檔案
 // a：append
 ```
 
-### 7.1. 以字元處理檔案
+### 6.1. 以字元處理檔案
 
 ```c
 int fget(FILE *p) // 讀取字元並回傳
 int fput(int c, FILE *p) // 寫入(成功寫入的話也會回傳)
 ```
 
-### 7.2. 重複讀取字元到 EOF
+### 6.2. 重複讀取字元到 EOF
 
 ```c
 while((c=fget(fp))!=EOF){
@@ -207,7 +185,7 @@ while((c=fget(fp))!=EOF){
 -   [文字添加範例](./file/file02.c)
 -   [文字讀寫範例](./file/file03.c)
 
-### 7.3. 以行處理檔案
+### 6.3. 以行處理檔案
 
 ```c
 int fgets(char *string, int num, FILE *p) // 讀取一行並回傳
@@ -224,7 +202,7 @@ while(fgets(string, STRINGLEN, fp)!=NULL){
 
 -   [以 fput 逐行寫入，在逐行讀取](./file/file04.c)
 
-### 7.4. 以格式處理檔案
+### 6.4. 以格式處理檔案
 
 ```c
 int fprintf(FILE *fp, const char *format, ...);
@@ -233,11 +211,11 @@ int fscanf(FILE *fp, const char *format, ...);
 
 -   [使用 fprintf，fscanf 讀寫檔案](./file/file05.c)
 
-### 7.5. 二進制檔案處理
+### 6.5. 二進制檔案處理
 
 -   [文字與二進制差別](./file/file06.c)
 
-### 7.6. 緩衝區為主的輸出入
+### 6.6. 緩衝區為主的輸出入
 
 -   緩衝區(buffer)是一塊記憶體，用來暫存數據，避免每次寫入或讀取文件時都直接操作磁碟，提升效率。
 
@@ -253,7 +231,7 @@ int fwrite(const void *buffer, int size, int n, FILE *fp);
 -   [使用 fread，fwrite](./file/file07.c)
 -   [將 struct 取操作](./file/file08.c)
 
-### 7.7. fseek 移動讀寫位置
+### 6.7. fseek 移動讀寫位置
 
 ```c
 int fseek(FILE *fp, long int offset, int base);
@@ -267,7 +245,7 @@ int fseek(FILE *fp, long int offset, int base);
 
 -   [使用 fseek 操作檔案](./file/file09.c)
 
-### 7.8. EOF 測試
+### 6.8. EOF 測試
 
 -   前面都是使用 fget 去檢查回傳質是否為 EOF，其實 stdio.h 也有專門測試 EOF 的函數
 -   EOF 是一種狀態，而非一種字元
@@ -283,7 +261,7 @@ while(!feof(fp)){
 }
 ```
 
-## 8. 動態記憶體配置
+## 7. 動態記憶體配置
 
 -   malloc：跟系統要記憶體
 -   free：還系統記憶體
@@ -297,7 +275,7 @@ void free(void *ptr);
 -   [跟系統要求一個 int 的記憶體空間](./dynamic%20memory/malloc01.c)
 -   [跟系統要求一個結構的記憶體空間](./dynamic%20memory/malloc02.c)
 
-## 9. LinkList(可以用力扣去說明)
+## 8. LinkList(可以用力扣去說明)
 
 -   節點概念
 
@@ -311,15 +289,15 @@ typedef struct listNode{
 -   [建立 listNode](./LinkList/create_node.c)
 -   [遍歷 listNode](./LinkList/traverse_node.c)
 
-## 10. 前置處理
+## 9. 前置處理
 
-### 10.1. #include
+### 9.1. #include
 
-### 10.2. #define
+### 9.2. #define
 
 -   在 C 語言中，#define 是一種預處理器指令，用來定義 宏（macro），可以用來替換數值、函數或表達式，提高程式碼的靈活性。
 
-#### 10.2.1. define 定義常數
+#### 9.2.1. define 定義常數
 
 ```c
 #include <stdio.h>
@@ -334,7 +312,7 @@ int main() {
 // PI 會在 編譯前 被替換成 3.14159，比 const double PI = 3.14159; 少了一點記憶體開銷
 ```
 
-#### 10.2.2. define 定義函數
+#### 9.2.2. define 定義函數
 
 ```c
 #include <stdio.h>
@@ -350,11 +328,11 @@ int main() {
 // 不用真正呼叫函數，所以 比函數快
 ```
 
-#### 10.2.3. define 的副作用
+#### 9.2.3. define 的副作用
 
 -   define 的問題在於它只是文本替換，沒有類型檢查，可能會產生預料外的錯誤。
 
-##### 10.2.3.1. 運算優先順序問題
+##### 9.2.3.1. 運算優先順序問題
 
 ```c
 #include <stdio.h>
@@ -377,7 +355,7 @@ int main() {
 // #define SQUARE(x) ((x) * (x))  // 確保優先運算順序
 ```
 
-##### 10.2.3.2. 多次運算問題
+##### 9.2.3.2. 多次運算問題
 
 ```c
 #include <stdio.h>
@@ -400,7 +378,7 @@ int main() {
 // #define INCREMENT(x) ((x) + 1)  // 確保運算順序正確
 ```
 
-##### 10.2.3.3. 參數重複運算問題
+##### 9.2.3.3. 參數重複運算問題
 
 ```c
 #include <stdio.h>
@@ -423,7 +401,7 @@ inline int square(int x) {
 }
 ```
 
-### 10.3. inline 函數
+### 9.3. inline 函數
 
 -   在 C（C99 及更新版本）和 C++ 中，inline 是一種函數修飾詞，用來建議編譯器將函數內聯（inline），以提高程式執行效率。
 -   編譯器會將函數的程式碼直接展開到函數調用的位置，而不是跳轉到函數地址執行，減少函數呼叫的額外開銷（如壓入/彈出堆疊）。
@@ -485,7 +463,7 @@ int main() {
 // 可讀性更好
 ```
 
-### 10.4. 條件編譯(#if)
+### 9.4. 條件編譯(#if)
 
 ```c
 #define DEBUG_LEVEL 4
@@ -514,7 +492,7 @@ gcc -DEBUG_LEVEL=8 program.c
 #endif
 ```
 
-### 10.5. `__LINE__ __FILE__`
+### 9.5. `__LINE__ __FILE__`
 
 -   取得當前程式碼的行號和檔案名
 
@@ -534,9 +512,9 @@ int main() {
 // 這行是第 4 行，檔案名稱是 .\test.c
 ```
 
-## 11. C standard library (stdlib)
+## 10. C standard library (stdlib)
 
-### 11.1. 排序：qsort
+### 10.1. 排序：qsort
 
 ```c
 void qsort(void *base, int num, int size, int(*compare)(const void*, const void*))
@@ -547,7 +525,7 @@ void qsort(void *base, int num, int size, int(*compare)(const void*, const void*
 -   [qsort 排序字串陣列](./Stdlib/qsort_string.c)
 -   [以 1 的個數做排序](./Stdlib/qsort_1bit.c)
 
-### 11.2. 字串轉換函數：
+### 10.2. 字串轉換函數：
 
 ```
 atoi(const char *str)：string to int
@@ -558,7 +536,7 @@ strtol(const char *str, char **ptr, int base)：字串依照基底轉換為長�
 
 -   [字串轉數值](./Stdlib/stdlib_conversion.c)
 
-### 11.3. 產生隨機數：
+### 10.3. 產生隨機數：
 
 ```c
 #include <time.h>
@@ -569,7 +547,7 @@ int rand(void); // 產生一個範圍在 0 到 RAND_MAX 之間的隨機整數
 
 -   [隨機數](./Stdlib/rand.c)
 
-## 12. C 語言的命令列參數（Command Line Arguments）
+## 11. C 語言的命令列參數（Command Line Arguments）
 
 ```
 int main(int argc, char *argv[])
