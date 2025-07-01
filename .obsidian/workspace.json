@@ -169,6 +169,8 @@
   },
   "active": "2df58f043c70e8ef",
   "lastOpenFiles": [
+    "test.exe",
+    "Tutor/類別.md",
     "Tutor/字串.md",
     "Tutor/字元.md",
     "Tutor/參考.md",
@@ -196,8 +198,6 @@
     "Header_File.md",
     "C_BUG.md",
     "README.md",
-    "成大工科 程式設計.md",
-    "Tutor/指標.md",
     "test.cpp",
     "Tutor",
     "LeetCode/DFS/530.minimum-absolute-difference-in-BST.cpp",

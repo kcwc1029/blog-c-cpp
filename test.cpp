@@ -1,27 +1,29 @@
 #include <iostream>
-#include <string>
-#include <algorithm>  // sort 需要這個標頭
 using namespace std;
 
+class Student {
+private:
+    int Score_T;
+public:
+    Student(int s) {
+        Score_T = s;
+    }
+    friend class Teacher;  // ✅ 宣告整個 Teacher 類別是朋友
+};
+
+class Teacher {
+public:
+    void show_score(Student s) {
+        cout << "學生分數是：" << s.Score_T << endl;  // ❌ 錯誤！Score_T 是 private
+    }
+};
+
 int main() {
-    string zodiac[12];{"rat", "ox", "tiger", "hare", "dragon", "snake", "horse", "sheep", "monkey", "rooster", "dog", "pig"};
-    
-
-    // 輸入 12 個生肖名稱
-    cout << "請輸入十二生肖（每次一個）:\n";
-    for (int i = 0; i < 12; i++) {
-        cout << "第 " << (i + 1) << " 個生肖：";
-        cin >> zodiac[i];
-    }
-
-    // 排序
-    sort(zodiac, zodiac + 12);
-
-    // 輸出結果
-    cout << "\n🔠 排序後的生肖順序：\n";
-    for (const string& s : zodiac) {
-        cout << s << endl;
-    }
-
+    Student s1(80);
+    Teacher t;
+    t.show_score(s1);
     return 0;
 }
+
+// .\test.cpp: 在 「void Teacher::show_score(Student)」 成員函式中:
+// .\test.cpp:16:37: 錯誤：「int Student::Score_T」 is private within this contex
