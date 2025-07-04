@@ -35,7 +35,8 @@
               "title": "運算"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -155,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tutor/zero-judge.md",
+                "file": "Tutor/運算.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "zero-judge 的大綱"
+              "title": "運算 的大綱"
             }
           }
         ],
@@ -181,11 +182,11 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "e9c1a88b12d61c8f",
+  "active": "4b2c43cdc0fa135a",
   "lastOpenFiles": [
+    "Tutor/zero-judge.md",
     "Tutor/README.md",
     "Tutor/運算.md",
-    "Tutor/zero-judge.md",
     "Tutor/字串.md",
     "test.exe",
     "Tutor/繼承與多型.md",

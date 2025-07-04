@@ -34,7 +34,48 @@ main(){
 
 {% endraw %}
 
-### 1.2. a005. Eva 的回家作業
+### 1.2. a003. 兩光法師占卜術
+
+{% raw %}
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int month, day;
+    cin >> month >> day;
+
+    int S = (month * 2 + day) % 3;
+
+    if (S == 0) cout << "普通";
+    else if (S == 1) cout << "吉";
+    else cout << "大吉";
+
+    return 0;
+}
+```
+{% endraw %}
+
+### 1.3. a004. 文文的求婚
+
+{% raw %}
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int year;
+    while (cin >> year) {
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+            cout << "閏年" << endl;
+        else
+            cout << "平年" << endl;
+    }
+    return 0;
+}
+```
+{% endraw %}
+### 1.4. a005. Eva 的回家作業
 
 說明：給一定個陣列，已知前四項，推估出第 5 向(等比或等差)
 
@@ -64,7 +105,7 @@ int main(){
 
 {% endraw %}
 
-### 1.3. a010. 因數分解
+### 1.5. a010. 因數分解
 
 {% raw %}
 
@@ -109,7 +150,7 @@ int main() {
 
 {% endraw %}
 
-### 1.4. a020. 身分證檢驗
+### 1.6. a020. 身分證檢驗
 
 說明：身分證號碼檢查如下：(假設是 T112663836)
 
@@ -162,7 +203,7 @@ int main() {
 
 {% endraw %}
 
-### 1.5. a024. 最大公因數(GCD)
+### 1.7. a024. 最大公因數(GCD)
 
 找出最大公因數 => 輾轉相除法
 
@@ -225,7 +266,7 @@ int main() {
 
 {% endraw %}
 
-### 1.6. a034. 二進位制轉換
+### 1.8. a034. 二進位制轉換
 
 將 10 進為轉成 2 進位
 
