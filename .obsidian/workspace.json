@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "94a7dac5369325ba",
+        "id": "6dce842e4a55acde",
         "type": "tabs",
         "children": [
           {
-            "id": "2df58f043c70e8ef",
+            "id": "e9c1a88b12d61c8f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README_hidden.md",
+                "file": "Tutor/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README_hidden"
+              "title": "README"
+            }
+          },
+          {
+            "id": "8e0bd3eccd895c4e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tutor/字串.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "字串"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README_hidden.md",
+                "file": "Tutor/字串.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README_hidden 的大綱"
+              "title": "字串 的大綱"
             }
           }
         ],
@@ -167,12 +182,18 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "2df58f043c70e8ef",
+  "active": "8e0bd3eccd895c4e",
   "lastOpenFiles": [
     "test.exe",
+    "Tutor/繼承與多型.md",
+    "Tutor/運算子多載.md",
+    "Tutor/README.md",
+    "README.md",
+    "LeetCode清單.md",
+    "Tutor/字元.md",
+    "README_hidden.md",
     "Tutor/類別.md",
     "Tutor/字串.md",
-    "Tutor/字元.md",
     "Tutor/參考.md",
     "Tutor/記憶體.md",
     "Tutor/結構.md",
@@ -184,9 +205,7 @@
     "Tutor/static與extern.md",
     "Tutor/建立編譯環境.md",
     "Tutor/運算.md",
-    "README_hidden.md",
     "輸入輸出.md",
-    "Tutor/README.md",
     "Tutor/bug.md",
     "Tutor/輸入輸出.md",
     "Tutor/陣列.md",
@@ -194,17 +213,12 @@
     "Tutor/判斷式.md",
     "Tutor/函數.md",
     "Tutor/先備知識.md",
-    "變數.md",
-    "Header_File.md",
-    "C_BUG.md",
-    "README.md",
     "test.cpp",
     "Tutor",
     "LeetCode/DFS/530.minimum-absolute-difference-in-BST.cpp",
     "LeetCode/BFS/107.binary-tree-level-order-traversal-ii.cpp",
     "LeetCode/BFS/103.binary-tree-zigzag-level-order-traversal.cpp",
     "LeetCode/BFS/102.binary-tree-level-order-traversal.cpp",
-    "leetcode_刷題筆記.pdf",
     "D1mini(ESP8266)/MP32410_examples/ch05/temp/ball0.jpg",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/@vue/cli-service/generator/template/src/assets/logo.png",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_world.png",

@@ -1,29 +1,62 @@
 #include <iostream>
 using namespace std;
 
-class Student {
-private:
-    int Score_T;
+// 基礎類別 vehicle
+class vehicle {
 public:
-    Student(int s) {
-        Score_T = s;
+    void start() {
+        cout << "運輸工具啟動" << endl;
     }
-    friend class Teacher;  // ✅ 宣告整個 Teacher 類別是朋友
+    void shutdown() {
+        cout << "運輸工具熄火" << endl;
+    }
 };
 
-class Teacher {
+// 使用虛擬繼承：virtual public vehicle
+class aircraft : virtual public vehicle {
 public:
-    void show_score(Student s) {
-        cout << "學生分數是：" << s.Score_T << endl;  // ❌ 錯誤！Score_T 是 private
+    void fly() {
+        cout << "飛行器飛行" << endl;
     }
+    void land() {
+        cout << "飛行器著陸" << endl;
+    }
+};
+
+// 使用虛擬繼承：virtual public vehicle
+class car : virtual public vehicle {
+public:
+    void go() {
+        cout << "汽車啟動" << endl;
+    }
+    void stop() {
+        cout << "汽車熄火" << endl;
+    }
+};
+
+// 同時繼承 aircraft 與 car
+class aircar : public aircraft, public car {
+    // 不需要額外定義，直接繼承所有成員
 };
 
 int main() {
-    Student s1(80);
-    Teacher t;
-    t.show_score(s1);
+    aircar ac;
+
+    // 呼叫 vehicle 類別的成員
+    ac.start();
+
+    // 呼叫 car 類別成員
+    ac.go();
+
+    // 呼叫 aircraft 類別成員
+    ac.fly();
+    ac.land();
+
+    // 呼叫 car 類別成員
+    ac.stop();
+
+    // 呼叫 vehicle 類別的成員
+    ac.shutdown();
+
     return 0;
 }
-
-// .\test.cpp: 在 「void Teacher::show_score(Student)」 成員函式中:
-// .\test.cpp:16:37: 錯誤：「int Student::Score_T」 is private within this contex
