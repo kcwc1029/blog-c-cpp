@@ -13,30 +13,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tutor/README.md",
+                "file": "Tutor/zero-judge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "zero-judge"
             }
           },
           {
-            "id": "8e0bd3eccd895c4e",
+            "id": "4b2c43cdc0fa135a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tutor/字串.md",
+                "file": "Tutor/運算.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "字串"
+              "title": "運算"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -156,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tutor/字串.md",
+                "file": "Tutor/zero-judge.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "字串 的大綱"
+              "title": "zero-judge 的大綱"
             }
           }
         ],
@@ -182,18 +181,20 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "8e0bd3eccd895c4e",
+  "active": "e9c1a88b12d61c8f",
   "lastOpenFiles": [
+    "Tutor/README.md",
+    "Tutor/運算.md",
+    "Tutor/zero-judge.md",
+    "Tutor/字串.md",
     "test.exe",
     "Tutor/繼承與多型.md",
     "Tutor/運算子多載.md",
-    "Tutor/README.md",
     "README.md",
     "LeetCode清單.md",
     "Tutor/字元.md",
     "README_hidden.md",
     "Tutor/類別.md",
-    "Tutor/字串.md",
     "Tutor/參考.md",
     "Tutor/記憶體.md",
     "Tutor/結構.md",
@@ -204,7 +205,6 @@
     "Tutor/遞迴.md",
     "Tutor/static與extern.md",
     "Tutor/建立編譯環境.md",
-    "Tutor/運算.md",
     "輸入輸出.md",
     "Tutor/bug.md",
     "Tutor/輸入輸出.md",
