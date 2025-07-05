@@ -37,6 +37,7 @@ main(){
 ### 1.2. a003. 兩光法師占卜術
 
 {% raw %}
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -54,11 +55,13 @@ int main() {
     return 0;
 }
 ```
+
 {% endraw %}
 
 ### 1.3. a004. 文文的求婚
 
 {% raw %}
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -74,7 +77,9 @@ int main() {
     return 0;
 }
 ```
+
 {% endraw %}
+
 ### 1.4. a005. Eva 的回家作業
 
 說明：給一定個陣列，已知前四項，推估出第 5 向(等比或等差)
@@ -303,3 +308,6 @@ int main() {
 ```
 
 {% endraw %}
+
+
+

@@ -1,30 +1,41 @@
 #include <iostream>
-using namespace std ;
-int main(){
-    // 輸出a 5次
-    // for(int i=0;i<5;i++){
-    //     cout << "a";
-    // }
+#include <fstream>
+using namespace std;
 
-    // while
-    int a = 0;
-    while(a<8){
-        cout << "a";
-        cout << "b";
-        cout << "c";
-        a++;
+
+class NOTE {
+protected:
+    char str[8];   // 姓名
+    int num;       // 電話
+public:
+    void showNote() {
+        cout << "姓名：" << str << endl;
+        cout << "電話：" << num << endl;
     }
-    // 
-    return 0 ;
+};
+
+
+
+int main() {
+    NOTE myNOTE;
+    int noteLength = sizeof(myNOTE);  // 每筆資料大小（固定長度）
+    int n;
+
+    ifstream fileInput("text2.txt", ios::binary | ios::in);  // 二進位開檔
+    if (!fileInput.is_open()) {
+        cout << "檔案開啟錯誤！" << endl;
+        return 1;
+    }
+
+    cout << "請問要讀取第幾筆資料？";
+    cin >> n;
+
+    fileInput.seekg((n - 1) * noteLength, ios::beg);  // 計算第 n 筆位置並跳轉
+    fileInput.read((char*)&myNOTE, noteLength);       // 讀取資料
+
+    cout << "第 " << n << " 筆資料如下：" << endl;
+    myNOTE.showNote();
+
+    fileInput.close();
+    return 0;
 }
-
-
-
-
-
-// 迴圈
-// for() 依據次數(in) 請你跑5次 
-// while() 請你做到...為止
-
-
-// if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) //閏年
