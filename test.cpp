@@ -1,41 +1,25 @@
 #include <iostream>
-#include <fstream>
 using namespace std;
 
-
-class NOTE {
-protected:
-    char str[8];   // 姓名
-    int num;       // 電話
+template <typename T>
+class ArrayPrinter{
 public:
-    void showNote() {
-        cout << "姓名：" << str << endl;
-        cout << "電話：" << num << endl;
+    void print(T arr[], int size) {
+        for (int i = 0; i < size; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
     }
 };
 
 
+int main(){
+    ArrayPrinter<int> printer1;
+    int arr1[] = {1, 2, 3, 4, 5};
+    printer1.print(arr1, 5);
 
-int main() {
-    NOTE myNOTE;
-    int noteLength = sizeof(myNOTE);  // 每筆資料大小（固定長度）
-    int n;
-
-    ifstream fileInput("text2.txt", ios::binary | ios::in);  // 二進位開檔
-    if (!fileInput.is_open()) {
-        cout << "檔案開啟錯誤！" << endl;
-        return 1;
-    }
-
-    cout << "請問要讀取第幾筆資料？";
-    cin >> n;
-
-    fileInput.seekg((n - 1) * noteLength, ios::beg);  // 計算第 n 筆位置並跳轉
-    fileInput.read((char*)&myNOTE, noteLength);       // 讀取資料
-
-    cout << "第 " << n << " 筆資料如下：" << endl;
-    myNOTE.showNote();
-
-    fileInput.close();
+    ArrayPrinter<string> printer2;
+    string arr2[] = {"蘋果", "香蕉", "葡萄"};
+    printer2.print(arr2, 3);
     return 0;
 }

@@ -169,6 +169,7 @@
   },
   "active": "e9c1a88b12d61c8f",
   "lastOpenFiles": [
+    "Tutor/模板.md",
     "Tutor/例外處裡.md",
     "fileOutput.txt",
     "Tutor/檔案處理.md",
@@ -199,7 +200,6 @@
     "Tutor/bug.md",
     "Tutor/輸入輸出.md",
     "Tutor/陣列.md",
-    "Tutor/迴圈.md",
     "test.cpp",
     "Tutor",
     "LeetCode/DFS/530.minimum-absolute-difference-in-BST.cpp",
