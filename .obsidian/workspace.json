@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tutor/zero-judge.md",
+                "file": "Tutor/函數.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "zero-judge"
+              "title": "函數"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#define",
+                "query": "tag:#include",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tutor/zero-judge.md",
+                "file": "Tutor/函數.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "zero-judge 的大綱"
+              "title": "函數 的大綱"
             }
           }
         ],
@@ -169,12 +169,13 @@
   },
   "active": "e9c1a88b12d61c8f",
   "lastOpenFiles": [
+    "Tutor/前置處理.md",
+    "Tutor/zero-judge.md",
     "Tutor/模板.md",
     "Tutor/例外處裡.md",
     "fileOutput.txt",
     "Tutor/檔案處理.md",
     "Tutor/判斷式.md",
-    "Tutor/zero-judge.md",
     "Tutor/運算.md",
     "test.exe",
     "Tutor/README.md",
@@ -199,7 +200,6 @@
     "輸入輸出.md",
     "Tutor/bug.md",
     "Tutor/輸入輸出.md",
-    "Tutor/陣列.md",
     "test.cpp",
     "Tutor",
     "LeetCode/DFS/530.minimum-absolute-difference-in-BST.cpp",

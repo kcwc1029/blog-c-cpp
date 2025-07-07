@@ -1,18 +1,16 @@
 #include <iostream>
 using namespace std;
 
-template <typename T>
-void mySwap(T& a, T& b) {
-    T temp = a;
-    a = b;
-    b = temp;
-}
+// 此巨集用於除錯，若條件不符就輸出錯誤並結束程式
+#define assert(cond) \
+    if (!(cond)) { \
+        cout << "Assertion failed: " << #cond << " " \
+             << "file " << __FILE__ << " line " << __LINE__ << endl; \
+        exit(0); \
+    }
 
-int main(){
-    int x = 10, y = 20;
-    string a = "1", b = "2";
-    mySwap(x, y);
-    mySwap(a, b);
-    cout << x << " " << y << endl;
-    cout << a << " " << b << endl;
+int main(void) {
+    int i = 0;
+    assert(i == 1);  // 輸出：Assertion failed: i == 1
+    return 0;
 }
