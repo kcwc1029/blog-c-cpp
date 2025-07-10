@@ -49,6 +49,7 @@
 		"xloctime": "c",
 		"xmemory": "c",
 		"xtr1common": "c",
-		"fstream": "cpp"
+		"fstream": "cpp",
+		"stdio.h": "c"
 	}
 }

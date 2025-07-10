@@ -1,34 +1,14 @@
 #include <stdio.h>
-#include <string.h>
-
-#define SIZE 5
-#define LEN 20
+// #include <iostream>
 
 int main() {
-    char names[SIZE][LEN] = {
-        "banana",
-        "apple",
-        "grape",
-        "kiwi",
-        "melon"
-    };
+    int num;
 
-    // Bubble Sort
-    for (int i = 0; i < SIZE - 1; i++) {
-        for (int j = 0; j < SIZE - 1 - i; j++) {
-            if (strcmp(names[j], names[j + 1]) > 0) {
-                char temp[LEN];
-                strcpy(temp, names[j]);
-                strcpy(names[j], names[j + 1]);
-                strcpy(names[j + 1], temp);
-            }
-        }
-    }
-
-    printf("排序後的字串：\n");
-    for (int i = 0; i < SIZE; i++) {
-        printf("%s\n", names[i]);
-    }
-
+    printf("請輸入一個整數: ");
+    scanf("%d", &num);
+    printf("你輸入的整數是: %d\n", num);
+    printf("123%d %c %d", 123, 'c', 456);
     return 0;
 }
+
+
