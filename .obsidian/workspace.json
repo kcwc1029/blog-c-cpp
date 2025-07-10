@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6dce842e4a55acde",
+        "id": "f0530fdbf4e071ee",
         "type": "tabs",
         "children": [
           {
-            "id": "e9c1a88b12d61c8f",
+            "id": "6c134d1011078d2f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tutor/函數.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "函數"
+              "title": "新分頁"
             }
           }
         ]
@@ -78,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 356.5
+    "width": 219.50260543823242
   },
   "right": {
     "id": "8d7f124c8bc7eb67",
@@ -141,13 +137,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tutor/函數.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "函數 的大綱"
+              "title": "大綱"
             }
           }
         ],
@@ -155,7 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 370.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,22 +162,32 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "e9c1a88b12d61c8f",
+  "active": "6c134d1011078d2f",
   "lastOpenFiles": [
-    "Tutor/前置處理.md",
+    "Tutor/README.md",
+    "Tutor/陣列.md",
     "Tutor/zero-judge.md",
+    "README.md",
+    "Tutor/迴圈.md",
+    "Tutor/輸入輸出.md",
+    "Tutor/運算.md",
+    "LeetCode/leetcode_刷題筆記.pdf",
+    "2024成大工科 程式設計/W1_程設介紹.pptx",
+    "2024成大工科 程式設計/成大工科 程式設計.md",
+    "2024成大工科 程式設計",
+    "Tutor/先備知識.md",
+    "Tutor/指標.md",
+    "Tutor/函數.md",
+    "Tutor/前置處理.md",
     "Tutor/模板.md",
     "Tutor/例外處裡.md",
     "fileOutput.txt",
     "Tutor/檔案處理.md",
     "Tutor/判斷式.md",
-    "Tutor/運算.md",
     "test.exe",
-    "Tutor/README.md",
     "Tutor/字串.md",
     "Tutor/繼承與多型.md",
     "Tutor/運算子多載.md",
-    "README.md",
     "LeetCode清單.md",
     "Tutor/字元.md",
     "README_hidden.md",
@@ -190,21 +195,11 @@
     "Tutor/參考.md",
     "Tutor/記憶體.md",
     "Tutor/結構.md",
-    "Tutor/常數.md",
     "a.exe",
     "123.exe",
     "123.cpp",
-    "Tutor/遞迴.md",
-    "Tutor/static與extern.md",
-    "Tutor/建立編譯環境.md",
-    "輸入輸出.md",
-    "Tutor/bug.md",
-    "Tutor/輸入輸出.md",
     "test.cpp",
     "Tutor",
-    "LeetCode/DFS/530.minimum-absolute-difference-in-BST.cpp",
-    "LeetCode/BFS/107.binary-tree-level-order-traversal-ii.cpp",
-    "LeetCode/BFS/103.binary-tree-zigzag-level-order-traversal.cpp",
     "D1mini(ESP8266)/MP32410_examples/ch05/temp/ball0.jpg",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/@vue/cli-service/generator/template/src/assets/logo.png",
     "互動網頁設計/Vue/vue-project-dynamic-components/node_modules/serve-index/public/icons/page_world.png",
