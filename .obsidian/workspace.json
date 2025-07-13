@@ -11,14 +11,10 @@
             "id": "6c134d1011078d2f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tutor/zero-judge.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "zero-judge"
+              "title": "新分頁"
             }
           }
         ]
@@ -141,13 +137,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tutor/zero-judge.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "zero-judge 的大綱"
+              "title": "大綱"
             }
           }
         ],
@@ -169,11 +164,11 @@
   },
   "active": "6c134d1011078d2f",
   "lastOpenFiles": [
+    "Tutor/zero-judge.md",
     "Tutor/迴圈.md",
     "Tutor/遞迴.md",
     "Tutor/運算.md",
     "Tutor/輸入輸出.md",
-    "Tutor/zero-judge.md",
     "Tutor/README.md",
     "Tutor/陣列.md",
     "README.md",
